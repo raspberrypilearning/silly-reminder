@@ -1,5 +1,3 @@
-## Introduction
-
 This is a **Discover** project, this project will help you explore what the **micro:bit** can do and decide whether you want to learn more. 
 
 ### What you will make
@@ -10,8 +8,10 @@ In this project you are going to make a **silly reminder**.
 
 You will: 
 + Use variables to store data
-+ Draw icons to the LEDs
-+ Use `if... then` blocks to select a melody to play
++ Display icons, text and numbers on the LEDs
++ Play sounds
++ Use `if... then` blocks to select what to display
++ Use the pause blocks to create a countdown timer
 + Use buttons
 
 ### Opening MakeCode
@@ -54,30 +54,9 @@ Create your project with the name `silly-reminder` and click **Create**.
 
 --- /task ---
 
-### The MakeCode Editor
-
-Created by the micro:bit Foundation, the **MakeCode editor** has everything you need to get started coding on micro:bit. 
-
-![](images/makecode-tour.png)
-
-On the left side there is a **simulator**, this contains a virtual micro:bit that you can use to test your code! 
-
-It has all the features and buttons found on a V2 micro:bit, including:
-+ LED Display
-+ Speaker
-+ Microphone
-+ Input buttons
-    + A
-    + B
-    + Logo
-
-In the centre there is the **blocks panel** which is colour coded and allows you to access various code blocks.
-
-On the right side there is a main **code editor panel** to drag and drop blocks into when creating your program.
+[[[makecode-tour]]]
 
 ### Display Icon
-
-The MakeCode editor panel already contains two blocks: `on start` and `forever`.
 
 You will make use of the `on start` block to see how the LEDs on the simulator work.
 
