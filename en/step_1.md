@@ -329,35 +329,9 @@ Change the string `Hello!` to `Pose`.
 
 **Save** and download your code so you can test it out on a physical micro:bit.
 
---- task ---
+[[[download-to-microbit]]]
 
-Click on the `Download` button below the micro:bit simulator. 
-
-![Highlighted download button on the MakeCode editor](images/download-button.png)
-
-You will be asked to plug in your micro:bit, do that now, then click **Continue**. 
-
-Now to Pair your micro:bit, click **Pair** and select your device from the list that appears, then click **Connect**.
-
-![Select micro:bit dailog box showing a BBC micro:bit device.](images/select-microbit.png)
-
---- collapse ---
-
----
-title: My microbit won't pair
----
-
-If your micro:bit won't pair using the method above, it will download the program for you. 
-
-**Windows:** Open **File Explorer** and check that you can see `MICROBIT` under `This PC` on the left hand side. If it is there, drag the downloaded `.HEX` file into the micro:bit, your program will upload onto the device and you should be able to use it. 
-
-**MacOS:** Open **Finder** and check that you can see `MICROBIT` under `Locations` on the left hand side. If it is there, drag the downloaded `.HEX` file into the micro:bit, your program will upload onto the device and you should be able to use it.
-
-If the device isn't showing up, try unplugging it and plugging it back in. You can also try a different USB slot or USB cable if they are available.
-
---- /collapse ---
-
---- /task ---
+When you have downloaded your program to your physical micro:bit, it will run immediately.
 
 --- task ---
 
