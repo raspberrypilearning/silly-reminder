@@ -20,11 +20,11 @@ You will:
 
 --- task ---
 
-What happens when the program starts?
-What happens when the countdown runs?
-What happens when the countdown finishes?
-What happens if you `press` the A button?
-What happens if you `press` the B button?
++ What happens when the program starts?
++ What happens when the countdown runs?
++ What happens when the countdown finishes?
++ What happens if you `press` the A button?
++ What happens if you `press` the B button?
 
 <div style="position:relative;height:100%;padding-bottom:125%;padding-top:0;overflow:hidden;">
 <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=_gpECA3RDMhu2" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe>
