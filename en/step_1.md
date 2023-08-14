@@ -350,7 +350,7 @@ You can do this by making use of the `else`.
 
 --- task ---
 
-Inside the `Basic` menu, drag out the `show string` block. Place it insude the `else` part of the `if..then..else` block.
+Inside the `Basic` menu, drag out the `show string` block. Place it inside the `else` part of the `if..then..else` block.
 
 Change the string `Hello!` to `Pose!`.
 
