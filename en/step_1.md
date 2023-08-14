@@ -312,7 +312,11 @@ To create a countdown, the timer variable value needs to reduce by `1` (but only
 
 --- task ---
 
-Using the `Variables` menu, drag the `change timer by 1` block and place it within the `if.. then` section of blocks. Also change the `1` to `-1`.
+From the `Variables` block menu, drag the `change timer by 1` block and place it inside the `if.. then` section of blocks. 
+
+Also change `1` to `-1`.
+
+![TODO - replace with embedded blocks]()
 
 --- collapse ---
 
@@ -320,30 +324,35 @@ Using the `Variables` menu, drag the `change timer by 1` block and place it with
 title: Adding sound for dramatic effect
 ---
 
-Inside the `Music` menu, drag the `play..tone..Middle C for 1 beat.. until done` block. Place it below the `change timer by -1` variable block.
+From the `Music` block menu, drag the `play..tone..Middle C for 1 beat.. until done` block. Place it below the `change timer by -1` variable block.
 
-Click on the `Middle C` module and a piano keys console will appear. Choose a suitable note for your timer. In this example we have selected `Middle` A.
+Click on the `Middle C` module and a piano keys console will appear. Choose a suitable note for your timer. In this example we have selected `Middle A`.
 
 --- /collapse ---
 
 --- /task ---
 
-After each second is displayed on the micro:bit, you can also add a pause to make the timer more realistic.
+After each value of `timer` is displayed on the micro:bit, you need to add a 1-second pause.
 
 --- task ---
 
-Right click on any of the `pause ms` blocks already on the editor panel to duplicate it. Drag and drop this below the `play tone..for 1 beat` block.
+Right click on any of the `pause ms` blocks already on the editor panel and duplicate it. 
 
-Change `2000` ms to `1000`ms. You can also try out various durations to suit your preference.
+Drag this below the `play tone..for 1 beat` block.
+
+Change `2000`ms to `1000`ms. 
+
 --- /task ---
 
-You can now add a message to let you know when to change your silly pose. You can do this by making use of the `else` condition block.
+After the countdown finishes, you need a message to tell the user to change their silly pose.
+
+You can do this by making use of the `else`.
 
 --- task ---
 
-Inside the `Basic` menu, drag out the `show string` block. Place it below the `else` condition block inside the `if..then..else` condition block.
+Inside the `Basic` menu, drag out the `show string` block. Place it insude the `else` part of the `if..then..else` block.
 
-Change the string `Hello!` to `Pose`.
+Change the string `Hello!` to `Pose!`.
 
 --- /task ---
 
@@ -363,17 +372,15 @@ Change the string `Hello!` to `Pose`.
 
 --- save --- 
 
-### Uploading your program to the micro:bit
-
-**Save** and download your code so you can test it out on a physical micro:bit.
+--- task ---
 
 [[[download-to-microbit]]]
 
-When you have downloaded your program to your physical micro:bit, it will run immediately.
+--- /task ---
 
 --- task ---
 
-**Test** Run your program on the physical micro:bit. You should now see icons randomly chosen when you shake the device.
+**Test** Run your program on the physical micro:bit. 
 
 --- /task ---
 
@@ -382,5 +389,6 @@ When you have downloaded your program to your physical micro:bit, it will run im
 You can upgrade your project to make it more engaging by doing the following:
 
 + Add more silly poses so you can have a wider range to choose from.
-+ Randomise the pose that gets selected afer the timer counts down
++ Randomise the pose that gets selected after the timer reaches 0
 + Add other input gestures such as shake and on logo press.
+
