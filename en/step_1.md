@@ -100,7 +100,7 @@ Click the down arrow on the show icon block and choose any icon of your choice.
 
 ![The show icon menu expanded to display all available icons](images/show-icon.png)
 
-In this example we have chosen the `heart` icon.
+In this example, we have chosen the `heart` icon.
 
 --- /task ---
 
@@ -180,7 +180,7 @@ You can click on each of the squares to draw your pose. In this example, we have
 
 --- /task ---
 
-You will want the icon to be displayed for some time before changing so you will need to make use of a `pause ms` block. This is measured in milliseconds.
+You will want the icon to be displayed for some time before changing so you will need to use a `pause ms` block. This is measured in milliseconds.
 
 --- task ---
 
@@ -200,7 +200,7 @@ Change the 100 in the `pause (ms) 100` block to a longer time so the icon can be
 
 --- task ---
 
-Right click on the `set timer` block inside the `on start` block. 
+Right-click on the `set timer` block inside the `on start` block. 
 
 Click `Duplicate` to make a copy of it.
 
@@ -218,7 +218,7 @@ To create more than one pose that can be selected, you will need to use another 
 
 --- task ---
 
-Right click on the entire `on button A pressed` block. 
+Right-click on the entire `on button A pressed` block. 
 
 Click `Duplicate` to make a copy of it.
 
@@ -246,11 +246,11 @@ Change the squares on the `show leds` block inside the `on button B pressed` blo
 
 When your program runs, you should see your icon appear.
 
-**Test** Press the `A` button to test the icon that displays on the led. Take a note of how long it shows for
+**Test** Press the `A` button to test the icon that displays on the led. Take note of how long it shows for
 
 Do the same to test the `B` button.
 
-**Change** You can change the value in your `pause ms` block to increase or decrease the time the icons are shown for on each button press.
+**Change** You can change the value in your `pause ms` block to increase or decrease the time the icons are shown on each button press.
 
 --- /task ---
 
@@ -266,7 +266,7 @@ From the `Basic` block menu, drag the `show number` block inside the `forever` b
 
 ![The Basic block menu with the 'show number' block highlighted](images/show-number.png)
 
-From on the `Variables` block menu, drag the `timer` variable inside the `0` on the `show number` block
+From the `Variables` block menu, drag the `timer` variable inside the `0` on the `show number` block
 
 ![TODO - replace with embedded blocks](images/shownumber-timer.png)
 
@@ -302,7 +302,7 @@ Place it inside the `true` space within the `if..then..else` block.
 
 From the `Variables` block menu, drag out the `timer` variable block and place it inside the first `0` on the `0 = 0` comparison block.
 
-Change the `=` to a `>` than symbol using the drop down arrow on the comparison block.
+Change the `=` to a `>` than symbol using the drop-down arrow on the comparison block.
 
 ![TODO - replace with embedded blocks]()
 
@@ -326,7 +326,7 @@ title: Adding sound for dramatic effect
 
 From the `Music` block menu, drag the `play..tone..Middle C for 1 beat.. until done` block. Place it below the `change timer by -1` variable block.
 
-Click on the `Middle C` module and a piano keys console will appear. Choose a suitable note for your timer. In this example we have selected `Middle A`.
+Click on the `Middle C` module and a piano keys console will appear. Choose a suitable note for your timer. In this example, we have selected `Middle A`.
 
 --- /collapse ---
 
@@ -336,7 +336,7 @@ After each value of `timer` is displayed on the micro:bit, you need to add a 1-s
 
 --- task ---
 
-Right click on any of the `pause ms` blocks already on the editor panel and duplicate it. 
+Right-click on any of the `pause ms` blocks already on the editor panel and duplicate it. 
 
 Drag this below the `play tone..for 1 beat` block.
 
