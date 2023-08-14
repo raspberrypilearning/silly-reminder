@@ -62,7 +62,7 @@ You will make use of the `on start` block to see how the LEDs on the simulator w
 
 --- task ---
 
-Click on the Basic blocks in the Blocks panel. This will expand to show you various groups of blocks that you can use in your project.
+Click on the `Basic` blocks menu. This will expand to show you various groups of blocks that you can use in your project.
 
 ![](images/basic-blocks.png)
 
@@ -70,7 +70,8 @@ Drag the `show icon` block and place it **inside** the `on start` block.
 
 Once placed in, the block will fit in place like a puzzle.
 
-![](images/onstart-showicon.png)
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_g2caj6PsuPET" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
 
 --- /task ---
 
@@ -130,7 +131,7 @@ New blocks will be created that you can use in your program and change the value
 
 Drag the `set [timer] to 0` block inside the `onstart` block and change the 0 to 10.
 
-![TODO - Change this image for embedded blocks](images/set-timer-variable.png)
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_f4yMbPEpHFwv" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -140,22 +141,23 @@ You will now program the A and B input buttons on the micro:bit to help you sele
 
 --- task ---
 
-Click on the `input` menu and drag the `on button A pressed` block.
+Click on the `Input` blocks menu and drag the `on button A pressed` block.
 
-![TODO - replace with embedded blocks](images/buttonA-pressed.png)
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_TUwcRCfFsHCb" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
  Place it onto the **code editor panel** 
 
 --- /task ---
 
 --- task ---
-Inside the `Basic` menu, drag the `show leds` block below the `on button A pressed` block.
+Inside the `Basic` blocks menu, drag the `show leds` block below the `on button A pressed` block.
 
-![TODO - replace with embedded blocks](images/show-leds.png)
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_7Ugf5a3JXb81" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 You can click on each of the squares to draw your picture. In this example, we have drawn a smiley face as a silly pose.
 
-![TODO - replace with embedded blocks](images/drawicon-led.png)
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_XsR7jJ2wiTAx
+" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
