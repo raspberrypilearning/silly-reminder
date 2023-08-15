@@ -20,11 +20,11 @@ You will:
 
 --- task ---
 
-+ What happens when the program starts?
-+ What happens when the countdown runs?
-+ What happens when the countdown finishes?
-+ What happens if you `press` the A button?
-+ What happens if you `press` the B button?
+What happens when the program starts?
+What happens when the countdown runs?
+What happens when the countdown finishes?
+What happens if you `press` the A button?
+What happens if you `press` the B button?
 
 <div style="position:relative;height:100%;padding-bottom:125%;padding-top:0;overflow:hidden;">
 <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=_gpECA3RDMhu2" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe>
@@ -186,7 +186,8 @@ You will want the icon to be displayed for some time before changing so you will
 
 From the `Basic` block menu, drag a `pause (ms) 100` block below the `show leds` block inside the `on button A pressed` block.
 
-![TODO - replace with embedded blocks](images/pause-ms.png)
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_AVuUqsMq8hbR
+" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -194,7 +195,8 @@ From the `Basic` block menu, drag a `pause (ms) 100` block below the `show leds`
 
 Change the 100 in the `pause (ms) 100` block to a longer time so the icon can be displayed for longer. We have set it to 2000ms (2 seconds) in this example.
 
-![TODO - replace with embedded blocks](images/pause-2000.png)
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_2AcgfYKeAeFu
+" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -204,13 +206,16 @@ Right-click on the `set timer` block inside the `on start` block.
 
 Click `Duplicate` to make a copy of it.
 
+![The right click menu open with the "Duplicate" button highlighted](images/duplicate-settimer.png)
+
 --- /task ---
 
 --- task ---
 
 Place the duplicated `set timer` below the `pause (ms) 2000` block inside the `on button A pressed` block.
 
-![TODO - replace with embedded blocks](images/settimer-pressed.png)
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_1HLLsHXAPhK0
+" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -260,27 +265,11 @@ You will now create a countdown using the `timer` variable that you previously s
 
 The `timer` variable value will decrease by 1 each time.
 
---- task ---
-
-From the `Basic` block menu, drag the `show number` block inside the `forever` block on the editor panel.
-
-![The Basic block menu with the 'show number' block highlighted](images/show-number.png)
-
-From the `Variables` block menu, drag the `timer` variable inside the `0` on the `show number` block
-
-![TODO - replace with embedded blocks](images/shownumber-timer.png)
-
---- /task ---
-
-To check if the timer is greater than 0, then make it count down, you will need an `if..then..else` logic condition block. 
-
---- task ---
-
 From the `Logic` block menu, drag the `if..then..else` logic block. 
 
-![TODO - replace with screenshot of Logic block and if then else](images/ifelse-condition.png)
+[The Logic block menu - with new blocks to set the value of timer, to change the value of timer and to use the value of timer in your code.](images/ifelse-condition.png)
 
-Place it below the `show number` block.
+Place it inside the `forever` block.
 
 ![TODO - replace with embedded blocks]()
 
@@ -317,6 +306,23 @@ From the `Variables` block menu, drag the `change timer by 1` block and place it
 Also change `1` to `-1`.
 
 ![TODO - replace with embedded blocks]()
+
+--- task ---
+
+From the `Basic` block menu, drag the `show number` block and place it below the `change number by -1` block.
+
+![The Basic block menu with the 'show number' block highlighted](images/show-number.png)
+
+From the `Variables` block menu, drag the `timer` variable inside the `0` on the `show number` block
+
+![TODO - replace with embedded blocks](images/shownumber-timer.png)
+
+--- /task ---
+
+To check if the timer is greater than 0, then make it count down, you will need an `if..then..else` logic condition block. 
+
+--- task ---
+
 
 --- collapse ---
 
@@ -390,5 +396,4 @@ You can upgrade your project to make it more engaging by doing the following:
 
 + Add more silly poses so you can have a wider range to choose from.
 + Randomise the pose that gets selected after the timer reaches 0
-+ Add other input gestures such as shake and on logo press.
-
++ Use A and B buttons
