@@ -28,7 +28,7 @@ You will:
 + What happens if you `press` Button A?
 
 <div style="position:relative;height:100%;padding-bottom:125%;padding-top:0;overflow:hidden;">
-<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=_aK33ofCUfffY" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe>
+<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=_WRMV6RCMU5Fb" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe>
 </div>
 
 --- /task ---
@@ -67,9 +67,9 @@ Click on the **New Project** button.
 
 --- task ---
 
-Create your project with the name `Silly Reminder` and click **Create**.
+Create your project with the name `silly reminder` and click **Create**.
 
-![The name 'silly reminder' written in the Create a Project dialogue box.](images/new-project.png)
+<img src="images/new-project.png" alt="The name 'silly reminder' written in the Create a Project dialogue box." width="400"/>
 
 **Tip:** Give your project a helpful name that relates to the activity you’re creating. This will make it easier to find if you create other projects on MakeCode.
 
@@ -100,27 +100,29 @@ The MakeCode editor panel already contains two blocks: `on start` and `forever`.
 
 ### Display Icon
 
-You will make use of the `on start` block to see how the LEDs on the simulator work.
+You will use the <code style="background-color: #1E90FF">on start</code> block to see how the LEDs on the simulator work.
 
 --- task ---
 
-Click on the <code style="background-color: #1E90FF">Basic</code> menu. This will expand to show you the blocks available.
+Click on the <code style="background-color: #1E90FF">Basic</code> menu. 
 
-![The Basic menu with the 'show icon' block highlighted](images/basic-blocks.png)
+This will expand to show you the blocks available.
 
-Drag the `show icon` block and place it **inside** the `on start` block. 
+<img src="images/show-icon-location.png" alt="The Basic menu with the 'show icon' block highlighted." width="350"/>
+
+Drag the <code style="background-color: #1E90FF">show icon</code> block and place it **inside** the <code style="background-color: #1E90FF">on start</code> block. 
 
 This should fit in place like a puzzle.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_iVKhocCVxR3f" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_iVKhocCVxR3f" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
 --- task ---
 
-Click the down arrow on the show icon block and choose any icon of your choice.
+Click the down arrow on the <code style="background-color: #1E90FF">show icon</code> block and choose any icon of your choice.
 
-![The show icon menu expanded to display all available icons](images/show-icon.png)
+<img src="images/show-icon.png" alt="The show icon menu expanded to display all available icons." width="350"/>
 
 In this example, we have chosen the `heart` icon.
 
@@ -128,7 +130,8 @@ In this example, we have chosen the `heart` icon.
 
 --- task ---
 
-**Test:** Click the play button on the simulator. The LED display should light up, showing your chosen icon.
+**Test:** 
+The LED display should light up on the simulator, showing your chosen icon.
 
 Well done for getting the LEDs on the micro:bit to light up!
 
@@ -136,13 +139,12 @@ Well done for getting the LEDs on the micro:bit to light up!
 
 ### Choose some poses
 
-You will need to decide what silly faces/poses you will make whenever you push a micro:bit button. Here are some ideas for poses you could use:
+You will need to decide which silly faces/poses you will make whenever you push a micro:bit button. Here are some ideas for poses:
 
 + A big cheesy grin
 + Jumping jacks
 + Be a tree
 + Flexing muscle pose
-
 
 ### Create a timer for each pose
 
@@ -152,7 +154,7 @@ Create a variable that will be used as a timer for how long you should hold each
 
 Open the <code style="background-color: #DC143C">Variables</code> menu, and click **Make a variable**.
 
-![The Variables menu open with the "Make a variable" button highlighted](images/variable-menu.png)
+<img src="images/variable-menu.png" alt="The Variables menu open with the 'Make a variable' button highlighted." width="350"/>
 
 --- /task ---
 
@@ -160,19 +162,19 @@ Open the <code style="background-color: #DC143C">Variables</code> menu, and clic
 
 Name the new variable `timer`, then click the `Ok` button.
 
-![The 'New variable name' window, with the name 'timer' written in the box](images/variable-examplename.png)
+<img src="images/variable-examplename.png" alt="The 'New variable name' window, with the name 'timer' written in the box" width="400"/>
 
 --- /task ---
 
 New blocks will be created that you can place in your program to use and change the value stored in the `timer` variable. 
 
-![The Variable menu - with new blocks to set the value of timer, to change the value of timer and to use the value of timer in your code.](images/variable-blocks.png)
+<img src="images/variable-blocks.png" alt="The Variable menu - with new blocks to set the value of timer, to change the value of timer and to use the value of timer in your code." width="350"/>
 
 --- task ---
 
-Drag the `set [timer] to 0` block inside the `onstart` block and change the `0` to `10`.
+Drag the <code style="background-color: #DC143C">set</code> block inside the <code style="background-color: #1E90FF">on start</code> block and change the `0` to `10`.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_f4yMbPEpHFwv" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:65%;height:65%;" src="https://makecode.microbit.org/---codeembed#pub:_f4yMbPEpHFwv" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -182,32 +184,34 @@ You will now program the A and B input buttons on the micro:bit to help you sele
 
 --- task ---
 
-Click on the <code style="background-color: #D400D4">Input</code> menu and drag the `on button A pressed` block.
+Click on the <code style="background-color: #D400D4">Input</code> menu and drag out an <code style="background-color: #D400D4">on button</code> block to the **code editor panel**.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_TUwcRCfFsHCb" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
-
- Place it onto the **code editor panel** 
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_TUwcRCfFsHCb" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag the `show leds` block inside the `on button A pressed` block.
+From the <code style="background-color: #1E90FF">Basic</code> menu, drag the <code style="background-color: #1E90FF">show leds</code> block inside the <code style="background-color: #D400D4">on button</code> block.
 
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_7Ugf5a3JXb81" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
-You can click on each of the squares to draw your pose. In this example, we have drawn a smiley face as a silly pose.
+Click on each of the squares to draw your pose. 
+
+In this example, we have drawn a smiley face as a silly pose.
 
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_XsR7jJ2wiTAx
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
-You will want the icon to be displayed for some time before changing so you will need to use a `pause ms` block. This is measured in milliseconds.
+The icon should be displayed for some time before changing. 
+
+You will use a <code style="background-color: #1E90FF">pause</code> block for this. This is a set number of milliseconds (1/1000th of a second).
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag a `pause (ms) 100` block below the `show leds` block inside the `on button A pressed` block.
+From the <code style="background-color: #1E90FF">Basic</code> menu, drag a <code style="background-color: #1E90FF">pause</code> block below the <code style="background-color: #1E90FF">show leds</code> block.
 
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_AVuUqsMq8hbR
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
@@ -216,7 +220,7 @@ From the <code style="background-color: #1E90FF">Basic</code> menu, drag a `paus
 
 --- task ---
 
-Change the 100 in the `pause (ms) 100` block to a longer time so the icon can be displayed for longer. We have set it to 2000ms (2 seconds) in this example.
+Change the 100 in the <code style="background-color: #1E90FF">pause</code> block to a longer time, so the icon can be displayed for longer. We have set it to 2000 (2 seconds) in this example.
 
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_2AcgfYKeAeFu
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
