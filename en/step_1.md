@@ -334,6 +334,8 @@ Also change `1` to `-1`.
 
 ![TODO - replace with embedded blocks]()
 
+--- /task ---
+
 --- task ---
 
 From the <code style="background-color: #1E90FF">Basic</code> menu, drag the `show number` block and place it below the `change number by -1` block.
@@ -349,7 +351,6 @@ From the <code style="background-color: #DC143C">Variables</code> menu, drag the
 To check if the timer is greater than 0, then make it count down, you will need an `if..then..else` logic condition block. 
 
 --- task ---
-
 
 --- collapse ---
 
