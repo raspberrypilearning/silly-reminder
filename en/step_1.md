@@ -296,7 +296,7 @@ From the <code style="background-color: #00A4A6">Logic</code> menu, grab an <cod
 
 Place it in the <code style="background-color: #1E90FF">forever</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_bbCWu0JRuH7u
+<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_bbCWu0JRuH7u
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
@@ -311,7 +311,7 @@ Change the <code style="background-color: #00A4A6">=</code> to a <code style="ba
 
 Place it inside the <code style="background-color: #00A4A6">true</code> space in the <code style="background-color: #00A4A6">if</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:55%;" src="https://makecode.microbit.org/---codeembed#pub:_5RoV5sKivV2q
+<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_5RoV5sKivV2q
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
@@ -320,7 +320,7 @@ Place it inside the <code style="background-color: #00A4A6">true</code> space in
 
 From the <code style="background-color: #DC143C">Variables</code> menu, drag out the <code style="background-color: #DC143C">timer</code> block and place it inside the first `0` in the <code style="background-color: #00A4A6">0 > 0</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:55%;" src="https://makecode.microbit.org/---codeembed#pub:_6XMb0hUethJt
+<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_6XMb0hUethJt
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
@@ -333,7 +333,7 @@ From the <code style="background-color: #DC143C">Variables</code> menu, drag the
 
 Change `1` to `-1`.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_dET7rvT68REy
+<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_dET7rvT68REy
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
@@ -346,12 +346,8 @@ From the <code style="background-color: #1E90FF">Basic</code> menu, drag the <co
 
 From the <code style="background-color: #DC143C">Variables</code> menu, drag the <code style="background-color: #DC143C">timer</code> variable inside the `0` on the <code style="background-color: #1E90FF">show number</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:85%;height:85%;" src="https://makecode.microbit.org/---codeembed#pub:_ERVifxFw4R8c
+<div style="position:relative;height:calc(250px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ERVifxFw4R8c
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
-
---- /task ---
-
---- task ---
 
 --- /task ---
 
@@ -365,7 +361,7 @@ Drag this below the <code style="background-color: #1E90FF">show number</code> b
 
 Change `2000` to `1000`. 
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:95%;height:95%;" src="https://makecode.microbit.org/---codeembed#pub:_eaMbceAxEb8f
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_eaMbceAxEb8f
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
@@ -384,7 +380,7 @@ From the <code style="background-color: #1E90FF">Basic</code> menu, drag out the
 
 Change the string `Hello!` to `Pose!`.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:95%;height:95%;" src="https://makecode.microbit.org/---codeembed#pub:_J5q9imD6m2RK
+<div style="position:relative;height:calc(400px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_J5q9imD6m2RK
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
