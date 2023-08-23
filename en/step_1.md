@@ -69,7 +69,7 @@ Click on the **New Project** button.
 
 Create your project with the name `silly reminder` and click **Create**.
 
-<img src="images/new-project.png" alt="The name 'silly reminder' written in the Create a Project dialogue box." width="400"/>
+<img src="images/new-project.png" alt="The name 'silly reminder' written in the Create a Project dialogue box." width="450"/>
 
 **Tip:** Give your project a helpful name that relates to the activity you’re creating. This will make it easier to find if you create other projects on MakeCode.
 
@@ -96,7 +96,7 @@ In the centre there is the **blocks panel** which is colour-coded and allows you
 
 On the right side is the **code editor panel** to drag and drop blocks into when creating your program.
 
-The MakeCode editor panel already contains two blocks: `on start` and `forever`.
+The MakeCode editor panel already contains two blocks: <code style="background-color: #1E90FF">on start</code> and <code style="background-color: #1E90FF">forever</code>.
 
 ### Display Icon
 
@@ -148,7 +148,7 @@ You will need to decide which silly faces/poses you will make whenever you push 
 
 ### Create a timer for each pose
 
-Create a variable that will be used as a timer for how long you should hold each pose.
+Create a variable that will be used in a timer for how long you should hold each pose.
 
 --- task ---
 
@@ -174,7 +174,7 @@ New blocks will be created that you can place in your program to use and change 
 
 Drag the <code style="background-color: #DC143C">set</code> block inside the <code style="background-color: #1E90FF">on start</code> block and change the `0` to `10`.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:65%;height:65%;" src="https://makecode.microbit.org/---codeembed#pub:_f4yMbPEpHFwv" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:55%;" src="https://makecode.microbit.org/---codeembed#pub:_f4yMbPEpHFwv" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -229,128 +229,165 @@ Change the 100 in the <code style="background-color: #1E90FF">pause</code> block
 
 --- task ---
 
-Right-click on the `set timer` block inside the `on start` block. 
+Right-click on the <code style="background-color: #DC143C">set</code> block inside the <code style="background-color: #1E90FF">on start</code> block. 
 
 Click `Duplicate` to make a copy of it.
 
-![The right click menu open with the "Duplicate" button highlighted](images/duplicate-settimer.png)
+<img src="images/duplicate-timer-variable.gif" alt="An animation showing the process of duplicating the set block" width="350"/>
 
 --- /task ---
 
 --- task ---
 
-Place the duplicated `set timer` below the `pause (ms) 2000` block inside the `on button A pressed` block.
+Place the duplicated <code style="background-color: #DC143C">set</code> block below the <code style="background-color: #1E90FF">pause</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_1HLLsHXAPhK0
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_1HLLsHXAPhK0
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
-To create more than one pose that can be selected, you will need to use another input button on the micro:bit. This will be the `on button B pressed` block.
+To allow more than one pose to be selected, you will use Button B
 
 --- task ---
 
-Right-click on the entire `on button A pressed` block. 
+Right-click on the entire <code style="background-color: #D400D4">on button</code> block. 
 
 Click `Duplicate` to make a copy of it.
 
-![The 'on button A pressed' block showing a menu including 'Duplicate', Add Comment, Collapse Block, Delete Blocks and Help.](images/duplicate-block.png)
+<img src="images/duplicate-block.png" alt="The 'on button A pressed' block showing a menu including 'Duplicate', Add Comment, Collapse Block, Delete Blocks and Help." width="350"/>
 
-You will now have an exact copy of all the blocks of code inside `on button A pressed` on the code editor panel.
-
---- /task ---
-
---- task ---
-
-Click the down arrow next to the A on your duplicated `on button A pressed` block. Change the `A` to `B`.
-
-![The 'on button A pressed' block showing a drop-down menu from the A, with options for A, B and A+B together](images/button-options.png)
+You will now have two <code style="background-color: #D400D4">on button</code> blocks on the code editor panel.
 
 --- /task ---
 
 --- task ---
 
-Change the squares on the `show leds` block inside the `on button B pressed` block to create a new pose icon.
+Click the down arrow next to the <code style="background-color: #D400D4">A</code> on your duplicated <code style="background-color: #D400D4">on button</code> block. Change the <code style="background-color: #D400D4">A</code> to <code style="background-color: #D400D4">B</code>.
+
+<img src="images/button-options.png" alt="The 'on button A pressed' block showing a drop-down menu from the A, with options for A, B and A+B" width="350"/>
 
 --- /task ---
 
 --- task ---
 
-When your program runs, you should see your icon appear.
+To create a new pose icon, change the squares on the new <code style="background-color: #1E90FF">show leds</code> block inside the new <code style="background-color: #D400D4">on button</code> block.
 
-**Test** Press the `A` button to test the icon that displays on the led. Take note of how long it shows for
+--- /task ---
 
-Do the same to test the `B` button.
+--- task ---
 
-**Change** You can change the value in your `pause ms` block to increase or decrease the time the icons are shown on each button press.
+**Test** 
+
++ Click Button `A` on the simulator to test the icon that displays on the led. Take note of how long it shows for
++ Do the same to test Button `B`.
++ Change the value in your <code style="background-color: #1E90FF">pause</code> block to increase or decrease how much time the icons are shown for on each button press.
 
 --- /task ---
 
 ### Create a countdown
 
-You will now create a countdown using the `timer` variable that you previously set to `10` to represent 10 seconds. 
+You will now create a 10-second countdown.
 
-The `timer` variable value will decrease by 1 each time.
+The <code style="background-color: #DC143C">timer</code> variable value will decrease by `1` each second, but **only** if the timer is **greater than 0**.
 
-From the <code style="background-color: #00A4A6">Logic</code> menu, drag the `if` logic block. 
+--- task ---
 
-[The Logic menu - with new blocks to set the value of timer, to change the value of timer and to use the value of timer in your code.](images/ifelse-condition.png)
+From the <code style="background-color: #00A4A6">Logic</code> menu, grab an <code style="background-color: #00A4A6">if</code> block. 
 
-Place it inside the `forever` block.
+Place it in the <code style="background-color: #1E90FF">forever</code> block.
 
-![TODO - replace with embedded blocks]()
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:50%;" src="https://makecode.microbit.org/---codeembed#pub:_bbCWu0JRuH7u
+" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #00A4A6">Logic</code> menu, drag out a comparison block `0 = 0`.
+From the <code style="background-color: #00A4A6">Logic</code> menu, drag out a <code style="background-color: #00A4A6">0 = 0</code> block.
 
-![The Logic menu with the condition block '0 = 0' highlighted](images/comparison-block.png)
+<img src="images/comparison-block.png" alt="The Logic menu with the comparison block '0 = 0' highlighted" width="350"/>
 
-Place it inside the `true` space within the `if..then..else` block.
+Change the <code style="background-color: #00A4A6">=</code> to a <code style="background-color: #00A4A6">></code> (greater than) symbol using the drop-down arrow on the comparison block.
 
-![TODO - replace with embedded blocks]()
+Place it inside the <code style="background-color: #00A4A6">true</code> space in the <code style="background-color: #00A4A6">if</code> block.
 
---- /task ---
-
---- task ---
-
-From the `Variables` block menu, drag out the `timer` variable block and place it inside the first `0` on the `0 = 0` comparison block.
-
-Change the `=` to a `>` than symbol using the drop-down arrow on the comparison block.
-
-![TODO - replace with embedded blocks]()
-
---- /task ---
-
-To create a countdown, the timer variable value needs to reduce by `1` (but only if the timer is greater than `0`).
-
---- task ---
-
-From the `Variables` block menu, drag the `change timer by 1` block and place it inside the `if.. then` section of blocks. 
-
-Also change `1` to `-1`.
-
-![TODO - replace with embedded blocks]()
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:55%;" src="https://makecode.microbit.org/---codeembed#pub:_5RoV5sKivV2q
+" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag the `show number` block and place it below the `change number by -1` block.
+From the <code style="background-color: #DC143C">Variables</code> menu, drag out the <code style="background-color: #DC143C">timer</code> block and place it inside the first `0` in the <code style="background-color: #00A4A6">0 > 0</code> block.
 
-![The Basic menu with the 'show number' block highlighted](images/show-number.png)
-
-From the <code style="background-color: #DC143C">Variables</code> menu, drag the `timer` variable inside the `0` on the `show number` block
-
-![TODO - replace with embedded blocks](images/shownumber-timer.png)
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:55%;" src="https://makecode.microbit.org/---codeembed#pub:_6XMb0hUethJt
+" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
-To check if the timer is greater than 0, then make it count down, you will need an `if..then..else` logic condition block. 
+To create a countdown, the timer variable value needs to reduce by `1`.
 
 --- task ---
+
+From the <code style="background-color: #DC143C">Variables</code> menu, drag the <code style="background-color: #DC143C">change</code> block and place it inside the <code style="background-color: #00A4A6">if</code> section. 
+
+Change `1` to `-1`.
+
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:75%;height:75%;" src="https://makecode.microbit.org/---codeembed#pub:_dET7rvT68REy
+" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+--- /task ---
+
+--- task ---
+
+From the <code style="background-color: #1E90FF">Basic</code> menu, drag the <code style="background-color: #1E90FF">show number</code> block and place it below the <code style="background-color: #DC143C">change</code> block.
+
+<img src="images/show-number.png" alt="The Basic menu with the 'show number' block highlighted" width="350"/>
+
+From the <code style="background-color: #DC143C">Variables</code> menu, drag the <code style="background-color: #DC143C">timer</code> variable inside the `0` on the <code style="background-color: #1E90FF">show number</code> block.
+
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:85%;height:85%;" src="https://makecode.microbit.org/---codeembed#pub:_ERVifxFw4R8c
+" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+--- /task ---
+
+--- task ---
+
+--- /task ---
+
+After each value of <code style="background-color: #DC143C">timer</code> is displayed on the micro:bit, you need to add a 1-second pause.
+
+--- task ---
+
+Right-click on one of the <code style="background-color: #1E90FF">pause</code> blocks already on the editor panel and duplicate it. 
+
+Drag this below the <code style="background-color: #1E90FF">show number</code> block.
+
+Change `2000` to `1000`. 
+
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:95%;height:95%;" src="https://makecode.microbit.org/---codeembed#pub:_eaMbceAxEb8f
+" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+--- /task ---
+
+After the countdown finishes, the value will be 0. 
+
+You need a message to tell the user to change their silly pose.
+
+You will do this in the <code style="background-color: #00A4A6">else</code> section.
+
+--- task ---
+
+Click on the `+` symbol at the bottom of the <code style="background-color: #00A4A6">if</code> block. This will create an `else` section. 
+
+From the <code style="background-color: #1E90FF">Basic</code> menu, drag out the `show string` block. Place it inside the `else` section.
+
+Change the string `Hello!` to `Pose!`.
+
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:95%;height:95%;" src="https://makecode.microbit.org/---codeembed#pub:_J5q9imD6m2RK
+" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+
+--- /task ---
 
 --- collapse ---
 
@@ -358,53 +395,32 @@ To check if the timer is greater than 0, then make it count down, you will need 
 title: Adding sound for dramatic effect
 ---
 
-From the <code style="background-color: #E63022">Music</code> menu, drag the `play..tone..Middle C for 1 beat.. until done` block. Place it below the `change timer by -1` variable block.
+From the <code style="background-color: #E63022">Music</code> menu, drag out a <code style="background-color: #E63022">play..tone..Middle C for 1 beat.. until done</code> block. Place it below the <code style="background-color: #DC143C">change</code> block.
 
-Click on the `Middle C` module and a piano keys console will appear. Choose a suitable note for your timer. In this example, we have selected `Middle A`.
+Click the `Middle C` dropdown and a piano keys console will appear. Choose a tone for your timer. 
+
+We have selected `Middle A`.
+
+Click the <code style="background-color: #E63022">until done</code> dropdown and change it to <code style="background-color: #E63022">in background</code>.
+
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:95%;height:95%;" src="https://makecode.microbit.org/---codeembed#pub:_b7MeJEDtAMMq
+" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /collapse ---
 
---- /task ---
-
-After each value of `timer` is displayed on the micro:bit, you need to add a 1-second pause.
-
 --- task ---
 
-Right-click on any of the `pause ms` blocks already on the editor panel and duplicate it. 
+**Test** your program on the simulator: 
 
-Drag this below the `play tone..for 1 beat` block.
++ **Click** Button A to see the pose icon displayed. 
 
-Change `2000`ms to `1000`ms. 
++ **Click** Button B to see another pose icon displayed.  
 
---- /task ---
++ **Check** the countdown timer is working and counting back from 10. 
 
-After the countdown finishes, you need a message to tell the user to change their silly pose.
-
-You can do this by making use of the `else`.
-
---- task ---
-
-Inside the <code style="background-color: #1E90FF">Basic</code> menu, drag out the `show string` block. Place it inside the `else` part of the `if..then..else` block.
-
-Change the string `Hello!` to `Pose!`.
++ **Check** that a tone is played as each second counts down.
 
 --- /task ---
-
---- task ---
-
-**Run** the program to check that all your code is working. 
-
-**Press** the A button to see the pose icon displayed. 
-
-**Press** the B button to see another pose icon displayed.  
-
-**Check** the countdown timer is working and counting from 10 backwards. 
-
-**Check** that a tone is played after each second counts down.  
-
---- /task ---
-
---- save --- 
 
 --- task ---
 
@@ -414,14 +430,12 @@ Change the string `Hello!` to `Pose!`.
 
 --- task ---
 
-**Test** Run your program on the physical micro:bit. 
+**Test** your program on the physical micro:bit. 
 
 --- /task ---
 
 ### Upgrade your project
 
-You can upgrade your project to make it more engaging by doing the following:
+You can upgrade your hobby selector by:
 
-+ Add more silly poses so you can have a wider range to choose from.
-+ Randomise the pose that gets selected after the timer reaches 0
-+ Use A and B buttons
++ Adding more silly poses so you can have a wider range to choose from.
