@@ -28,7 +28,7 @@ You will:
 + What happens if you `press` Button A?
 
 <div style="position:relative;height:100%;padding-bottom:125%;padding-top:0;overflow:hidden;">
-<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=_P9iHxke9FMWH" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe>
+<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=_Dwm4WkMtaY8w" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe>
 </div>
 
 --- /task ---
@@ -114,7 +114,7 @@ Drag the <code style="background-color: #1E90FF">show icon</code> block and plac
 
 This should fit in place like a puzzle.
 
-<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_iVKhocCVxR3f" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
@@ -233,9 +233,10 @@ Right-click on the <code style="background-color: #DC143C">set</code> block insi
 
 Click `Duplicate` to make a copy of it.
 
-Place the duplicated <code style="background-color: #DC143C">set</code> block below the <code style="background-color: #1E90FF">pause</code> block.
+Place the duplicated <code style="background-color: #DC143C">set</code> block above the <code style="background-color: #1E90FF">show leds</code> block.
 
-![TODO: Change gif]()
+Change the `0` in to `10`.
+
 <img src="images/duplicate-timer-variable.gif" alt="An animation showing the process of duplicating the set block" width="350"/>
 
 --- /task ---
@@ -248,8 +249,6 @@ Right-click on the entire <code style="background-color: #D400D4">on button</cod
 
 Click `Duplicate` to make a copy of it.
 
-<img src="images/duplicate-block.png" alt="The 'on button A pressed' block showing a menu including 'Duplicate', Add Comment, Collapse Block, Delete Blocks and Help." width="350"/>
-
 You will now have two <code style="background-color: #D400D4">on button</code> blocks on the code editor panel.
 
 --- /task ---
@@ -258,7 +257,7 @@ You will now have two <code style="background-color: #D400D4">on button</code> b
 
 Click the down arrow next to the <code style="background-color: #D400D4">A</code> on your duplicated <code style="background-color: #D400D4">on button</code> block. Change the <code style="background-color: #D400D4">A</code> to <code style="background-color: #D400D4">B</code>.
 
-<img src="images/button-options.png" alt="The 'on button A pressed' block showing a drop-down menu from the A, with options for A, B and A+B" width="350"/>
+<img src="images/button-options.png" alt="The 'on button A pressed' block showing a drop-down menu from the A, with options for A, B and A+B" width="210"/>
 
 --- /task ---
 
@@ -374,7 +373,9 @@ From the <code style="background-color: #1E90FF">Basic</code> menu, drag out the
 
 Change the string `Hello!` to `Pose!`.
 
-<div style="position:relative;height:calc(350px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:70%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_J5q9imD6m2RK
+From the <code style="background-color: #1E90FF">Basic</code> menu, drag out the <code style="background-color: #1E90FF">clear screen</code> block. Place it under the <code style="background-color: #1E90FF">show string</code> block.
+
+<div style="position:relative;height:calc(350px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:70%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_RUVJMfW8EFmP
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
@@ -397,7 +398,7 @@ We have selected `Middle A`.
 
 Click the <code style="background-color: #E63022">until done</code> dropdown and change it to <code style="background-color: #E63022">in background</code>.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:95%;height:95%;" src="https://makecode.microbit.org/---codeembed#pub:_EHW3KK2u7h8x
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:95%;height:95%;" src="https://makecode.microbit.org/---codeembed#pub:_R4xU4T1CrbbX
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /collapse ---
@@ -433,4 +434,4 @@ Click the <code style="background-color: #E63022">until done</code> dropdown and
 You can upgrade your silly reminder by:
 
 + Adding more silly poses so you can have a wider range to choose from.
-+ 
++ TODO add
