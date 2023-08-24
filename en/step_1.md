@@ -28,7 +28,7 @@ You will:
 + What happens if you `press` Button A?
 
 <div style="position:relative;height:100%;padding-bottom:125%;padding-top:0;overflow:hidden;">
-<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=_WRMV6RCMU5Fb" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe>
+<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=_P9iHxke9FMWH" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe>
 </div>
 
 --- /task ---
@@ -160,7 +160,7 @@ Open the <code style="background-color: #DC143C">Variables</code> menu, and clic
 
 --- task ---
 
-Name the new variable `timer`, then click the `Ok` button.
+Name the new variable `timer`, then click the **Ok** button.
 
 <img src="images/variable-examplename.png" alt="The 'New variable name' window, with the name 'timer' written in the box" width="400"/>
 
@@ -172,15 +172,15 @@ New blocks will be created that you can place in your program to use and change 
 
 --- task ---
 
-Drag the <code style="background-color: #DC143C">set</code> block inside the <code style="background-color: #1E90FF">on start</code> block and change the `0` to `10`.
+Drag the <code style="background-color: #DC143C">set</code> block inside the <code style="background-color: #1E90FF">on start</code> block.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_f4yMbPEpHFwv" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_WqPTC6UjXJ02" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
 ### Set icon for each pose
 
-You will now program the A and B input buttons on the micro:bit to help you select an icon for each pose.
+You will now program the A and B input buttons on the micro:bit to help you select which silly pose to do.
 
 --- task ---
 
@@ -220,7 +220,7 @@ From the <code style="background-color: #1E90FF">Basic</code> menu, drag a <code
 
 --- task ---
 
-Change the 100 in the <code style="background-color: #1E90FF">pause</code> block to a longer time, so the icon can be displayed for longer. We have set it to 2000 (2 seconds) in this example.
+Change the `100` in the <code style="background-color: #1E90FF">pause</code> block to a longer time, so the icon can be displayed for longer. We have set it to 2 seconds (`2000`) in this example.
 
 <div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_2AcgfYKeAeFu
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
@@ -233,16 +233,10 @@ Right-click on the <code style="background-color: #DC143C">set</code> block insi
 
 Click `Duplicate` to make a copy of it.
 
-<img src="images/duplicate-timer-variable.gif" alt="An animation showing the process of duplicating the set block" width="350"/>
-
---- /task ---
-
---- task ---
-
 Place the duplicated <code style="background-color: #DC143C">set</code> block below the <code style="background-color: #1E90FF">pause</code> block.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_1HLLsHXAPhK0
-" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+![TODO: Change gif]()
+<img src="images/duplicate-timer-variable.gif" alt="An animation showing the process of duplicating the set block" width="350"/>
 
 --- /task ---
 
@@ -278,8 +272,8 @@ To create a new pose icon, change the squares on the new <code style="background
 
 **Test** 
 
-+ Click Button `A` on the simulator to test the icon that displays on the led. Take note of how long it shows for
-+ Do the same to test Button `B`.
++ Click Button `A` on the simulator to see which icon displays on the LED. Take note of how long it shows for
++ Do the same to test Button `B`
 + Change the value in your <code style="background-color: #1E90FF">pause</code> block to increase or decrease how much time the icons are shown for on each button press.
 
 --- /task ---
@@ -355,9 +349,9 @@ After each value of <code style="background-color: #DC143C">timer</code> is disp
 
 --- task ---
 
-Right-click on one of the <code style="background-color: #1E90FF">pause</code> blocks already on the editor panel and duplicate it. 
+Right-click on one of your <code style="background-color: #1E90FF">pause</code> blocks and duplicate it. 
 
-Drag this below the <code style="background-color: #1E90FF">show number</code> block.
+Drag the duplicated <code style="background-color: #1E90FF">pause</code> block below the <code style="background-color: #1E90FF">show number</code> block.
 
 Change `2000` to `1000`. 
 
@@ -374,9 +368,9 @@ You will do this in the <code style="background-color: #00A4A6">else</code> sect
 
 --- task ---
 
-Click on the `+` symbol at the bottom of the <code style="background-color: #00A4A6">if</code> block. This will create an `else` section. 
+Click on the `+` symbol at the bottom of the <code style="background-color: #00A4A6">if</code> block. This will create an <code style="background-color: #00A4A6">else</code> section. 
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag out the `show string` block. Place it inside the `else` section.
+From the <code style="background-color: #1E90FF">Basic</code> menu, drag out the <code style="background-color: #1E90FF">show string</code> block. Place it inside the <code style="background-color: #00A4A6">else</code> section.
 
 Change the string `Hello!` to `Pose!`.
 
@@ -391,15 +385,19 @@ Change the string `Hello!` to `Pose!`.
 title: Adding sound for dramatic effect
 ---
 
-From the <code style="background-color: #E63022">Music</code> menu, drag out a <code style="background-color: #E63022">play..tone..Middle C for 1 beat.. until done</code> block. Place it below the <code style="background-color: #DC143C">change</code> block.
+From the <code style="background-color: #E63022">Music</code> menu, drag out a <code style="background-color: #E63022">play tone</code> block. 
 
-Click the `Middle C` dropdown and a piano keys console will appear. Choose a tone for your timer. 
+Place it below the <code style="background-color: #DC143C">change</code> block.
+
+Click the `Middle C` dropdown and a piano keys console will appear. 
+
+Choose a tone for your timer. 
 
 We have selected `Middle A`.
 
 Click the <code style="background-color: #E63022">until done</code> dropdown and change it to <code style="background-color: #E63022">in background</code>.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:95%;height:95%;" src="https://makecode.microbit.org/---codeembed#pub:_b7MeJEDtAMMq
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:95%;height:95%;" src="https://makecode.microbit.org/---codeembed#pub:_EHW3KK2u7h8x
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /collapse ---
@@ -432,6 +430,7 @@ Click the <code style="background-color: #E63022">until done</code> dropdown and
 
 ### Upgrade your project
 
-You can upgrade your hobby selector by:
+You can upgrade your silly reminder by:
 
 + Adding more silly poses so you can have a wider range to choose from.
++ 
