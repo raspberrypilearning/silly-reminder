@@ -433,5 +433,5 @@ Click the <code style="background-color: #E63022">until done</code> dropdown and
 
 You can upgrade your silly reminder by:
 
-+ Adding more silly poses so you can have a wider range to choose from.
-+ TODO add
++ Adding one more silly pose that shows when you press Buttons A and B together (`A+B`) 
++ Increase the amount of time between poses
