@@ -373,7 +373,7 @@ From the <code style="background-color: #1E90FF">Basic</code> menu, drag out the
 
 Change the string `Hello!` to `Pose!`.
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag out the <code style="background-color: #1E90FF">clear screen</code> block. Place it under the <code style="background-color: #1E90FF">show string</code> block.
+From the <code style="background-color: #1E90FF">Basic</code> menu, drag out the <code style="background-color: #1E90FF">clear screen</code> block. Place it **above** the <code style="background-color: #1E90FF">show string</code> block.
 
 <div style="position:relative;height:calc(350px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:70%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_RUVJMfW8EFmP
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
