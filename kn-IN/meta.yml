@@ -1,0 +1,10 @@
+title: Silly reminder
+hero_image: images/banner.png
+description: Let your micro:bit remind you to loosen up and stike a pose
+version: 4
+listed: false
+copyedit: false
+last_tested: "2023-08-11"
+steps:
+  - 
+    title: Set a reminder
