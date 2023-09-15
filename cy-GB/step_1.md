@@ -1,31 +1,31 @@
-The **micro:bit** is a small computer that you can use to interact with the world around you.
+Mae'r **micro:bit** yn gyfrifiadur bach y gallwch ei ddefnyddio i ryngweithio â'r byd o'ch cwmpas.
 
-This project will help you **discover** what the **micro:bit** can do.
+Bydd y prosiect hwn yn eich helpu **ddarganfod** beth gall y **micro:bit** ei wneud.
 
-### What you will make
+### Beth fyddwch chi'n ei greu
 
-This project reminds you to make time to be silly, have fun, and strike a pose! This could be after a long day at school, or as a way to cheer you and your friends up. You can program the micro:bit buttons to help you remember to have some silly fun.
+Mae'r prosiect hwn yn eich atgoffa i wneud amser i fod yn wirion, cael hwyl, a gwneud ystum! Gallai hyn fod ar ôl diwrnod hir yn yr ysgol, neu fel ffordd o godi calon chi a'ch ffrindiau. Gallwch raglennu'r botymau micro:bit i'ch helpu i gofio cael ychydig o hwyl gwirion.
 
-In this project, you will make a **silly reminder**.
+Yn y prosiect hwn, byddwch yn gwneud nodyn atgoffa **gwirion**.
 
-You will:
-+ Display icons, text, and numbers on the LEDs
-+ Use <code style="background-color: #00A4A6">if</code> blocks to control what is displayed
-+ Use the <code style="background-color: #1E90FF">pause</code> block to create a countdown timer
-+ Play sounds
-+ Use buttons to change the display
+Byddwch yn:
++ Arddangos eiconau, testun, a rhifau ar y LEDs
++ Defnyddiwch flociau <code style="background-color: #00A4A6">os</code> i reoli'r hyn sy'n cael ei arddangos
++ Defnyddiwch y bloc <code style="background-color: #1E90FF">saib</code> i greu amserydd cyfrif i lawr
++ Chwarae synau
++ Defnyddiwch fotymau i newid yr arddangosfa
 
 --- no-print ---
 
-### Play ▶️
+### Chwarae ▶️
 
 --- task ---
 
-+ What happens when the program starts?
-+ What happens when the countdown runs?
-+ What happens when the countdown finishes?
-+ What happens if you `press` Button A?
-+ What happens if you `press` Button B?
++ Beth sy'n digwydd pan fydd y rhaglen yn dechrau?
++ Beth sy'n digwydd pan fydd y cyfrif i lawr yn rhedeg?
++ Beth sy'n digwydd pan ddaw'r cyfrif lawr i ben?
++ Beth sy'n digwydd os `gwasgwch` Botwm A?
++ Beth sy'n digwydd os `gwasgwch` Botwm B?
 
 <div style="position:relative;height:100%;padding-bottom:125%;padding-top:0;overflow:hidden;">
 <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=_KiYLAWM3cip4" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe>
@@ -35,84 +35,84 @@ You will:
 
 --- /no-print ---
 
-### Open MakeCode
+### Agor MakeCode
 
-To start creating your micro:bit project, open the MakeCode editor.
+I ddechrau creu eich prosiect micro:bit, agorwch y golygydd MakeCode.
 
 --- task ---
 
-Open the MakeCode editor at [makecode.microbit.org](https://makecode.microbit.org)
+Agorwch y golygydd MakeCode yn [makecode.microbit.org](https://makecode.microbit.org)
 
 --- collapse ---
 
 ---
-title: Offline version of the editor
+title: Fersiwn all-lein o'r golygydd
 ---
 
-There is also a [downloadable version of the MakeCode editor](https://makecode.microbit.org/offline-app).
+Mae yna hefyd fersiwn [y gellir ei lawrlwytho o olygydd MakeCode](https://makecode.microbit.org/offline-app).
 
 --- /collapse ---
 
 --- /task ---
 
-Once the editor is open, create a New Project and give your project a name.
+Unwaith y bydd y golygydd ar agor, crëwch Brosiect Newydd a rhowch enw i'ch prosiect.
 
 --- task ---
 
-Click on the **New Project** button.
+Cliciwch ar y botwm **Prosiect Newydd**.
 
-![The New Project button in MakeCode.](images/new-project-button.png)
+![Y botwm Prosiect Newydd yn MakeCode.](images/new-project-button.png)
 
 --- /task ---
 
 --- task ---
 
-Give your project the name `silly reminder` and click **Create**.
+Rhowch yr enw `nodyn atgoffa gwirion` i'ch prosiect a chliciwch **Creu**.
 
-<img src="images/new-project.png" alt="The name 'silly reminder' written in the Create a Project dialogue box." width="450" />
+<img src="images/new-project.png" alt="Mae'r enw 'atgof gwirion' wedi'i ysgrifennu yn y blwch deialog Creu Prosiect." width="450" />
 
-**Tip:** To make your project easier to find later, give it a helpful name that relates to what you’re creating.
+**Awgrym:** I wneud eich prosiect yn haws dod o hyd iddo yn nes ymlaen, rhowch enw defnyddiol iddo sy'n ymwneud â'r hyn rydych chi'n ei greu.
 
 --- /task ---
 
-### The MakeCode editor
+### Golygydd MakeCode
 
-Created by the micro:bit Foundation, the **MakeCode editor** has everything you need start coding with micro:bit.
+Wedi'i greu gan y micro:bit Foundation, mae gan **olygydd MakeCode** bopeth sydd ei angen arnoch i ddechrau codio gyda micro:bit.
 
-![The MakeCode editor window](images/makecode-tour.png)
+![Ffenestr golygydd MakeCode](images/makecode-tour.png)
 
-On the left-hand side. there is a **simulator**. This is a virtual micro:bit that you can use to test your code!
+Ar yr ochr chwith. mae yna **efelychydd **. Micro:bit rhithwir yw hwn y gallwch ei ddefnyddio i brofi'ch cod!
 
-It has all the features and buttons found on a V2 micro:bit, including:
-+ LED display
-+ Speaker
-+ Microphone
-+ Input buttons
+Mae ganddo'r holl nodweddion a botymau a geir ar micro:bit V2, gan gynnwys:
++ Arddangosfa LED
++ Llefarydd
++ Meicroffon
++ Botymau mewnbwn
     + A
     + B
     + Logo
 
-In the centre, there is the **blocks panel**, which is colour-coded and allows you to access various code blocks.
+Yn y canol, mae **panel blociau**, sydd â chôd lliw ac sy'n eich galluogi i gael mynediad at flociau cod amrywiol.
 
-On the right-hand side, there is the **code editor panel**. This is where you drag and drop blocks to create your program.
+Ar yr ochr dde, mae **panel golygydd cod**. Dyma lle rydych chi'n llusgo a gollwng blociau i greu eich rhaglen.
 
-The MakeCode editor panel already contains two blocks: <code style="background-color: #1E90FF">on start</code> and <code style="background-color: #1E90FF">forever</code>.
+Mae panel golygydd MakeCode eisoes yn cynnwys dau floc: <code style="background-color: #1E90FF">ar y cychwyn</code> a <code style="background-color: #1E90FF">am byth</code>.
 
-### Display icon
+### Eicon arddangos
 
-You will use the <code style="background-color: #1E90FF">on start</code> block to see how the LEDs on the simulator work.
+Byddwch yn defnyddio'r bloc <code style="background-color: #1E90FF">ar gychwyn</code> i weld sut mae'r LEDs ar yr efelychydd yn gweithio.
 
 --- task ---
 
-Click on the <code style="background-color: #1E90FF">Basic</code> menu.
+Cliciwch ar y ddewislen <code style="background-color: #1E90FF">Sylfaenol</code>.
 
-This will expand to show you the blocks available.
+Bydd hyn yn ehangu i ddangos y blociau sydd ar gael i chi.
 
-<img src="images/show-icon-location.png" alt="The Basic menu with the 'show icon' block highlighted." width="350" />
+<img src="images/show-icon-location.png" alt="Mae'r ddewislen Sylfaenol gyda'r bloc 'eicon dangos' wedi'i amlygu." width="350" />
 
-Drag the <code style="background-color: #1E90FF">show icon</code> block and place it **inside** the <code style="background-color: #1E90FF">on start</code> block.
+Llusgwch y bloc <code style="background-color: #1E90FF">dangos eicon</code> bloc a'i osod **y tu mewn i** y bloc <code style="background-color: #1E90FF">ar ddechrau</code>.
 
-This should fit in place like a puzzle piece.
+Dylai hwn ffitio yn ei le fel darn pos.
 
 <div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
@@ -120,70 +120,70 @@ This should fit in place like a puzzle piece.
 
 --- task ---
 
-Click the down arrow on the <code style="background-color: #1E90FF">show icon</code> block and pick an icon.
+Cliciwch y saeth i lawr ar y bloc <code style="background-color: #1E90FF">danogs eicon</code> a dewiswch eicon.
 
-<img src="images/show-icon.png" alt="The show icon menu expanded to display all available icons." width="350" />
+<img src="images/show-icon.png" alt="Ehangodd y ddewislen eicon sioe i ddangos yr holl eiconau sydd ar gael." width="350" />
 
-In this example, we have chosen the `heart` icon.
-
---- /task ---
-
---- task ---
-
-**Test:** The LED display should light up on the simulator, and show your chosen icon.
-
-Well done! You've made the LEDs on the micro:bit light up!
-
---- /task ---
-
-### Choose some poses
-
-You will need to decide on some silly faces or poses that you will make whenever you push a micro:bit button. Here are some ideas for poses:
-
-+ A big cheesy grin
-+ Jumping jacks
-+ Be a tree
-+ Flexing muscle pose
-
-### Create a timer for each pose
-
-Create a variable that will be used in a timer that tells you how long to hold each pose for.
-
---- task ---
-
-Open the <code style="background-color: #DC143C">Variables</code> menu, and click **Make a variable**.
-
-<img src="images/variable-menu.png" alt="The Variables menu open with the 'Make a variable' button highlighted." width="350" />
+Yn yr enghraifft hon, rydyn ni wedi dewis yr eicon `calon`.
 
 --- /task ---
 
 --- task ---
 
-Name the new variable `timer`, then click the **OK** button.
+**Prawf:** Dylai'r dangosydd LED oleuo'r efelychydd, a dangos yr eicon a ddewiswyd gennych.
 
-<img src="images/variable-examplename.png" alt="The 'New variable name' window, with the name 'timer' written in the box." width="400" />
+Da iawn! Rydych chi wedi gwneud i'r LEDs ar y micro:bit oleuo!
 
 --- /task ---
 
-New blocks will be created that you can place in your program to use and change the value stored in the `timer` variable.
+### Dewiswch rai ystumiau
 
-<img src="images/variable-blocks.png" alt="The Variable menu with new blocks to set the value, to change the value, and to use the value of the timer variable in your code." width="350" />
+Bydd angen i chi benderfynu ar rai wynebau neu ystumiau gwirion y byddwch yn eu gwneud pryd bynnag y byddwch yn gwthio botwm micro:bit. Dyma rai syniadau ar gyfer ystumiau:
+
++ Gwên fawr gawslyd
++ Naid sêr
++ Byddwch yn goeden
++ Ystym ystwytho y cyhyrau
+
+### Creu amserydd ar gyfer pob ystum
+
+Creu newidyn a fydd yn cael ei ddefnyddio mewn amserydd sy'n dweud wrthych am ba mor hir i ddal pob ystum.
 
 --- task ---
 
-Drag the <code style="background-color: #DC143C">set</code> block **under** the <code style="background-color: #1E90FF">show icon</code> block.
+Agorwch y ddewislen <code style="background-color: #DC143C">Newidynnau</code>, a chliciwch **Gwneud newidyn**.
+
+<img src="images/variable-menu.png" alt="Mae'r ddewislen Newidynnau yn agor gyda'r botwm 'Gwneud newidyn' wedi'i amlygu." width="350" />
+
+--- /task ---
+
+--- task ---
+
+Enwch y newidyn newydd `amserydd`, yna cliciwch ar y botwm **OK**.
+
+<img src="images/variable-examplename.png" alt="Y ffenestr 'Enw newidyn newydd', gyda'r enw 'amserydd' wedi'i ysgrifennu yn y blwch." width="400" />
+
+--- /task ---
+
+Bydd blociau newydd yn cael eu creu y gallwch eu gosod yn eich rhaglen i'w defnyddio a newid y gwerth sydd wedi'i storio yn y newidyn `amserydd`.
+
+<img src="images/variable-blocks.png" alt="Y ddewislen Newidyn gyda blociau newydd i osod y gwerth, i newid y gwerth, ac i ddefnyddio gwerth y newidyn amserydd yn eich cod." width="350" />
+
+--- task ---
+
+Llusgwch y <code style="background-color: #DC143C">set</code> bloc **o dan** y bloc <code style="background-color: #1E90FF">dangos eicon</code>.
 
 <div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:S59350-24192-35926-97900" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
-### Set icon for each pose
+### Gosod eicon ar gyfer pob ystum
 
-You will now program the A and B input buttons on the micro:bit to help you select which silly pose to do.
+Byddwch nawr yn rhaglennu'r botymau mewnbwn A a B ar y micro:bit i'ch helpu i ddewis pa ystum gwirion i'w wneud.
 
 --- task ---
 
-Click on the <code style="background-color: #D400D4">Input</code> menu and drag an <code style="background-color: #D400D4">on button</code> block to the **code editor panel**.
+Cliciwch ar y ddewislen <code style="background-color: #D400D4">Mewnbwn</code> a llusgwch bloc <code style="background-color: #D400D4">botwm ymlaen</code> i'r **panel golygydd cod**.
 
 <div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_TUwcRCfFsHCb" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
@@ -191,26 +191,26 @@ Click on the <code style="background-color: #D400D4">Input</code> menu and drag 
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag the <code style="background-color: #1E90FF">show leds</code> block inside the <code style="background-color: #D400D4">on button</code> block.
+O'r ddewislen <code style="background-color: #1E90FF">Sylfaenol</code>, llusgwch y bloc <code style="background-color: #1E90FF">dangos leds</code> a'i osod tu fewn i'r bloc <code style="background-color: #D400D4">ar botwm</code>.
 
 <div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_7Ugf5a3JXb81" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
-Click on the squares to draw your pose. Whites squares will be lit on the LED display.
+Cliciwch ar y sgwariau i dynnu llun eich ystum. Bydd sgwariau gwyn yn cael eu goleuo ar yr arddangosfa LED.
 
-In this example, we have drawn a smiley face as a silly pose.
+Yn yr enghraifft hon, rydyn ni wedi tynnu llun wyneb gwên fel ystum gwirion.
 
 <div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_XsR7jJ2wiTAx
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
-The icon should be displayed for some time before changing.
+Dylid arddangos yr eicon am beth amser cyn ei newid.
 
-You will use a <code style="background-color: #1E90FF">pause</code> block for this. This pauses the program for a set number of milliseconds (1/1000th of a second).
+Byddwch yn defnyddio bloc <code style="background-color: #1E90FF">saib</code> ar gyfer hyn. Mae hyn yn oedi'r rhaglen am nifer penodol o filieiliadau (1/1000fed o eiliad).
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag a <code style="background-color: #1E90FF">pause</code> block below the <code style="background-color: #1E90FF">show leds</code> block.
+O'r ddewislen <code style="background-color: #1E90FF">Sylfaenol</code>, llusgwch floc <code style="background-color: #1E90FF">saib</code> o dan y bloc <code style="background-color: #1E90FF">dangos leds</code>.
 
 <div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_AVuUqsMq8hbR
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
@@ -219,7 +219,7 @@ From the <code style="background-color: #1E90FF">Basic</code> menu, drag a <code
 
 --- task ---
 
-Change the `100` in the <code style="background-color: #1E90FF">pause</code> block to a larger number so the pause is longer, and the icon is displayed for longer. We have set it to 2 seconds (`2000`) in this example.
+Newidiwch y `100` yn y bloc <code style="background-color: #1E90FF">saib</code> i rif mwy fel bod y saib yn hirach, ac mae'r eicon yn cael ei arddangos am gyfnod hirach. Rydym wedi ei osod i 2 eiliad (`2000`) yn yr enghraifft hon.
 
 <div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_2AcgfYKeAeFu
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
@@ -228,65 +228,65 @@ Change the `100` in the <code style="background-color: #1E90FF">pause</code> blo
 
 --- task ---
 
-Right-click on the <code style="background-color: #DC143C">set</code> block inside the <code style="background-color: #1E90FF">on start</code> block.
+De-gliciwch ar y bloc <code style="background-color: #DC143C">set</code> y tu mewn i'r bloc <code style="background-color: #1E90FF">ar ddechrau</code>.
 
-Click **Duplicate** to make a copy of it.
+Cliciwch ar **Dyblyg** i wneud copi ohono.
 
-Place the duplicated <code style="background-color: #DC143C">set</code> block above the <code style="background-color: #1E90FF">show leds</code> block.
+Rhowch y bloc <code style="background-color: #DC143C">set</code> a ddyblygwyd uwchben y bloc <code style="background-color: #1E90FF">dangos leds</code>.
 
-Change the `0` to `10` in the new block.
+Newidiwch y `0` i `10` yn y bloc newydd.
 
-<img src="images/duplicate-timer-variable.gif" alt="An animation showing the process of duplicating the set block." width="350" />
-
---- /task ---
-
-To allow more than one pose to be selected, you will use Button B.
-
---- task ---
-
-Right-click on the entire <code style="background-color: #D400D4">on button</code> block.
-
-Click `Duplicate` to make a copy of it.
-
-You will now have two <code style="background-color: #D400D4">on button</code> blocks in the **code editor panel**.
+<img src="images/duplicate-timer-variable.gif" alt="Animeiddiad yn dangos y broses o ddyblygu'r bloc gosod." width="350" />
 
 --- /task ---
 
+Er mwyn caniatáu dewis mwy nag un ystum, byddwch yn defnyddio Botwm B.
+
 --- task ---
 
-Click the down arrow next to the <code style="background-color: #D400D4">A</code> on your duplicated <code style="background-color: #D400D4">on button</code> block. Change the <code style="background-color: #D400D4">A</code> to <code style="background-color: #D400D4">B</code>.
+De-gliciwch ar y bloc cyfan <code style="background-color: #D400D4">ar fotwm</code>.
 
-<img src="images/button-options.png" alt="The 'on button A pressed' block showing a drop-down menu from the A, with options for A, B, and A+B." width="210" />
+Cliciwch ar `Dyblygu` i wneud copi ohono.
+
+Bydd nawr gennych ddau floc botwm <code style="background-color: #D400D4">ar fotwm</code> yn y **panel golygydd cod**.
 
 --- /task ---
 
 --- task ---
 
-To create a new pose icon, change the squares on the new <code style="background-color: #1E90FF">show leds</code> block inside the new <code style="background-color: #D400D4">on button</code> block.
+Cliciwch y saeth i lawr wrth ymyl y <code style="background-color: #D400D4">A</code> ar eich <code style="background-color: #D400D4">ar fotwm</code> dyblyg. Newidiwch y <code style="background-color: #D400D4">A</code> i <code style="background-color: #D400D4">B</code>.
+
+<img src="images/button-options.png" alt="Y bloc 'ar fotwm A wedi'i wasgu' sy'n dangos cwymplen o'r A, gydag opsiynau ar gyfer A, B, ac A+B." width="210" />
 
 --- /task ---
 
 --- task ---
 
-**Test**
-
-+ Click Button `A` on the simulator to see which icon displays on the LED. Take note of how long it shows for.
-+ Do the same to test Button `B`.
-+ Change the value in your <code style="background-color: #1E90FF">pause</code> block to increase or decrease how much time the icons are shown for on each button press.
+I greu eicon ystum newydd, newidiwch y sgwariau ar y bloc <code style="background-color: #1E90FF">show leds</code> y tu mewn i'r bloc <code style="background-color: #D400D4">ar fotwm</code> newydd.
 
 --- /task ---
 
-### Create a countdown
+--- task ---
 
-You will now create a 10-second countdown.
+**Prawf**
 
-The <code style="background-color: #DC143C">timer</code> variable value will decrease by `1` each second, but **only** if the timer is **greater than 0**.
++ Cliciwch ar Fotwm `A` ar yr efelychydd i weld pa eicon sy'n dangos ar y LED. Sylwch ar ba mor hir y mae'n dangos.
++ Gwnewch yr un peth i brofi Botwm `B`.
++ Newidiwch y gwerth yn eich bloc <code style="background-color: #1E90FF">saib</code> i gynyddu neu leihau faint o amser y dangosir yr eiconau ar bob gwasgwch botwm.
+
+--- /task ---
+
+### Creu cyfrif i lawr
+
+Byddwch nawr yn creu cyfrif i lawr 10 eiliad.
+
+Bydd gwerth newidiol <code style="background-color: #DC143C">amserydd</code> yn gostwng `1` bob eiliad, ond **dim ond** os yw'r amserydd **yn fwy na 0**.
 
 --- task ---
 
-From the <code style="background-color: #00A4A6">Logic</code> menu, drag an <code style="background-color: #00A4A6">if</code> block.
+O'r ddewislen <code style="background-color: #00A4A6">Logic</code>, llusgwch bloc <code style="background-color: #00A4A6">os</code>.
 
-Place it in the <code style="background-color: #1E90FF">forever</code> block.
+Rhowch ef yn y bloc <code style="background-color: #1E90FF">am byth</code>.
 
 <div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_bbCWu0JRuH7u
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
@@ -295,13 +295,13 @@ Place it in the <code style="background-color: #1E90FF">forever</code> block.
 
 --- task ---
 
-From the <code style="background-color: #00A4A6">Logic</code> menu, drag a <code style="background-color: #00A4A6">0 = 0</code> comparison block.
+O'r ddewislen <code style="background-color: #00A4A6">Logic</code>, llusgwch floc cymharu <code style="background-color: #00A4A6">0 = 0</code>.
 
-<img src="images/comparison-block.png" alt="The Logic menu with the comparison block '0 = 0' highlighted." width="350" />
+<img src="images/comparison-block.png" alt="Amlygwyd y ddewislen Rhesymeg gyda'r bloc cymharu '0 = 0'." width="350" />
 
-Change the <code style="background-color: #00A4A6">=</code> to a <code style="background-color: #00A4A6">></code> (greater than) symbol using the drop-down arrow on the comparison block.
+Newidiwch y symbol <code style="background-color: #00A4A6">=</code> i <code style="background-color: #00A4A6">></code> (mwy na) gan ddefnyddio'r saeth gwympo ar y bloc cymharu.
 
-Place the comparison block inside the <code style="background-color: #00A4A6">true</code> space in the <code style="background-color: #00A4A6">if</code> block.
+Rhowch y bloc cymharu y tu mewn i'r bwlch <code style="background-color: #00A4A6">gwir</code> yn y bloc <code style="background-color: #00A4A6">os</code>.
 
 <div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:60%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_5RoV5sKivV2q
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
@@ -310,19 +310,19 @@ Place the comparison block inside the <code style="background-color: #00A4A6">tr
 
 --- task ---
 
-From the <code style="background-color: #DC143C">Variables</code> menu, drag the <code style="background-color: #DC143C">timer</code> block and place it inside the first `0` in the <code style="background-color: #00A4A6">0 > 0</code> block.
+O'r ddewislen <code style="background-color: #DC143C">Newidynnau</code>, llusgwch y bloc <code style="background-color: #DC143C">amserydd</code> a'i osod y tu mewn i'r `0` cyntaf yn y bloc <code style="background-color: #00A4A6">0 > 0</code>.
 
 <div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe>0</div>
 
 --- /task ---
 
-To create a countdown, the `timer` variable value needs to reduce by `1`.
+I greu cyfrif i lawr, mae angen lleihau gwerth newidiol `amserydd` gan `1`.
 
 --- task ---
 
-From the <code style="background-color: #DC143C">Variables</code> menu, drag the <code style="background-color: #DC143C">change</code> block and place it inside the <code style="background-color: #00A4A6">if</code> section.
+O'r ddewislen <code style="background-color: #DC143C">Newidynnau</code>, llusgwch y bloc <code style="background-color: #DC143C">change</code> a'i osod y tu mewn i'r adran <code style="background-color: #00A4A6">os</code>.
 
-Change `1` to `-1`.
+Newid `1` i `-1`.
 
 <div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe>1</div>
 
@@ -330,45 +330,45 @@ Change `1` to `-1`.
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag the <code style="background-color: #1E90FF">show number</code> block and place it below the <code style="background-color: #DC143C">change</code> block.
+O'r ddewislen <code style="background-color: #1E90FF">Sylfaenol</code>, llusgwch y bloc <code style="background-color: #1E90FF">dangos rhif</code> a'i osod o dan y bloc <code style="background-color: #DC143C">newid</code>.
 
-<img src="images/show-number.png" alt="The Basic menu with the 'show number' block highlighted." width="350" />
+<img src="images/show-number.png" alt="Mae'r ddewislen Sylfaenol gyda'r bloc 'rhif dangos' wedi'i amlygu." width="350" />
 
-From the <code style="background-color: #DC143C">Variables</code> menu, drag the <code style="background-color: #DC143C">timer</code> variable inside the `0` on the <code style="background-color: #1E90FF">show number</code> block.
+O'r ddewislen <code style="background-color: #DC143C">Newidynnau</code>, llusgwch y newidyn <code style="background-color: #DC143C">amserydd</code> y tu mewn i'r `0` ar y bloc <code style="background-color: #1E90FF">dangos rhif</code>.
 
 <div style="position:relative;height:calc(250px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe>2</div>
 
 --- /task ---
 
-After each value of <code style="background-color: #DC143C">timer</code> is displayed on the micro:bit, you need to add a 1-second pause.
+Ar ôl i bob gwerth o <code style="background-color: #DC143C">amserydd</code> gael ei arddangos ar y micro:bit, mae angen i chi ychwanegu saib o 1 eiliad.
 
 --- task ---
 
-Right-click on one of your <code style="background-color: #1E90FF">pause</code> blocks and duplicate it.
+Dde-gliciwch ar un o'ch blociau <code style="background-color: #1E90FF">saib</code> a'i ddyblu.
 
-Drag the duplicated <code style="background-color: #1E90FF">pause</code> block below the <code style="background-color: #1E90FF">show number</code> block.
+Llusgwch y bloc <code style="background-color: #1E90FF">saib</code> a ddyblygwyd o dan y bloc <code style="background-color: #1E90FF">dangos rhif</code>.
 
-Change `2000` to `1000`. 
+Newid `2000` i `1000`. 
 
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe>3</div>
 
 --- /task ---
 
-After the countdown finishes, the value will be 0.
+Ar ôl i'r cyfrif i lawr ddod i ben, y gwerth fydd 0.
 
-You need a message to tell the user to change their silly pose.
+Mae angen neges arnoch i ddweud wrth y defnyddiwr am newid ei ystum gwirion.
 
-You will do this by adding an <code style="background-color: #00A4A6">else</code> section to the <code style="background-color: #00A4A6">if</code> block.
+Byddwch yn gwneud hyn drwy ychwanegu adran <code style="background-color: #00A4A6">arall</code> at y bloc <code style="background-color: #00A4A6">os</code>.
 
 --- task ---
 
-Click on the `+` symbol at the bottom of the <code style="background-color: #00A4A6">if</code> block. This will create an <code style="background-color: #00A4A6">else</code> section.
+Cliciwch ar y symbol `+` ar waelod y bloc <code style="background-color: #00A4A6">os</code>. Bydd hyn yn creu adran <code style="background-color: #00A4A6">arall</code>.
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag the <code style="background-color: #1E90FF">show string</code> block and place it inside the <code style="background-color: #00A4A6">else</code> section.
+O'r ddewislen <code style="background-color: #1E90FF">Sylfaenol</code>, llusgwch y bloc <code style="background-color: #1E90FF">dangos llinyn</code> a'i osod y tu mewn i'r adran <code style="background-color: #00A4A6">arall</code>.
 
-Change the string `Hello!` to `Pose!`.
+Newidiwch y llinyn `Helo!` i `Osgo!`.
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag the <code style="background-color: #1E90FF">clear screen</code> block and drop it **above** the <code style="background-color: #1E90FF">show string</code> block.
+O'r ddewislen <code style="background-color: #1E90FF">Sylfaenol</code>, llusgwch y bloc <code style="background-color: #1E90FF">sgrin glir</code> a'i ollwng **uwchben** y bloc <code style="background-color: #1E90FF">dangos llinyn</code>.
 
 <div style="position:relative;height:calc(350px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe>4</div>
 
@@ -377,20 +377,20 @@ From the <code style="background-color: #1E90FF">Basic</code> menu, drag the <co
 --- collapse ---
 
 ---
-title: Add sound for dramatic effect
+title: Ychwanegu sain ar gyfer effaith ddramatig
 ---
 
-From the <code style="background-color: #E63022">Music</code> menu, drag a <code style="background-color: #E63022">play tone</code> block.
+O'r ddewislen <code style="background-color: #E63022">Music</code>, llusgwch bloc <code style="background-color: #E63022">chwarae tôn</code>.
 
-Place it below the <code style="background-color: #DC143C">change</code> block.
+Rhowch ef o dan y bloc <code style="background-color: #DC143C">newid</code>.
 
-Click the `Middle C` drop-down menu and a piano keys console will appear.
+Cliciwch y gwymplen `Middle C` a bydd consol allweddi piano yn ymddangos.
 
-Choose a tone for your timer.
+Dewiswch tôn ar gyfer eich amserydd.
 
-We have selected `Middle A`.
+Rydym wedi dewis `Canol A`.
 
-Click the <code style="background-color: #E63022">until done</code> drop-down menu and change it to <code style="background-color: #E63022">in background</code>.
+Cliciwch ar y gwymplen <code style="background-color: #E63022">nes gorffen</code> a'i newid i <code style="background-color: #E63022">yn y cefndir</code>.
 
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe>5</div>
 
@@ -398,15 +398,15 @@ Click the <code style="background-color: #E63022">until done</code> drop-down me
 
 --- task ---
 
-**Test** your program on the simulator:
+**Profwch** eich rhaglen ar yr efelychydd:
 
-+ **Click** Button A to see the pose icon displayed.
++ **Cliciwch** Botwm A i weld yr eicon ystum sy'n cael ei arddangos.
 
-+ **Click** Button B to see another pose icon displayed.
++ **Cliciwch** Botwm B i weld eicon ystum arall yn cael ei arddangos.
 
-+ **Check** the countdown timer is working and counting back from 10.
++ **Gwiriwch** bod yr amserydd cyfrif i lawr yn gweithio ac yn cyfri yn ôl o 10.
 
-+ **Check** that a tone is played as each second counts down.
++ **Gwiriwch** fod tôn yn cael ei chwarae wrth i bob eiliad gyfrif i lawr.
 
 --- /task ---
 
@@ -418,13 +418,13 @@ Click the <code style="background-color: #E63022">until done</code> drop-down me
 
 --- task ---
 
-**Test** your program on the physical micro:bit.
+**Profwch** eich rhaglen ar y micro:bit ffisegol.
 
 --- /task ---
 
-### Upgrade your project
+### Uwchraddiwch eich prosiect
 
-You can upgrade your silly reminder project by:
+Gallwch chi uwchraddio'ch prosiect atgoffa gwirion trwy:
 
-+ Adding one more silly pose that shows when you press Buttons A and B together (`A+B`)
-+ Increase the amount of time between poses
++ Ychwanegu un ystum gwirion arall sy'n dangos pryd rydych chi'n pwyso Botymau A a B gyda'i gilydd (`A+B`)
++ Cynyddu'r amser rhwng ystumiau
