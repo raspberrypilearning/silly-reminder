@@ -1,31 +1,31 @@
-The **micro:bit** is a small computer that you can use to interact with the world around you.
+De **micro:bit** is een kleine computer die je kunt gebruiken om te communiceren met de wereld om je heen.
 
-This project will help you **discover** what the **micro:bit** can do.
+Dit project helpt je te **ontdekken** wat de **micro:bit** kan doen.
 
-### What you will make
+### Wat ga je maken
 
-This project reminds you to make time to be silly, have fun, and strike a pose! This could be after a long day at school, or as a way to cheer you and your friends up. You can program the micro:bit buttons to help you remember to have some silly fun.
+Dit project herinnert je eraan om tijd vrij te maken om gek te doen, plezier te hebben en te poseren in n maffe houding! Dit kan na een lange schooldag zijn, of als een manier om jou en je vrienden op te vrolijken. Je kunt de micro:bit-knoppen programmeren om je te helpen herinneren dat het tijd is om plezier te maken.
 
-In this project, you will make a **silly reminder**.
+In dit project maak je een **timer voor gekkigheid**.
 
-You will:
-+ Display icons, text, and numbers on the LEDs
-+ Use <code style="background-color: #00A4A6">if</code> blocks to control what is displayed
-+ Use the <code style="background-color: #1E90FF">pause</code> block to create a countdown timer
-+ Play sounds
-+ Use buttons to change the display
+Je gaat:
++ Pictogrammen, tekst en cijfers laten zien op de LED's
++ <code style="background-color: #00A4A6">als</code> blokken gebruiken om te bepalen wat wordt weergegeven
++ Het <code style="background-color: #1E90FF">pauzeer</code> blok gebruiken om een afteltimer te maken
++ Geluiden afspelen
++ Knoppen gebruiken om het scherm te wijzigen
 
 --- no-print ---
 
-### Play ▶️
+### Afspelen ▶️
 
 --- task ---
 
-+ What happens when the program starts?
-+ What happens when the countdown runs?
-+ What happens when the countdown finishes?
-+ What happens if you `press` Button A?
-+ What happens if you `press` Button B?
++ Wat gebeurt er wanneer het programma start?
++ Wat gebeurt er als het aftellen loopt?
++ Wat gebeurt er als het aftellen is afgelopen?
++ Wat gebeurt er als je op knop A `drukt`?
++ Wat gebeurt er als je op knop B `drukt`?
 
 <div style="position:relative;height:100%;padding-bottom:125%;padding-top:0;overflow:hidden;">
 <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=_KiYLAWM3cip4" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe>
@@ -35,84 +35,84 @@ You will:
 
 --- /no-print ---
 
-### Open MakeCode
+### MakeCode openen
 
-To start creating your micro:bit project, open the MakeCode editor.
+Om je micro:bit-project te maken, moet je eerst de MakeCode-editor openen.
 
 --- task ---
 
-Open the MakeCode editor at [makecode.microbit.org](https://makecode.microbit.org)
+Open de MakeCode editor op [makecode.microbit.org](https://makecode.microbit.org)
 
 --- collapse ---
 
 ---
-title: Offline version of the editor
+title: Offline versie van de editor
 ---
 
-There is also a [downloadable version of the MakeCode editor](https://makecode.microbit.org/offline-app).
+Er is ook een [downloadbare versie van de MakeCode editor](https://makecode.microbit.org/offline-app).
 
 --- /collapse ---
 
 --- /task ---
 
-Once the editor is open, create a New Project and give your project a name.
+Zodra de editor is geopend, moet je een nieuw project aanmaken en je project een naam geven.
 
 --- task ---
 
-Click on the **New Project** button.
+Klik op de knop **Nieuw Project**.
 
-![The New Project button in MakeCode.](images/new-project-button.png)
+![De knop Nieuw project in MakeCode.](images/new-project-button.png)
 
 --- /task ---
 
 --- task ---
 
-Give your project the name `silly reminder` and click **Create**.
+Geef je nieuwe project de naam `Tijd voor gekkigheid` en klik op **Aanmaken**.
 
-<img src="images/new-project.png" alt="The name 'silly reminder' written in the Create a Project dialogue box." width="450" />
+<img src="images/new-project.png" alt="De naam 'Tijd voor gekkigheid' geschreven in het dialoogvenster een project maken." width="450" />
 
-**Tip:** To make your project easier to find later, give it a helpful name that relates to what you’re creating.
+**Tip:** Om het makkelijker te maken om je project later terug te vinden, geef het een logische naam die gerelateerd is aan de activiteit die je aan doen bent.
 
 --- /task ---
 
-### The MakeCode editor
+### De MakeCode editor
 
-Created by the micro:bit Foundation, the **MakeCode editor** has everything you need start coding with micro:bit.
+De **MakeCode editor** - gemaakt door de micro:bit Foundation- bevat alles wat je nodig hebt om te beginnen met coderen op de micro:bit.
 
-![The MakeCode editor window](images/makecode-tour.png)
+![De MakeCode editor venster](images/makecode-tour.png)
 
-On the left-hand side. there is a **simulator**. This is a virtual micro:bit that you can use to test your code!
+Aan de linkerkant is er een **simulator**. Dit bevat een virtuele micro:bit die je kunt gebruiken om je code te testen!
 
-It has all the features and buttons found on a V2 micro:bit, including:
+Het heeft alle functies en knoppen die je op een V2 micro:bit vindt, inclusief:
 + LED display
-+ Speaker
-+ Microphone
-+ Input buttons
++ Luidspreker
++ Microfoon
++ Invoerknoppen
     + A
     + B
     + Logo
 
-In the centre, there is the **blocks panel**, which is colour-coded and allows you to access various code blocks.
+In het midden staat het **blokken paneel**, dat ingedeeld is per kleur en je toegang geeft tot de verschillende codeblokken.
 
-On the right-hand side, there is the **code editor panel**. This is where you drag and drop blocks to create your program.
+Aan de rechterkant bevindt zich het **code-editorpaneel**. Dit is waar je blokken sleept en neerzet om je programma te maken.
 
-The MakeCode editor panel already contains two blocks: <code style="background-color: #1E90FF">on start</code> and <code style="background-color: #1E90FF">forever</code>.
+Het MakeCode editor paneel bevat al twee blokken: <code style="background-color: #1E90FF">bij opstarten</code> en <code style="background-color: #1E90FF">de hele tijd</code>.
 
-### Display icon
+### Toon pictogram
 
-You will use the <code style="background-color: #1E90FF">on start</code> block to see how the LEDs on the simulator work.
+Je gebruikt het <code style="background-color: #1E90FF">bij opstarten</code> blok om te zien hoe de LED's op de simulator werken.
 
 --- task ---
 
-Click on the <code style="background-color: #1E90FF">Basic</code> menu.
+Klik op het menu <code style="background-color: #1E90FF">Basis</code>.
 
-This will expand to show you the blocks available.
+Dit zal je uitklappen om de beschikbare blokken te laten zien.
 
-<img src="images/show-icon-location.png" alt="The Basic menu with the 'show icon' block highlighted." width="350" />
+<img src="images/show-icon-location.png" alt="Het basisblokmenu met het 'toon pictogram' blok geaccentueerd." width="350" />
 
-Drag the <code style="background-color: #1E90FF">show icon</code> block and place it **inside** the <code style="background-color: #1E90FF">on start</code> block.
+Sleep het <code style="background-color: #1E90FF">toon pictogram</code> blok en zet het neer **in** het <code style="background-color: #1E90FF">bij opstarten</code> blok.
 
-This should fit in place like a puzzle piece.
+Het moet als een puzzelstuk op zijn plaats passen.
 
 <div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
@@ -120,70 +120,70 @@ This should fit in place like a puzzle piece.
 
 --- task ---
 
-Click the down arrow on the <code style="background-color: #1E90FF">show icon</code> block and pick an icon.
+Klik op de pijl-omlaag op het blok <code style="background-color: #1E90FF">toon pictogram</code> en kies een pictogram.
 
-<img src="images/show-icon.png" alt="The show icon menu expanded to display all available icons." width="350" />
+<img src="images/show-icon.png" alt="Het Toon pictogram menu uitgeklapt met alle beschikbare iconen." width="350" />
 
-In this example, we have chosen the `heart` icon.
-
---- /task ---
-
---- task ---
-
-**Test:** The LED display should light up on the simulator, and show your chosen icon.
-
-Well done! You've made the LEDs on the micro:bit light up!
-
---- /task ---
-
-### Choose some poses
-
-You will need to decide on some silly faces or poses that you will make whenever you push a micro:bit button. Here are some ideas for poses:
-
-+ A big cheesy grin
-+ Jumping jacks
-+ Be a tree
-+ Flexing muscle pose
-
-### Create a timer for each pose
-
-Create a variable that will be used in a timer that tells you how long to hold each pose for.
-
---- task ---
-
-Open the <code style="background-color: #DC143C">Variables</code> menu, and click **Make a variable**.
-
-<img src="images/variable-menu.png" alt="The Variables menu open with the 'Make a variable' button highlighted." width="350" />
+In dit voorbeeld hebben we het `hart` pictogram gekozen.
 
 --- /task ---
 
 --- task ---
 
-Name the new variable `timer`, then click the **OK** button.
+**Test:** Het LED-display op de simulator zou moeten oplichten en het door jou gekozen pictogram weergeven.
 
-<img src="images/variable-examplename.png" alt="The 'New variable name' window, with the name 'timer' written in the box." width="400" />
+Goed gedaan! Je hebt de LED's op de micro:bit laten oplichten!
 
 --- /task ---
 
-New blocks will be created that you can place in your program to use and change the value stored in the `timer` variable.
+### Kies een aantal poses
 
-<img src="images/variable-blocks.png" alt="The Variable menu with new blocks to set the value, to change the value, and to use the value of the timer variable in your code." width="350" />
+Je zult een aantal gekke gezichten of poses moeten kiezen die je gaat maken wanneer je op een micro:bit-knop drukt. Hier zijn enkele ideeën om je te helpen:
+
++ Een grote grijns
++ Op en neer springen
++ Doe een boom na
++ Je beste bodybuilder pose
+
+### Maak een timer voor elke pose
+
+Maak een variabele die wordt gebruikt in een timer die aangeeft hoe lang je elke pose moet vasthouden.
 
 --- task ---
 
-Drag the <code style="background-color: #DC143C">set</code> block **under** the <code style="background-color: #1E90FF">show icon</code> block.
+Open het menu <code style="background-color: #DC143C">Variabelen</code> en klik op **Maak een variabele**.
+
+<img src="images/variable-menu.png" alt="Het variabelenblokmenu wordt geopend met de knop 'Maak een variabele' gemarkeerd." width="350" />
+
+--- /task ---
+
+--- task ---
+
+Noem de nieuwe variabele `timer` en klik vervolgens op de knop **OK**.
+
+<img src="images/variable-examplename.png" alt="Het dialoogvenster 'Voer een nieuwe variabelenaam in', met de naam 'timer' in het vak." width="400" />
+
+--- /task ---
+
+Er worden nieuwe blokken gemaakt die je in je programma kunt plaatsen om de waarde die opgeslagen wordt in de `timer` variabele te gebruiken en te wijzigen.
+
+<img src="images/variable-blocks.png" alt="Het variabelen blokmenu - met nieuwe blokken om de waarde in te stellen, te wijzigen en de waarde van de 'timer' variabele te gebruiken in je code." width="350" />
+
+--- task ---
+
+Sleep het <code style="background-color: #DC143C">stel</code> blok **onder** het <code style="background-color: #1E90FF">toon pictogram</code> blok.
 
 <div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:S59350-24192-35926-97900" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
-### Set icon for each pose
+### Stel een pictogram in voor elke pose
 
-You will now program the A and B input buttons on the micro:bit to help you select which silly pose to do.
+Je gaat nu de invoerknoppen A en B op de micro:bit programmeren om je te helpen bij het selecteren welke gekke pose je wilt doen.
 
 --- task ---
 
-Click on the <code style="background-color: #D400D4">Input</code> menu and drag an <code style="background-color: #D400D4">on button</code> block to the **code editor panel**.
+Klik op het menu <code style="background-color: #D400D4">Invoer</code> en sleep een <code style="background-color: #D400D4">wanneer knop</code> blok naar het **code editor paneel**.
 
 <div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_TUwcRCfFsHCb" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
@@ -191,26 +191,26 @@ Click on the <code style="background-color: #D400D4">Input</code> menu and drag 
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag the <code style="background-color: #1E90FF">show leds</code> block inside the <code style="background-color: #D400D4">on button</code> block.
+Sleep vanuit het menu <code style="background-color: #1E90FF">Basis</code> het blok met <code style="background-color: #1E90FF">toon lichtjes</code> in het blok <code style="background-color: #D400D4">wanneer knop</code>.
 
 <div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_7Ugf5a3JXb81" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
-Click on the squares to draw your pose. Whites squares will be lit on the LED display.
+Klik op de vierkantjes om je pose te tekenen. Witte vierkantjes worden verlicht op het LED-scherm.
 
-In this example, we have drawn a smiley face as a silly pose.
+In dit voorbeeld hebben we een smiley getekend als gekke pose.
 
 <div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_XsR7jJ2wiTAx
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
-The icon should be displayed for some time before changing.
+Het pictogram moet enige tijd worden weergegeven voordat het wordt gewijzigd.
 
-You will use a <code style="background-color: #1E90FF">pause</code> block for this. This pauses the program for a set number of milliseconds (1/1000th of a second).
+Je gebruikt hiervoor een <code style="background-color: #1E90FF">pauzeer</code> blok. Hierdoor wordt het programma gedurende een bepaald aantal milliseconden (1/1000ste van een seconde) gepauzeerd.
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag a <code style="background-color: #1E90FF">pause</code> block below the <code style="background-color: #1E90FF">show leds</code> block.
+Vanuit het <code style="background-color: #1E90FF">Basis</code> menu sleep je een <code style="background-color: #1E90FF">pauzeer</code> blok onder het <code style="background-color: #1E90FF">toon lichtjes</code> blok.
 
 <div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_AVuUqsMq8hbR
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
@@ -219,7 +219,7 @@ From the <code style="background-color: #1E90FF">Basic</code> menu, drag a <code
 
 --- task ---
 
-Change the `100` in the <code style="background-color: #1E90FF">pause</code> block to a larger number so the pause is longer, and the icon is displayed for longer. We have set it to 2 seconds (`2000`) in this example.
+Verander het getal `100` in het <code style="background-color: #1E90FF">pauzeer</code>blok naar een groter getal zodat de pauze langer is, en het pictogram langer wordt weergegeven. In dit voorbeeld hebben we de tijd ingesteld op 2 seconden (`2000`).
 
 <div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_2AcgfYKeAeFu
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
@@ -228,41 +228,41 @@ Change the `100` in the <code style="background-color: #1E90FF">pause</code> blo
 
 --- task ---
 
-Right-click on the <code style="background-color: #DC143C">set</code> block inside the <code style="background-color: #1E90FF">on start</code> block.
+Klik met de rechtermuisknop op het <code style="background-color: #DC143C">stel</code> blok binnen het <code style="background-color: #1E90FF">bij opstarten</code> blok.
 
-Click **Duplicate** to make a copy of it.
+Klik op **Dupliceren** om een kopie ervan te maken.
 
-Place the duplicated <code style="background-color: #DC143C">set</code> block above the <code style="background-color: #1E90FF">show leds</code> block.
+Plaats het gedupliceerde <code style="background-color: #DC143C">stel</code> blok boven het <code style="background-color: #1E90FF">toon lichtjes</code> blok.
 
-Change the `0` to `10` in the new block.
+Verander het getal `0` naar `10` in het nieuwe blok.
 
-<img src="images/duplicate-timer-variable.gif" alt="An animation showing the process of duplicating the set block." width="350" />
-
---- /task ---
-
-To allow more than one pose to be selected, you will use Button B.
-
---- task ---
-
-Right-click on the entire <code style="background-color: #D400D4">on button</code> block.
-
-Click `Duplicate` to make a copy of it.
-
-You will now have two <code style="background-color: #D400D4">on button</code> blocks in the **code editor panel**.
+<img src="images/duplicate-timer-variable.gif" alt="Een animatie die het proces van het dupliceren van het stel blok laat zien." width="350" />
 
 --- /task ---
 
+Om meer dan een pose te kunnen selecteren, gebruik je knop B.
+
 --- task ---
 
-Click the down arrow next to the <code style="background-color: #D400D4">A</code> on your duplicated <code style="background-color: #D400D4">on button</code> block. Change the <code style="background-color: #D400D4">A</code> to <code style="background-color: #D400D4">B</code>.
+Klik met de rechtermuisknop op het hele <code style="background-color: #D400D4">wanneer op knop</code> blok.
 
-<img src="images/button-options.png" alt="The 'on button A pressed' block showing a drop-down menu from the A, with options for A, B, and A+B." width="210" />
+Klik op `Dupliceren` om een kopie ervan te maken.
+
+Je hebt nu twee <code style="background-color: #D400D4">wanneer op knop</code> blokken in het **code editor paneel**.
 
 --- /task ---
 
 --- task ---
 
-To create a new pose icon, change the squares on the new <code style="background-color: #1E90FF">show leds</code> block inside the new <code style="background-color: #D400D4">on button</code> block.
+Klik op de pijl omlaag naast de <code style="background-color: #D400D4">A</code> op je gedupliceerde <code style="background-color: #D400D4">wanneer op knop</code> blok. Verander de <code style="background-color: #D400D4">A</code> in <code style="background-color: #D400D4">B</code>.
+
+<img src="images/button-options.png" alt="Het blok 'wanneer knop A wordt ingedrukt' toont een vervolgkeuzemenu van A, met opties voor A, B en A+B." width="210" />
+
+--- /task ---
+
+--- task ---
+
+Om een nieuw pose pictogram te maken, verander je de vierkanten van de nieuwe <code style="background-color: #1E90FF">toon lichtjes</code> blok binnen het nieuwe <code style="background-color: #D400D4">wanneer op knop</code> blok.
 
 --- /task ---
 
@@ -270,23 +270,23 @@ To create a new pose icon, change the squares on the new <code style="background
 
 **Test**
 
-+ Click Button `A` on the simulator to see which icon displays on the LED. Take note of how long it shows for.
-+ Do the same to test Button `B`.
-+ Change the value in your <code style="background-color: #1E90FF">pause</code> block to increase or decrease how much time the icons are shown for on each button press.
++ Klik op knop `A` op de simulator om te zien welk pictogram op de LED wordt weergegeven. Let op hoe lang het zichtbaar is.
++ Doe hetzelfde om knop `B` te testen.
++ Verander de waarde in je <code style="background-color: #1E90FF">pauzeer</code> blok om de tijd die de iconen worden weergegeven te verhogen of te verlagen bij elke druk op de knop.
 
 --- /task ---
 
-### Create a countdown
+### Aftellen aanmaken
 
-You will now create a 10-second countdown.
+Je maakt nu een afteller van 10 seconden.
 
-The <code style="background-color: #DC143C">timer</code> variable value will decrease by `1` each second, but **only** if the timer is **greater than 0**.
+De variabele waarde van <code style="background-color: #DC143C">timer</code> neemt elke seconde af met `1`, maar **alleen** als de timer **groter is dan 0**.
 
 --- task ---
 
-From the <code style="background-color: #00A4A6">Logic</code> menu, drag an <code style="background-color: #00A4A6">if</code> block.
+Sleep vanuit het menu <code style="background-color: #00A4A6">Logisch</code> een <code style="background-color: #00A4A6">als</code> blok.
 
-Place it in the <code style="background-color: #1E90FF">forever</code> block.
+Plaats het in het <code style="background-color: #1E90FF">de hele tijd</code> blok.
 
 <div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_bbCWu0JRuH7u
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
@@ -295,13 +295,13 @@ Place it in the <code style="background-color: #1E90FF">forever</code> block.
 
 --- task ---
 
-From the <code style="background-color: #00A4A6">Logic</code> menu, drag a <code style="background-color: #00A4A6">0 = 0</code> comparison block.
+Vanuit het <code style="background-color: #00A4A6">Logisch</code> menu sleep je een <code style="background-color: #00A4A6">0 = 0</code> vergelijkingsblok.
 
-<img src="images/comparison-block.png" alt="The Logic menu with the comparison block '0 = 0' highlighted." width="350" />
+<img src="images/comparison-block.png" alt="Het Logisch blokmenu met het vergelijkingsblok '0=0' gemarkeerd." width="350" />
 
-Change the <code style="background-color: #00A4A6">=</code> to a <code style="background-color: #00A4A6">></code> (greater than) symbol using the drop-down arrow on the comparison block.
+Wijzig de <code style="background-color: #00A4A6">=</code> in een <code style="background-color: #00A4A6"></code> (groter dan) symbool met behulp van de vervolgkeuzepijl op het vergelijkingsblok.
 
-Place the comparison block inside the <code style="background-color: #00A4A6">true</code> space in the <code style="background-color: #00A4A6">if</code> block.
+Plaats het vergelijkingsblok in de <code style="background-color: #00A4A6">waar</code> ruimte in het <code style="background-color: #00A4A6">als</code> blok.
 
 <div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:60%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_5RoV5sKivV2q
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
@@ -310,19 +310,19 @@ Place the comparison block inside the <code style="background-color: #00A4A6">tr
 
 --- task ---
 
-From the <code style="background-color: #DC143C">Variables</code> menu, drag the <code style="background-color: #DC143C">timer</code> block and place it inside the first `0` in the <code style="background-color: #00A4A6">0 > 0</code> block.
+Sleep vanuit het menu <code style="background-color: #DC143C">Variabelen</code> het blok <code style="background-color: #DC143C">timer</code> en plaats het in de eerste `0` van het blok <code style="background-color: #00A4A6">0 > 0</code>.
 
 <div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe>0</div>
 
 --- /task ---
 
-To create a countdown, the `timer` variable value needs to reduce by `1`.
+Om een teller te maken, moet de waarde van de variabele `timer` verminderd worden met `1`.
 
 --- task ---
 
-From the <code style="background-color: #DC143C">Variables</code> menu, drag the <code style="background-color: #DC143C">change</code> block and place it inside the <code style="background-color: #00A4A6">if</code> section.
+Sleep vanuit het menu <code style="background-color: #DC143C">Variabelen</code> het blok <code style="background-color: #DC143C">verander</code> en plaats het in de sectie <code style="background-color: #00A4A6">als</code>.
 
-Change `1` to `-1`.
+Wijzig `1` in `-1`.
 
 <div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe>1</div>
 
@@ -330,45 +330,45 @@ Change `1` to `-1`.
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag the <code style="background-color: #1E90FF">show number</code> block and place it below the <code style="background-color: #DC143C">change</code> block.
+Sleep vanuit het menu <code style="background-color: #1E90FF">Basis</code> het blok <code style="background-color: #1E90FF">toon nummer</code> en plaats het onder het blok <code style="background-color: #DC143C">verander</code>.
 
-<img src="images/show-number.png" alt="The Basic menu with the 'show number' block highlighted." width="350" />
+<img src="images/show-number.png" alt="Het basisblokmenu met het 'toon nummer' blok geaccentueerd." width="350" />
 
-From the <code style="background-color: #DC143C">Variables</code> menu, drag the <code style="background-color: #DC143C">timer</code> variable inside the `0` on the <code style="background-color: #1E90FF">show number</code> block.
+Sleep vanuit het menu <code style="background-color: #DC143C">Variabelen</code> de variabele <code style="background-color: #DC143C">timer</code> binnen de `0` van het <code style="background-color: #1E90FF">toon numer</code> blok.
 
 <div style="position:relative;height:calc(250px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe>2</div>
 
 --- /task ---
 
-After each value of <code style="background-color: #DC143C">timer</code> is displayed on the micro:bit, you need to add a 1-second pause.
+Nadat elke waarde van <code style="background-color: #DC143C">timer</code> wordt weergegeven op de micro:bit, moet je een pauze van 1 seconden toevoegen.
 
 --- task ---
 
-Right-click on one of your <code style="background-color: #1E90FF">pause</code> blocks and duplicate it.
+Rechtsklik op een van je <code style="background-color: #1E90FF">pauzeer</code> blokken en dupliceer het.
 
-Drag the duplicated <code style="background-color: #1E90FF">pause</code> block below the <code style="background-color: #1E90FF">show number</code> block.
+Sleep het gedupliceerde <code style="background-color: #1E90FF">pauzeer</code> blok onder het <code style="background-color: #1E90FF">toon nummer</code> blok.
 
-Change `2000` to `1000`. 
+Verander `2000` naar `1000`. 
 
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe>3</div>
 
 --- /task ---
 
-After the countdown finishes, the value will be 0.
+Nadat het aftellen is voltooid, zal de waarde 0 zijn.
 
-You need a message to tell the user to change their silly pose.
+Je hebt een bericht nodig om de gebruiker te vertellen zijn gekke houding te veranderen.
 
-You will do this by adding an <code style="background-color: #00A4A6">else</code> section to the <code style="background-color: #00A4A6">if</code> block.
+Dit doe je door een <code style="background-color: #00A4A6">anders</code> sectie toe te voegen aan het <code style="background-color: #00A4A6">als</code> blok.
 
 --- task ---
 
-Click on the `+` symbol at the bottom of the <code style="background-color: #00A4A6">if</code> block. This will create an <code style="background-color: #00A4A6">else</code> section.
+Klik op het `+` -symbool onderaan het <code style="background-color: #00A4A6">als</code> -blok. Hierdoor wordt een <code style="background-color: #00A4A6">anders</code> blok gemaakt.
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag the <code style="background-color: #1E90FF">show string</code> block and place it inside the <code style="background-color: #00A4A6">else</code> section.
+Sleep vanuit het menu <code style="background-color: #1E90FF">Basis</code> het blok <code style="background-color: #1E90FF">toon tekens</code> en plaats het in de sectie <code style="background-color: #00A4A6">anders</code>.
 
-Change the string `Hello!` to `Pose!`.
+Verander de tekst `Hello!` in `Poseren!`.
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag the <code style="background-color: #1E90FF">clear screen</code> block and drop it **above** the <code style="background-color: #1E90FF">show string</code> block.
+Vanuit het menu <code style="background-color: #1E90FF">Basis</code> sleep je het blok <code style="background-color: #1E90FF">wis scherm</code> en zet het neer **boven** het blok <code style="background-color: #1E90FF">toon tekens</code>.
 
 <div style="position:relative;height:calc(350px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe>4</div>
 
@@ -377,20 +377,20 @@ From the <code style="background-color: #1E90FF">Basic</code> menu, drag the <co
 --- collapse ---
 
 ---
-title: Add sound for dramatic effect
+title: Voeg geluid toe voor een dramatisch effect
 ---
 
-From the <code style="background-color: #E63022">Music</code> menu, drag a <code style="background-color: #E63022">play tone</code> block.
+Sleep vanuit het menu <code style="background-color: #E63022">Muziek</code> een <code style="background-color: #E63022">play tone</code> blok.
 
-Place it below the <code style="background-color: #DC143C">change</code> block.
+Plaats het onder het <code style="background-color: #DC143C">verander</code> blok.
 
-Click the `Middle C` drop-down menu and a piano keys console will appear.
+Klik op het vervolgkeuzemenu bij `Middle C` en er verschijnt een pianotoetsen console.
 
-Choose a tone for your timer.
+Kies een toon voor je timer.
 
-We have selected `Middle A`.
+We hebben `Middle A` geselecteerd.
 
-Click the <code style="background-color: #E63022">until done</code> drop-down menu and change it to <code style="background-color: #E63022">in background</code>.
+Klik op het <code style="background-color: #E63022">tot het klaar is</code> vervolgkeuzemenu en verander het naar <code style="background-color: #E63022">in background</code>.
 
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe>5</div>
 
@@ -398,15 +398,15 @@ Click the <code style="background-color: #E63022">until done</code> drop-down me
 
 --- task ---
 
-**Test** your program on the simulator:
+**Test** je programma op de simulator:
 
-+ **Click** Button A to see the pose icon displayed.
++ **Klik** knop A om het pose pictogram weer te geven.
 
-+ **Click** Button B to see another pose icon displayed.
++ **Klik** knop B om een ander pictogram te zien verschijnen.
 
-+ **Check** the countdown timer is working and counting back from 10.
++ **Check** of de afteltimer werkt en terugtelt vanaf 10.
 
-+ **Check** that a tone is played as each second counts down.
++ **Controleer** of er een toon wordt gespeeld terwijl elke seconde aftelt.
 
 --- /task ---
 
@@ -418,13 +418,13 @@ Click the <code style="background-color: #E63022">until done</code> drop-down me
 
 --- task ---
 
-**Test** your program on the physical micro:bit.
+**Test** je programma op de fysieke micro:bit.
 
 --- /task ---
 
-### Upgrade your project
+### Verbeter je project
 
-You can upgrade your silly reminder project by:
+Je kunt je tijd voor gekkigheid project upgraden door:
 
-+ Adding one more silly pose that shows when you press Buttons A and B together (`A+B`)
-+ Increase the amount of time between poses
++ Nog een gekke pose toegevoegd die te zien is als je tegelijkertijd op de knoppen A en B drukt (`A+B`)
++ Verhoog de hoeveelheid tijd tussen de poses
