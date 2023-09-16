@@ -79,7 +79,7 @@ Geef je nieuwe project de naam `Tijd voor gekkigheid` en klik op **Aanmaken**.
 
 De **MakeCode editor** - gemaakt door de micro:bit Foundation- bevat alles wat je nodig hebt om te beginnen met coderen op de micro:bit.
 
-![De MakeCode editor venster](images/makecode-tour.png)
+![Het MakeCode editor venster](images/makecode-tour.png)
 
 Aan de linkerkant is er een **simulator**. Dit bevat een virtuele micro:bit die je kunt gebruiken om je code te testen!
 
