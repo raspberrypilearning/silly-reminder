@@ -429,6 +429,10 @@ Click the <code style="background-color: #E63022">until done</code> drop-down me
 
 --- /task ---
 
+### Completed project
+
+If you want to check your code you can can find [the completed project here](https://makecode.microbit.org/_8K430qR3oH7t).
+
 ### Upgrade your project
 
 You can upgrade your silly reminder project by:
