@@ -114,7 +114,9 @@ Drag the `show iccon`{:class='microbitbasic'} block and place it **inside** the 
 
 This should fit in place like a puzzle piece.
 
-<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+basic.showIcon(IconNames.Heart)
+```
 
 --- /task ---
 
@@ -174,7 +176,13 @@ New blocks will be created that you can place in your program to use and change 
 
 Drag the `set`{:class='microbitvariables'} block **under** the `show icon`{:class='microbitbasic'} block.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:S59350-24192-35926-97900" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let timer = 0
+basic.forever(function () {
+    basic.showIcon(IconNames.Heart)
+    timer = 0
+})
+```
 
 --- /task ---
 
@@ -186,7 +194,11 @@ You will now program the A and B input buttons on the micro:bit to help you sele
 
 Click on the `Input`{:class='microbitinput'} menu and drag an `on button`{:class='microbitinput'} block to the **code editor panel**.
 
-<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_TUwcRCfFsHCb" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+input.onButtonPressed(Button.A, function () {
+	
+})
+```
 
 --- /task ---
 
@@ -194,14 +206,33 @@ Click on the `Input`{:class='microbitinput'} menu and drag an `on button`{:class
 
 From the `Basic`{:class='microbitbasic'} menu, drag the `show leds`{:class='microbitbasic'} block inside the `on button`{:class='microbitinput'} block.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_7Ugf5a3JXb81" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+input.onButtonPressed(Button.A, function () {
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
+})
+```
 
 Click on the squares to draw your pose. Whites squares will be lit on the LED display. 
 
 In this example, we have drawn a smiley face as a silly pose.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_XsR7jJ2wiTAx
-" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+input.onButtonPressed(Button.A, function () {
+    basic.showLeds(`
+        . # . # .
+        . . . . .
+        . . # . .
+        # . . . #
+        . # # # .
+        `)
+})
+```
 
 --- /task ---
 
@@ -213,8 +244,18 @@ You will use a `pause`{:class='microbitbasic'} block for this. This pauses the p
 
 From the `Basic`{:class='microbitbasic'} menu, drag a `pause`{:class='microbitbasic'} block below the `show leds`{:class='microbitbasic'} block.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_AVuUqsMq8hbR
-" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+input.onButtonPressed(Button.A, function () {
+    basic.showLeds(`
+        . # . # .
+        . . . . .
+        . . # . .
+        # . . . #
+        . # # # .
+        `)
+    basic.pause(100)
+})
+```
 
 --- /task ---
 
@@ -222,8 +263,18 @@ From the `Basic`{:class='microbitbasic'} menu, drag a `pause`{:class='microbitba
 
 Change the `100` in the `pause`{:class='microbitbasic'} block to a larger number so the pause is longer, and the icon is displayed for longer. We have set it to 2 seconds (`2000`) in this example.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_2AcgfYKeAeFu
-" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+input.onButtonPressed(Button.A, function () {
+    basic.showLeds(`
+        . # . # .
+        . . . . .
+        . . # . .
+        # . . . #
+        . # # # .
+        `)
+    basic.pause(2000)
+})
+```
 
 --- /task ---
 
@@ -289,8 +340,13 @@ From the `Logic`{:class='microbitlogic'} menu, drag an `if`{:class='microbitlogi
 
 Place it in the `forever`{:class='microbitbasic'} block.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_bbCWu0JRuH7u
-" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+basic.forever(function () {
+    if (true) {
+    	
+    }
+})
+```
 
 --- /task ---
 
@@ -304,8 +360,13 @@ Change the `=`{:class='microbitlogic'} to a `>`{:class='microbitlogic'} (greater
 
 Place the comparison block inside the `true`{:class='microbitlogic'} space in the `if`{:class='microbitlogic'} block.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:60%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_5RoV5sKivV2q
-" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+basic.forever(function () {
+    if (0 > 0) {
+    	
+    }
+})
+```
 
 --- /task ---
 
@@ -313,8 +374,14 @@ Place the comparison block inside the `true`{:class='microbitlogic'} space in th
 
 From the `Variables`{:class='microbitvariables'} menu, drag the `timer`{:class='microbitvariables'} block and place it inside the first `0` in the `0 > 0`{:class='microbitlogic'} block.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:70%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_6XMb0hUethJt
-" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+basic.forever(function () {
+    let timer = 0
+    if (timer > 0) {
+    	
+    }
+})
+```
 
 --- /task ---
 
@@ -326,8 +393,14 @@ From the `Variables`{:class='microbitvariables'} menu, drag the `change`{:class=
 
 Change `1` to `-1`.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:70%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_dET7rvT68REy
-" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let timer = 0
+basic.forever(function () {
+    if (timer > 0) {
+        timer += -1
+    }
+})
+```
 
 --- /task ---
 
@@ -339,8 +412,15 @@ From the `Basic`{:class='microbitbasic'} menu, drag the `show number`{:class='mi
 
 From the `Variables`{:class='microbitvariables'} menu, drag the `timer`{:class='microbitvariables'} variable inside the `0` on the `show number`{:class='microbitbasic'} block.
 
-<div style="position:relative;height:calc(250px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:70%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ERVifxFw4R8c
-" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let timer = 0
+basic.forever(function () {
+    if (timer > 0) {
+        timer += -1
+        basic.showNumber(timer)
+    }
+})
+```
 
 --- /task ---
 
@@ -354,8 +434,16 @@ Drag the duplicated `pause`{:class='microbitbasic'} block below the `show number
 
 Change `2000` to `1000`. 
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:70%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_eaMbceAxEb8f
-" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let timer = 0
+basic.forever(function () {
+    if (timer > 0) {
+        timer += -1
+        basic.showNumber(timer)
+        basic.pause(1000)
+    }
+})
+```
 
 --- /task ---
 
@@ -375,8 +463,19 @@ Change the string `Hello!` to `Pose!`.
 
 From the `Basic`{:class='microbitbasic'} menu, drag the `clear screen`{:class='microbitbasic'} block and drop it **above** the `show string`{:class='microbitbasic'} block.
 
-<div style="position:relative;height:calc(350px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:70%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_RUVJMfW8EFmP
-" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let timer = 0
+basic.forever(function () {
+    if (timer > 0) {
+        timer += -1
+        basic.showNumber(timer)
+        basic.pause(1000)
+    } else {
+        basic.clearScreen()
+        basic.showString("Pose!")
+    }
+})
+```
 
 --- /task ---
 
@@ -398,8 +497,20 @@ We have selected `Middle A`.
 
 Click the `until done`{:class='microbitmusic'} drop-down menu and change it to `in background`{:class='microbitmusic'}.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:95%;height:95%;" src="https://makecode.microbit.org/---codeembed#pub:_R4xU4T1CrbbX
-" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let timer = 0
+basic.forever(function () {
+    if (timer > 0) {
+        timer += -1
+        music.play(music.tonePlayable(440, music.beat(BeatFraction.Whole)), music.PlaybackMode.InBackground)
+        basic.showNumber(timer)
+        basic.pause(1000)
+    } else {
+        basic.clearScreen()
+        basic.showString("Pose!")
+    }
+})
+```
 
 --- /collapse ---
 
