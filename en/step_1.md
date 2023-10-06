@@ -10,8 +10,8 @@ In this project, you will make a **silly reminder**.
 
 You will: 
 + Display icons, text, and numbers on the LEDs
-+ Use <code style="background-color: #00A4A6">if</code> blocks to control what is displayed
-+ Use the <code style="background-color: #1E90FF">pause</code> block to create a countdown timer
++ Use `if`{:class='microbitlogic'} blocks to control what is displayed
++ Use the `pause`{:class='microbitbasic'} block to create a countdown timer
 + Play sounds
 + Use buttons to change the display
 
@@ -96,21 +96,21 @@ In the centre, there is the **blocks panel**, which is colour-coded and allows y
 
 On the right-hand side, there is the **code editor panel**. This is where you drag and drop blocks to create your program.
 
-The MakeCode editor panel already contains two blocks: <code style="background-color: #1E90FF">on start</code> and <code style="background-color: #1E90FF">forever</code>.
+The MakeCode editor panel already contains two blocks: `on start`{:class='microbitbasic'} and `forever`{:class='microbitbasic'}.
 
 ### Display icon
 
-You will use the <code style="background-color: #1E90FF">on start</code> block to see how the LEDs on the simulator work.
+You will use the `on start`{:class='microbitbasic'} block to see how the LEDs on the simulator work.
 
 --- task ---
 
-Click on the <code style="background-color: #1E90FF">Basic</code> menu. 
+Click on the `Basic`{:class='microbitbasic'} menu. 
 
 This will expand to show you the blocks available.
 
 <img src="images/show-icon-location.png" alt="The Basic menu with the 'show icon' block highlighted." width="350"/>
 
-Drag the <code style="background-color: #1E90FF">show icon</code> block and place it **inside** the <code style="background-color: #1E90FF">on start</code> block. 
+Drag the `show iccon`{:class='microbitbasic'} block and place it **inside** the `on start`{:class='microbitbasic'} block. 
 
 This should fit in place like a puzzle piece.
 
@@ -120,7 +120,7 @@ This should fit in place like a puzzle piece.
 
 --- task ---
 
-Click the down arrow on the <code style="background-color: #1E90FF">show icon</code> block and pick an icon.
+Click the down arrow on the `show icon`{:class='microbitbasic'} block and pick an icon.
 
 <img src="images/show-icon.png" alt="The show icon menu expanded to display all available icons." width="350"/>
 
@@ -152,7 +152,7 @@ Create a variable that will be used in a timer that tells you how long to hold e
 
 --- task ---
 
-Open the <code style="background-color: #DC143C">Variables</code> menu, and click **Make a variable**.
+Open the `Variables`{:class='microbitvariables'} menu, and click **Make a variable**.
 
 <img src="images/variable-menu.png" alt="The Variables menu open with the 'Make a variable' button highlighted." width="350"/>
 
@@ -172,7 +172,7 @@ New blocks will be created that you can place in your program to use and change 
 
 --- task ---
 
-Drag the <code style="background-color: #DC143C">set</code> block **under** the <code style="background-color: #1E90FF">show icon</code> block.
+Drag the `set`{:class='microbitvariables'} block **under** the `show icon`{:class='microbitbasic'} block.
 
 <div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:S59350-24192-35926-97900" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
@@ -184,7 +184,7 @@ You will now program the A and B input buttons on the micro:bit to help you sele
 
 --- task ---
 
-Click on the <code style="background-color: #D400D4">Input</code> menu and drag an <code style="background-color: #D400D4">on button</code> block to the **code editor panel**.
+Click on the `Input`{:class='microbitinput'} menu and drag an `on button`{:class='microbitinput'} block to the **code editor panel**.
 
 <div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_TUwcRCfFsHCb" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
@@ -192,7 +192,7 @@ Click on the <code style="background-color: #D400D4">Input</code> menu and drag 
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag the <code style="background-color: #1E90FF">show leds</code> block inside the <code style="background-color: #D400D4">on button</code> block.
+From the `Basic`{:class='microbitbasic'} menu, drag the `show leds`{:class='microbitbasic'} block inside the `on button`{:class='microbitinput'} block.
 
 <div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_7Ugf5a3JXb81" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
@@ -207,11 +207,11 @@ In this example, we have drawn a smiley face as a silly pose.
 
 The icon should be displayed for some time before changing. 
 
-You will use a <code style="background-color: #1E90FF">pause</code> block for this. This pauses the program for a set number of milliseconds (1/1000th of a second).
+You will use a `pause`{:class='microbitbasic'} block for this. This pauses the program for a set number of milliseconds (1/1000th of a second).
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag a <code style="background-color: #1E90FF">pause</code> block below the <code style="background-color: #1E90FF">show leds</code> block.
+From the `Basic`{:class='microbitbasic'} menu, drag a `pause`{:class='microbitbasic'} block below the `show leds`{:class='microbitbasic'} block.
 
 <div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_AVuUqsMq8hbR
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
@@ -220,7 +220,7 @@ From the <code style="background-color: #1E90FF">Basic</code> menu, drag a <code
 
 --- task ---
 
-Change the `100` in the <code style="background-color: #1E90FF">pause</code> block to a larger number so the pause is longer, and the icon is displayed for longer. We have set it to 2 seconds (`2000`) in this example.
+Change the `100` in the `pause`{:class='microbitbasic'} block to a larger number so the pause is longer, and the icon is displayed for longer. We have set it to 2 seconds (`2000`) in this example.
 
 <div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_2AcgfYKeAeFu
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
@@ -229,11 +229,11 @@ Change the `100` in the <code style="background-color: #1E90FF">pause</code> blo
 
 --- task ---
 
-Right-click on the <code style="background-color: #DC143C">set</code> block inside the <code style="background-color: #1E90FF">on start</code> block. 
+Right-click on the `set`{:class='microbitvariables'} block inside the `on start`{:class='microbitbasic'} block. 
 
 Click **Duplicate** to make a copy of it.
 
-Place the duplicated <code style="background-color: #DC143C">set</code> block above the <code style="background-color: #1E90FF">show leds</code> block.
+Place the duplicated `set`{:class='microbitvariables'} block above the `show leds`{:class='microbitbasic'} block.
 
 Change the `0` to `10` in the new block.
 
@@ -245,17 +245,17 @@ To allow more than one pose to be selected, you will use Button B.
 
 --- task ---
 
-Right-click on the entire <code style="background-color: #D400D4">on button</code> block. 
+Right-click on the entire `on button`{:class='microbitinput'} block. 
 
 Click `Duplicate` to make a copy of it.
 
-You will now have two <code style="background-color: #D400D4">on button</code> blocks in the **code editor panel**.
+You will now have two `on button`{:class='microbitinput'} blocks in the **code editor panel**.
 
 --- /task ---
 
 --- task ---
 
-Click the down arrow next to the <code style="background-color: #D400D4">A</code> on your duplicated <code style="background-color: #D400D4">on button</code> block. Change the <code style="background-color: #D400D4">A</code> to <code style="background-color: #D400D4">B</code>.
+Click the down arrow next to the `A`{:class='microbitinput'} on your duplicated `on button`{:class='microbitinput'} block. Change the `A`{:class='microbitinput'} to `B`{:class='microbitinput'}.
 
 <img src="images/button-options.png" alt="The 'on button A pressed' block showing a drop-down menu from the A, with options for A, B, and A+B." width="210"/>
 
@@ -263,7 +263,7 @@ Click the down arrow next to the <code style="background-color: #D400D4">A</code
 
 --- task ---
 
-To create a new pose icon, change the squares on the new <code style="background-color: #1E90FF">show leds</code> block inside the new <code style="background-color: #D400D4">on button</code> block.
+To create a new pose icon, change the squares on the new `show leds`{:class='microbitbasic'} block inside the new `on button`{:class='microbitinput'} block.
 
 --- /task ---
 
@@ -273,7 +273,7 @@ To create a new pose icon, change the squares on the new <code style="background
 
 + Click Button `A` on the simulator to see which icon displays on the LED. Take note of how long it shows for.
 + Do the same to test Button `B`.
-+ Change the value in your <code style="background-color: #1E90FF">pause</code> block to increase or decrease how much time the icons are shown for on each button press.
++ Change the value in your `pause`{:class='microbitbasic'} block to increase or decrease how much time the icons are shown for on each button press.
 
 --- /task ---
 
@@ -281,13 +281,13 @@ To create a new pose icon, change the squares on the new <code style="background
 
 You will now create a 10-second countdown.
 
-The <code style="background-color: #DC143C">timer</code> variable value will decrease by `1` each second, but **only** if the timer is **greater than 0**.
+The `timer`{:class='microbitvariables'} variable value will decrease by `1` each second, but **only** if the timer is **greater than 0**.
 
 --- task ---
 
-From the <code style="background-color: #00A4A6">Logic</code> menu, drag an <code style="background-color: #00A4A6">if</code> block. 
+From the `Logic`{:class='microbitlogic'} menu, drag an `if`{:class='microbitlogic'} block. 
 
-Place it in the <code style="background-color: #1E90FF">forever</code> block.
+Place it in the `forever`{:class='microbitbasic'} block.
 
 <div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_bbCWu0JRuH7u
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
@@ -296,13 +296,13 @@ Place it in the <code style="background-color: #1E90FF">forever</code> block.
 
 --- task ---
 
-From the <code style="background-color: #00A4A6">Logic</code> menu, drag a <code style="background-color: #00A4A6">0 = 0</code> comparison block.
+From the `Logic`{:class='microbitlogic'} menu, drag a `0 = 0`{:class='microbitlogic'} comparison block.
 
 <img src="images/comparison-block.png" alt="The Logic menu with the comparison block '0 = 0' highlighted." width="350"/>
 
-Change the <code style="background-color: #00A4A6">=</code> to a <code style="background-color: #00A4A6">></code> (greater than) symbol using the drop-down arrow on the comparison block.
+Change the `=`{:class='microbitlogic'} to a `>`{:class='microbitlogic'} (greater than) symbol using the drop-down arrow on the comparison block.
 
-Place the comparison block inside the <code style="background-color: #00A4A6">true</code> space in the <code style="background-color: #00A4A6">if</code> block.
+Place the comparison block inside the `true`{:class='microbitlogic'} space in the `if`{:class='microbitlogic'} block.
 
 <div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:60%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_5RoV5sKivV2q
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
@@ -311,7 +311,7 @@ Place the comparison block inside the <code style="background-color: #00A4A6">tr
 
 --- task ---
 
-From the <code style="background-color: #DC143C">Variables</code> menu, drag the <code style="background-color: #DC143C">timer</code> block and place it inside the first `0` in the <code style="background-color: #00A4A6">0 > 0</code> block.
+From the `Variables`{:class='microbitvariables'} menu, drag the `timer`{:class='microbitvariables'} block and place it inside the first `0` in the `0 > 0`{:class='microbitlogic'} block.
 
 <div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:70%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_6XMb0hUethJt
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
@@ -322,7 +322,7 @@ To create a countdown, the `timer` variable value needs to reduce by `1`.
 
 --- task ---
 
-From the <code style="background-color: #DC143C">Variables</code> menu, drag the <code style="background-color: #DC143C">change</code> block and place it inside the <code style="background-color: #00A4A6">if</code> section. 
+From the `Variables`{:class='microbitvariables'} menu, drag the `change`{:class='microbitvariables'} block and place it inside the `if`{:class='microbitlogic'} section. 
 
 Change `1` to `-1`.
 
@@ -333,24 +333,24 @@ Change `1` to `-1`.
 
 --- task ---
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag the <code style="background-color: #1E90FF">show number</code> block and place it below the <code style="background-color: #DC143C">change</code> block.
+From the `Basic`{:class='microbitbasic'} menu, drag the `show number`{:class='microbitbasic'} block and place it below the `change`{:class='microbitvariables'} block.
 
 <img src="images/show-number.png" alt="The Basic menu with the 'show number' block highlighted." width="350"/>
 
-From the <code style="background-color: #DC143C">Variables</code> menu, drag the <code style="background-color: #DC143C">timer</code> variable inside the `0` on the <code style="background-color: #1E90FF">show number</code> block.
+From the `Variables`{:class='microbitvariables'} menu, drag the `timer`{:class='microbitvariables'} variable inside the `0` on the `show number`{:class='microbitbasic'} block.
 
 <div style="position:relative;height:calc(250px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:70%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ERVifxFw4R8c
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 --- /task ---
 
-After each value of <code style="background-color: #DC143C">timer</code> is displayed on the micro:bit, you need to add a 1-second pause.
+After each value of `timer`{:class='microbitvariables'} is displayed on the micro:bit, you need to add a 1-second pause.
 
 --- task ---
 
-Right-click on one of your <code style="background-color: #1E90FF">pause</code> blocks and duplicate it. 
+Right-click on one of your `pause`{:class='microbitbasic'} blocks and duplicate it. 
 
-Drag the duplicated <code style="background-color: #1E90FF">pause</code> block below the <code style="background-color: #1E90FF">show number</code> block.
+Drag the duplicated `pause`{:class='microbitbasic'} block below the `show number`{:class='microbitbasic'} block.
 
 Change `2000` to `1000`. 
 
@@ -363,17 +363,17 @@ After the countdown finishes, the value will be 0.
 
 You need a message to tell the user to change their silly pose.
 
-You will do this by adding an <code style="background-color: #00A4A6">else</code> section to the <code style="background-color: #00A4A6">if</code> block.
+You will do this by adding an `else`{:class='microbitlogic'} section to the `if`{:class='microbitlogic'} block.
 
 --- task ---
 
-Click on the `+` symbol at the bottom of the <code style="background-color: #00A4A6">if</code> block. This will create an <code style="background-color: #00A4A6">else</code> section. 
+Click on the `+` symbol at the bottom of the `if`{:class='microbitlogic'} block. This will create an `else`{:class='microbitlogic'} section. 
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag the <code style="background-color: #1E90FF">show string</code> block and place it inside the <code style="background-color: #00A4A6">else</code> section.
+From the `Basic`{:class='microbitbasic'} menu, drag the `show string`{:class='microbitbasic'} block and place it inside the `else`{:class='microbitlogic'} section.
 
 Change the string `Hello!` to `Pose!`.
 
-From the <code style="background-color: #1E90FF">Basic</code> menu, drag the <code style="background-color: #1E90FF">clear screen</code> block and drop it **above** the <code style="background-color: #1E90FF">show string</code> block.
+From the `Basic`{:class='microbitbasic'} menu, drag the `clear screen`{:class='microbitbasic'} block and drop it **above** the `show string`{:class='microbitbasic'} block.
 
 <div style="position:relative;height:calc(350px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:70%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_RUVJMfW8EFmP
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
@@ -386,9 +386,9 @@ From the <code style="background-color: #1E90FF">Basic</code> menu, drag the <co
 title: Add sound for dramatic effect
 ---
 
-From the <code style="background-color: #E63022">Music</code> menu, drag a <code style="background-color: #E63022">play tone</code> block. 
+From the `Music`{:class='microbitmusic'} menu, drag a `play tone`{:class='microbitmusic'} block. 
 
-Place it below the <code style="background-color: #DC143C">change</code> block.
+Place it below the `change`{:class='microbitvariables'} block.
 
 Click the `Middle C` drop-down menu and a piano keys console will appear. 
 
@@ -396,7 +396,7 @@ Choose a tone for your timer.
 
 We have selected `Middle A`.
 
-Click the <code style="background-color: #E63022">until done</code> drop-down menu and change it to <code style="background-color: #E63022">in background</code>.
+Click the `until done`{:class='microbitmusic'} drop-down menu and change it to `in background`{:class='microbitmusic'}.
 
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:95%;height:95%;" src="https://makecode.microbit.org/---codeembed#pub:_R4xU4T1CrbbX
 " allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
