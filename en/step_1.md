@@ -41,7 +41,7 @@ To start creating your micro:bit project, open the MakeCode editor.
 
 --- task ---
 
-Open the MakeCode editor at [makecode.microbit.org](https://makecode.microbit.org)
+Open the MakeCode editor at [makecode.microbit.org](https://makecode.microbit.org){:target="_blank"}
 
 --- collapse ---
 
@@ -49,7 +49,7 @@ Open the MakeCode editor at [makecode.microbit.org](https://makecode.microbit.or
 title: Offline version of the editor
 ---
 
-There is also a [downloadable version of the MakeCode editor](https://makecode.microbit.org/offline-app).
+There is also a [downloadable version of the MakeCode editor](https://makecode.microbit.org/offline-app){:target="_blank"}.
 
 --- /collapse ---
 
@@ -542,7 +542,7 @@ basic.forever(function () {
 
 ### Completed project
 
-If you want to check your code you can can find [the completed project here](https://makecode.microbit.org/_8K430qR3oH7t).
+If you want to check your code you can can find [the completed project here](https://makecode.microbit.org/_8K430qR3oH7t){:target="_blank"}.
 
 ### Upgrade your project
 

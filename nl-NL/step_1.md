@@ -41,7 +41,7 @@ Om je micro:bit-project te maken, moet je eerst de MakeCode-editor openen.
 
 --- task ---
 
-Open de MakeCode editor op [makecode.microbit.org](https://makecode.microbit.org)
+Open de MakeCode editor op [makecode.microbit.org](https://makecode.microbit.org){:target="_blank"}
 
 --- collapse ---
 
@@ -49,7 +49,7 @@ Open de MakeCode editor op [makecode.microbit.org](https://makecode.microbit.org
 title: Offline versie van de editor
 ---
 
-Er is ook een [downloadbare versie van de MakeCode editor](https://makecode.microbit.org/offline-app).
+Er is ook een [downloadbare versie van de MakeCode editor](https://makecode.microbit.org/offline-app){:target="_blank"}.
 
 --- /collapse ---
 
