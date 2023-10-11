@@ -422,6 +422,8 @@ Cliciwch ar y gwymplen <code style="background-color: #E63022">nes gorffen</code
 
 --- /task ---
 
+[[[microbit-share]]]
+
 ### Uwchraddiwch eich prosiect
 
 Gallwch chi uwchraddio'ch prosiect atgoffa gwirion trwy:

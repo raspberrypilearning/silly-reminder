@@ -532,6 +532,8 @@ basic.forever(function () {
 
 [[[download-to-microbit]]]
 
+When you have downloaded your program to your micro:bit, it will run immediately.
+
 --- /task ---
 
 --- task ---
@@ -539,6 +541,8 @@ basic.forever(function () {
 **Test** your program on the physical micro:bit. 
 
 --- /task ---
+
+[[[microbit-share]]]
 
 ### Completed project
 

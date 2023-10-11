@@ -422,6 +422,8 @@ Klik op het <code style="background-color: #E63022">tot het klaar is</code> verv
 
 --- /task ---
 
+[[[microbit-share]]]
+
 ### Verbeter je project
 
 Je kunt je tijd voor gekkigheid project upgraden door:
