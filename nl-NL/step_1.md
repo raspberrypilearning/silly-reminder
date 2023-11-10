@@ -10,8 +10,8 @@ In dit project maak je een **timer voor gekkigheid**.
 
 Je gaat:
 + Pictogrammen, tekst en cijfers laten zien op de LED's
-+ <code style="background-color: #00A4A6">als</code> blokken gebruiken om te bepalen wat wordt weergegeven
-+ Het <code style="background-color: #1E90FF">pauzeer</code> blok gebruiken om een afteltimer te maken
++ `als`{:class='microbitlogic'} blokken gebruiken om te bepalen wat wordt weergegeven
++ Het `pauzeer (ms)`{:class='microbitbasic'} blok gebruiken om een afteltimer te maken
 + Geluiden afspelen
 + Knoppen gebruiken om het scherm te wijzigen
 
@@ -41,7 +41,7 @@ Om je micro:bit-project te maken, moet je eerst de MakeCode-editor openen.
 
 --- task ---
 
-Open de MakeCode editor op [makecode.microbit.org](https://makecode.microbit.org){:target="_blank"}
+Open de MakeCode editor op [makecode.microbit.org](https://makecode.microbit.org)
 
 --- collapse ---
 
@@ -49,7 +49,7 @@ Open de MakeCode editor op [makecode.microbit.org](https://makecode.microbit.org
 title: Offline versie van de editor
 ---
 
-Er is ook een [downloadbare versie van de MakeCode editor](https://makecode.microbit.org/offline-app){:target="_blank"}.
+Er is ook een [downloadbare versie van de MakeCode editor](https://makecode.microbit.org/offline-app).
 
 --- /collapse ---
 
@@ -96,31 +96,33 @@ In het midden staat het **blokken paneel**, dat ingedeeld is per kleur en je toe
 
 Aan de rechterkant bevindt zich het **code-editorpaneel**. Dit is waar je blokken sleept en neerzet om je programma te maken.
 
-Het MakeCode editor paneel bevat al twee blokken: <code style="background-color: #1E90FF">bij opstarten</code> en <code style="background-color: #1E90FF">de hele tijd</code>.
+Het MakeCode editor paneel bevat al twee blokken: `bij opstarten`{:class='microbitbasic'} en `de hele tijd`{:class='microbitbasic'}.
 
 ### Toon pictogram
 
-Je gebruikt het <code style="background-color: #1E90FF">bij opstarten</code> blok om te zien hoe de LED's op de simulator werken.
+Je gebruikt het `bij opstarten`{:class='microbitbasic'} blok om te zien hoe de LED's op de simulator werken.
 
 --- task ---
 
-Klik op het menu <code style="background-color: #1E90FF">Basis</code>.
+Klik op het menu `Basis`{:class='microbitbasic'}.
 
 Dit zal je uitklappen om de beschikbare blokken te laten zien.
 
 <img src="images/show-icon-location.png" alt="Het basisblokmenu met het 'toon pictogram' blok geaccentueerd." width="350" />
 
-Sleep het <code style="background-color: #1E90FF">toon pictogram</code> blok en zet het neer **in** het <code style="background-color: #1E90FF">bij opstarten</code> blok.
+Sleep het `toon pictogram`{:class='microbitbasic'} blok en plaats het **in** het `bij opstarten`{:class='microbitbasic'} blok.
 
 Het moet als een puzzelstuk op zijn plaats passen.
 
-<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+basic.showIcon(IconNames.Heart)
+```
 
 --- /task ---
 
 --- task ---
 
-Klik op de pijl-omlaag op het blok <code style="background-color: #1E90FF">toon pictogram</code> en kies een pictogram.
+Klik op de pijl-omlaag op het blok `toon pictogram`{:class='microbitbasic'} en kies een pictogram.
 
 <img src="images/show-icon.png" alt="Het Toon pictogram menu uitgeklapt met alle beschikbare iconen." width="350" />
 
@@ -151,7 +153,7 @@ Maak een variabele die wordt gebruikt in een timer die aangeeft hoe lang je elke
 
 --- task ---
 
-Open het menu <code style="background-color: #DC143C">Variabelen</code> en klik op **Maak een variabele**.
+Open het menu `Variabelen`{:class='microbitvariables'} en klik op **Maak een variabele**.
 
 <img src="images/variable-menu.png" alt="Het variabelenblokmenu wordt geopend met de knop 'Maak een variabele' gemarkeerd." width="350" />
 
@@ -171,9 +173,15 @@ Er worden nieuwe blokken gemaakt die je in je programma kunt plaatsen om de waar
 
 --- task ---
 
-Sleep het <code style="background-color: #DC143C">stel</code> blok **onder** het <code style="background-color: #1E90FF">toon pictogram</code> blok.
+Sleep het `stel in op`{:class='microbitvariables'} blok **onder** het `toon pictogram`{:class='microbitbasic'} blok.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:S59350-24192-35926-97900" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let timer = 0
+basic.forever(function () {
+    basic.showIcon(IconNames.Heart)
+    timer = 0
+})
+```
 
 --- /task ---
 
@@ -183,56 +191,99 @@ Je gaat nu de invoerknoppen A en B op de micro:bit programmeren om je te helpen 
 
 --- task ---
 
-Klik op het menu <code style="background-color: #D400D4">Invoer</code> en sleep een <code style="background-color: #D400D4">wanneer knop</code> blok naar het **code editor paneel**.
+Klik op het menu `Invoer`{:class='microbitinput'} en sleep een `wanneer knop`{:class='microbitinput'} blok naar het **code editor paneel**.
 
-<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_TUwcRCfFsHCb" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+input.onButtonPressed(Button.A, function () {
+
+})
+```
 
 --- /task ---
 
 --- task ---
 
-Sleep vanuit het menu <code style="background-color: #1E90FF">Basis</code> het blok met <code style="background-color: #1E90FF">toon lichtjes</code> in het blok <code style="background-color: #D400D4">wanneer knop</code>.
+Vanuit het `Basis`{:class='microbitbasic'} menu sleep je het `toon lichtjes`{:class='microbitbasic'} blok in het `wanneer knop wordt ingedrukt`{:class='microbitinput'} blok.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_7Ugf5a3JXb81" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+input.onButtonPressed(Button.A, function () {
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
+})
+```
 
 Klik op de vierkantjes om je pose te tekenen. Witte vierkantjes worden verlicht op het LED-scherm.
 
 In dit voorbeeld hebben we een smiley getekend als gekke pose.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_XsR7jJ2wiTAx
-" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+input.onButtonPressed(Button.A, function () {
+    basic.showLeds(`
+        . # . # .
+        . . . . .
+        . . # . .
+        # . . . #
+        . # # # .
+        `)
+})
+```
 
 --- /task ---
 
 Het pictogram moet enige tijd worden weergegeven voordat het wordt gewijzigd.
 
-Je gebruikt hiervoor een <code style="background-color: #1E90FF">pauzeer</code> blok. Hierdoor wordt het programma gedurende een bepaald aantal milliseconden (1/1000ste van een seconde) gepauzeerd.
+Je gebruikt hiervoor een `pauzeer (ms)`{:class='microbitbasic'}. Hierdoor wordt het programma gedurende een bepaald aantal milliseconden (1/1000ste van een seconde) gepauzeerd.
 
 --- task ---
 
-Vanuit het <code style="background-color: #1E90FF">Basis</code> menu sleep je een <code style="background-color: #1E90FF">pauzeer</code> blok onder het <code style="background-color: #1E90FF">toon lichtjes</code> blok.
+Vanuit het `Basis`{:class='microbitbasic'} menu, sleep je een `pauzeer (ms)`{:class='microbitbasic'} blok onder het `toon lichtjes`{:class='microbitbasic'} blok.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_AVuUqsMq8hbR
-" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+input.onButtonPressed(Button.A, function () {
+    basic.showLeds(`
+        . # . # .
+        . . . . .
+        . . # . .
+        # . . . #
+        . # # # .
+        `)
+    basic.pause(100)
+})
+```
 
 --- /task ---
 
 --- task ---
 
-Verander het getal `100` in het <code style="background-color: #1E90FF">pauzeer</code>blok naar een groter getal zodat de pauze langer is, en het pictogram langer wordt weergegeven. In dit voorbeeld hebben we de tijd ingesteld op 2 seconden (`2000`).
+Verander het getal `100` in het `pauzeer`{:class='microbitbasic'} blok naar een groter getal zodat de pauze langer is, en het pictogram langer wordt weergegeven. In dit voorbeeld hebben we de tijd ingesteld op 2 seconden (`2000`).
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_2AcgfYKeAeFu
-" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+input.onButtonPressed(Button.A, function () {
+    basic.showLeds(`
+        . # . # .
+        . . . . .
+        . . # . .
+        # . . . #
+        . # # # .
+        `)
+    basic.pause(2000)
+})
+```
 
 --- /task ---
 
 --- task ---
 
-Klik met de rechtermuisknop op het <code style="background-color: #DC143C">stel</code> blok binnen het <code style="background-color: #1E90FF">bij opstarten</code> blok.
+Klik met de rechtermuisknop op het `stel in op`{:class='microbitvariables'} blok binnen het `bij opstarten`{:class='microbitbasic'} blok.
 
 Klik op **Dupliceren** om een kopie ervan te maken.
 
-Plaats het gedupliceerde <code style="background-color: #DC143C">stel</code> blok boven het <code style="background-color: #1E90FF">toon lichtjes</code> blok.
+Plaats het gedupliceerde `stel in op`{:class='microbitvariables'} blok boven het `toon lichtjes`{:class='microbitbasic'} blok.
 
 Verander het getal `0` naar `10` in het nieuwe blok.
 
@@ -244,17 +295,17 @@ Om meer dan een pose te kunnen selecteren, gebruik je knop B.
 
 --- task ---
 
-Klik met de rechtermuisknop op het hele <code style="background-color: #D400D4">wanneer op knop</code> blok.
+Klik met de rechtermuisknop op het hele `wanneer op knop`{:class='microbitinput'} blok.
 
 Klik op `Dupliceren` om een kopie ervan te maken.
 
-Je hebt nu twee <code style="background-color: #D400D4">wanneer op knop</code> blokken in het **code editor paneel**.
+Je hebt nu twee `wanneer op knop`{:class='microbitinput'} blokken in het **code editor paneel**.
 
 --- /task ---
 
 --- task ---
 
-Klik op de pijl omlaag naast de <code style="background-color: #D400D4">A</code> op je gedupliceerde <code style="background-color: #D400D4">wanneer op knop</code> blok. Verander de <code style="background-color: #D400D4">A</code> in <code style="background-color: #D400D4">B</code>.
+Klik op de pijl omlaag naast de `A`{:class='microbitinput'} op je gedupliceerde `wanneer knop wordt ingedrukt`{:class='microbitinput'} blok. Verander de `A`{:class='microbitinput'} in een `B`{:class='microbitinput'}.
 
 <img src="images/button-options.png" alt="Het blok 'wanneer knop A wordt ingedrukt' toont een vervolgkeuzemenu van A, met opties voor A, B en A+B." width="210" />
 
@@ -262,7 +313,7 @@ Klik op de pijl omlaag naast de <code style="background-color: #D400D4">A</code>
 
 --- task ---
 
-Om een nieuw pose pictogram te maken, verander je de vierkanten van de nieuwe <code style="background-color: #1E90FF">toon lichtjes</code> blok binnen het nieuwe <code style="background-color: #D400D4">wanneer op knop</code> blok.
+Om een nieuw pose pictogram te maken, verander je de vierkanten van de nieuwe `toon lichtjes`{:class='microbitbasic'} blok binnen het nieuwe `wanneer op knop`{:class='microbitinput'} blok.
 
 --- /task ---
 
@@ -272,7 +323,7 @@ Om een nieuw pose pictogram te maken, verander je de vierkanten van de nieuwe <c
 
 + Klik op knop `A` op de simulator om te zien welk pictogram op de LED wordt weergegeven. Let op hoe lang het zichtbaar is.
 + Doe hetzelfde om knop `B` te testen.
-+ Verander de waarde in je <code style="background-color: #1E90FF">pauzeer</code> blok om de tijd die de iconen worden weergegeven te verhogen of te verlagen bij elke druk op de knop.
++ Verander de waarde in je `pauzeer`{:class='microbitbasic'} blok om de tijd die de iconen worden weergegeven te verhogen of te verlagen bij elke druk op de knop.
 
 --- /task ---
 
@@ -280,39 +331,56 @@ Om een nieuw pose pictogram te maken, verander je de vierkanten van de nieuwe <c
 
 Je maakt nu een afteller van 10 seconden.
 
-De variabele waarde van <code style="background-color: #DC143C">timer</code> neemt elke seconde af met `1`, maar **alleen** als de timer **groter is dan 0**.
+De variabele waarde van `timer`{:class='microbitvariables'} neemt elke seconde af met `1`, maar **alleen** als de timer **groter is dan 0**.
 
 --- task ---
 
-Sleep vanuit het menu <code style="background-color: #00A4A6">Logisch</code> een <code style="background-color: #00A4A6">als</code> blok.
+Vanuit het `Logisch`{:class='microbitlogic'} menu, sleep een `als`{:class='microbitlogic'} blok.
 
-Plaats het in het <code style="background-color: #1E90FF">de hele tijd</code> blok.
+Plaats het in het blok `de hele tijd`{:class='microbitbasic'}.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_bbCWu0JRuH7u
-" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+basic.forever(function () {
+    if (true) {
+
+    }
+})
+```
 
 --- /task ---
 
 --- task ---
 
-Vanuit het <code style="background-color: #00A4A6">Logisch</code> menu sleep je een <code style="background-color: #00A4A6">0 = 0</code> vergelijkingsblok.
+Sleep vanuit het menu `Logisch`{:class='microbitlogic'} het vergelijkingsblok `0 = 0`{:class='microbitlogic'}.
 
 <img src="images/comparison-block.png" alt="Het Logisch blokmenu met het vergelijkingsblok '0=0' gemarkeerd." width="350" />
 
-Wijzig de <code style="background-color: #00A4A6">=</code> in een <code style="background-color: #00A4A6"></code> (groter dan) symbool met behulp van de vervolgkeuzepijl op het vergelijkingsblok.
+Verander het `=`{:class='microbitlogic'} naar een `>`{:class='microbitlogic'} (groter dan) symbool met behulp van het drop-down pijltje in het vergelijkingsblok.
 
-Plaats het vergelijkingsblok in de <code style="background-color: #00A4A6">waar</code> ruimte in het <code style="background-color: #00A4A6">als</code> blok.
+Plaats het vergelijkingsblok in het `waar`{:class='microbitlogic'} ruimte in het `als`{:class='microbitlogisch'} blok.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:60%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_5RoV5sKivV2q
-" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+basic.forever(function () {
+    if (0 > 0) {
+
+    }
+})
+```
 
 --- /task ---
 
 --- task ---
 
-Sleep vanuit het menu <code style="background-color: #DC143C">Variabelen</code> het blok <code style="background-color: #DC143C">timer</code> en plaats het in de eerste `0` van het blok <code style="background-color: #00A4A6">0 > 0</code>.
+Vanuit het `Variabelen`{:class='microbitvariables'} menu, sleep het `timer`{:class='microbitvariables'} blok en plaats het in het eerste `0` in het `0 > 0`{:class='microbitlogisch'} blok.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe>0</div>
+```microbit
+basic.forever(function () {
+    let timer = 0
+    if (timer > 0) {
+
+    }
+})
+```
 
 --- /task ---
 
@@ -320,37 +388,61 @@ Om een teller te maken, moet de waarde van de variabele `timer` verminderd worde
 
 --- task ---
 
-Sleep vanuit het menu <code style="background-color: #DC143C">Variabelen</code> het blok <code style="background-color: #DC143C">verander</code> en plaats het in de sectie <code style="background-color: #00A4A6">als</code>.
+Vanuit het `Variabelen`{:class='microbitvariables'} menu, sleep het `verander met`{:class='microbitvariables'} blok en plaats het in de `als`{:class='microbitlogic'} sectie.
 
 Wijzig `1` in `-1`.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe>1</div>
+```microbit
+let timer = 0
+basic.forever(function () {
+    if (timer > 0) {
+        timer += -1
+    }
+})
+```
 
 --- /task ---
 
 --- task ---
 
-Sleep vanuit het menu <code style="background-color: #1E90FF">Basis</code> het blok <code style="background-color: #1E90FF">toon nummer</code> en plaats het onder het blok <code style="background-color: #DC143C">verander</code>.
+Vanuit het `Basis`{:class='microbitbasic'} menu sleep je het `toon nummer`{:class='microbitbasic'} blok en plaats je het onder het `verander met`{:class='microbitvariables'} blok.
 
 <img src="images/show-number.png" alt="Het basisblokmenu met het 'toon nummer' blok geaccentueerd." width="350" />
 
-Sleep vanuit het menu <code style="background-color: #DC143C">Variabelen</code> de variabele <code style="background-color: #DC143C">timer</code> binnen de `0` van het <code style="background-color: #1E90FF">toon numer</code> blok.
+Vanuit het `Variabelen`{:class='microbitvariables'} menu, sleep de `timer`{:class='microbitvariables'} variabele in de `0` van de `toon nummer`{:class='microbitbasic'} blok.
 
-<div style="position:relative;height:calc(250px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe>2</div>
+```microbit
+let timer = 0
+basic.forever(function () {
+    if (timer > 0) {
+        timer += -1
+        basic.showNumber(timer)
+    }
+})
+```
 
 --- /task ---
 
-Nadat elke waarde van <code style="background-color: #DC143C">timer</code> wordt weergegeven op de micro:bit, moet je een pauze van 1 seconden toevoegen.
+Nadat elke waarde van `timer`{:class='microbitvariables'} wordt weergegeven op de micro:bit, moet je een pauze van 1 seconden toevoegen.
 
 --- task ---
 
-Rechtsklik op een van je <code style="background-color: #1E90FF">pauzeer</code> blokken en dupliceer het.
+Rechtsklik op een van je `pauzeer`{:class='microbitbasic'} blokken en dupliceer het.
 
-Sleep het gedupliceerde <code style="background-color: #1E90FF">pauzeer</code> blok onder het <code style="background-color: #1E90FF">toon nummer</code> blok.
+Sleep het gedupliceerde `pauzeer (ms)`{:class='microbitbasic'} blok onder het `toon nummer`{:class='microbitbasic'} blok.
 
-Verander `2000` naar `1000`. 
+Verander `2000` naar `1000`.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe>3</div>
+```microbit
+let timer = 0
+basic.forever(function () {
+    if (timer > 0) {
+        timer += -1
+        basic.showNumber(timer)
+        basic.pause(1000)
+    }
+})
+```
 
 --- /task ---
 
@@ -358,19 +450,31 @@ Nadat het aftellen is voltooid, zal de waarde 0 zijn.
 
 Je hebt een bericht nodig om de gebruiker te vertellen zijn gekke houding te veranderen.
 
-Dit doe je door een <code style="background-color: #00A4A6">anders</code> sectie toe te voegen aan het <code style="background-color: #00A4A6">als</code> blok.
+Je doet dit door een `anders`{:class='microbitlogic'} sectie toe te voegen aan het `als`{:class='microbitlogic'} blok.
 
 --- task ---
 
-Klik op het `+` -symbool onderaan het <code style="background-color: #00A4A6">als</code> -blok. Hierdoor wordt een <code style="background-color: #00A4A6">anders</code> blok gemaakt.
+Klik op het `+` -symbool onderaan het `als`{:class='microbitlogic'} -blok. Hierdoor wordt een `anders`{:class='microbitlogic'} sectie aangemaakt.
 
-Sleep vanuit het menu <code style="background-color: #1E90FF">Basis</code> het blok <code style="background-color: #1E90FF">toon tekens</code> en plaats het in de sectie <code style="background-color: #00A4A6">anders</code>.
+Vanuit het `Basis`{:class='microbitbasic'} menu sleep je de `toon tekst`{:class='microbitbasic'} blok en plaats je het in de `anders`{:class='microbitlogic'} sectie.
 
 Verander de tekst `Hello!` in `Poseren!`.
 
-Vanuit het menu <code style="background-color: #1E90FF">Basis</code> sleep je het blok <code style="background-color: #1E90FF">wis scherm</code> en zet het neer **boven** het blok <code style="background-color: #1E90FF">toon tekens</code>.
+Vanuit het menu `Basis`{:class='microbitbasic'} sleep je het blok `wis scherm`{:class='microbitbasic'} en zet het neer **boven** het `toon tekst`{:class='microbitbasic'} blok.
 
-<div style="position:relative;height:calc(350px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe>4</div>
+```microbit
+let timer = 0
+basic.forever(function () {
+    if (timer > 0) {
+        timer += -1
+        basic.showNumber(timer)
+        basic.pause(1000)
+    } else {
+        basic.clearScreen()
+        basic.showString("Pose!")
+    }
+})
+```
 
 --- /task ---
 
@@ -380,9 +484,9 @@ Vanuit het menu <code style="background-color: #1E90FF">Basis</code> sleep je he
 title: Voeg geluid toe voor een dramatisch effect
 ---
 
-Sleep vanuit het menu <code style="background-color: #E63022">Muziek</code> een <code style="background-color: #E63022">play tone</code> blok.
+Neem vanuit het menu `Muziek`{:class='microbitmusic'} een `play`{:class='microbitmusic'} blok.
 
-Plaats het onder het <code style="background-color: #DC143C">verander</code> blok.
+Plaats het onder het `verander met`{:class='microbitvariables'} blok.
 
 Klik op het vervolgkeuzemenu bij `Middle C` en er verschijnt een pianotoetsen console.
 
@@ -390,9 +494,22 @@ Kies een toon voor je timer.
 
 We hebben `Middle A` geselecteerd.
 
-Klik op het <code style="background-color: #E63022">tot het klaar is</code> vervolgkeuzemenu en verander het naar <code style="background-color: #E63022">in background</code>.
+Klik op de `tot het klaar is`{:class='microbitmusic'} drop-down menu en verander het naar `in background`{:class='microbitmusic'}.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe>5</div>
+```microbit
+let timer = 0
+basic.forever(function () {
+    if (timer > 0) {
+        timer += -1
+        music.play(music.tonePlayable(440, music.beat(BeatFraction.Whole)), music.PlaybackMode.InBackground)
+        basic.showNumber(timer)
+        basic.pause(1000)
+    } else {
+        basic.clearScreen()
+        basic.showString("Pose!")
+    }
+})
+```
 
 --- /collapse ---
 
@@ -422,7 +539,9 @@ Klik op het <code style="background-color: #E63022">tot het klaar is</code> verv
 
 --- /task ---
 
-[[[microbit-share]]]
+### Voltooid project
+
+Als je je code wilt controleren, kun je [het voltooide project hier](https://makecode.microbit.org/_8K430qR3oH7t) vinden.
 
 ### Verbeter je project
 
@@ -437,5 +556,6 @@ Dit project werd vertaald door vrijwilligers:
 
 Iny van Beuningen
 Arnout Cator
+Sanneke van der Meer
 
 Dankzij vrijwilligers kunnen we mensen over de hele wereld de kans geven om in hun eigen taal te leren. Jij kunt ons helpen meer mensen te bereiken door vrijwillig te starten met vertalen - meer informatie op [rpf.io/translate](https://rpf.io/translate).
