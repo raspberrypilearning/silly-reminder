@@ -114,7 +114,9 @@ Llusgwch y bloc <code style="background-color: #1E90FF">dangos eicon</code> bloc
 
 Dylai hwn ffitio yn ei le fel darn pos.
 
-<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+basic.showIcon(IconNames.Heart)
+```
 
 --- /task ---
 
@@ -173,7 +175,13 @@ Bydd blociau newydd yn cael eu creu y gallwch eu gosod yn eich rhaglen i'w defny
 
 Llusgwch y <code style="background-color: #DC143C">set</code> bloc **o dan** y bloc <code style="background-color: #1E90FF">dangos eicon</code>.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:S59350-24192-35926-97900" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+let timer = 0
+basic.forever(function () {
+    basic.showIcon(IconNames.Heart)
+    timer = 0
+})
+```
 
 --- /task ---
 
@@ -185,7 +193,11 @@ Byddwch nawr yn rhaglennu'r botymau mewnbwn A a B ar y micro:bit i'ch helpu i dd
 
 Cliciwch ar y ddewislen <code style="background-color: #D400D4">Mewnbwn</code> a llusgwch bloc <code style="background-color: #D400D4">botwm ymlaen</code> i'r **panel golygydd cod**.
 
-<div style="position:relative;height:calc(150px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_TUwcRCfFsHCb" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+input.onButtonPressed(Button.A, function () {
+
+})
+```
 
 --- /task ---
 
@@ -193,36 +205,75 @@ Cliciwch ar y ddewislen <code style="background-color: #D400D4">Mewnbwn</code> a
 
 O'r ddewislen <code style="background-color: #1E90FF">Sylfaenol</code>, llusgwch y bloc <code style="background-color: #1E90FF">dangos leds</code> a'i osod tu fewn i'r bloc <code style="background-color: #D400D4">ar botwm</code>.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_7Ugf5a3JXb81" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+input.onButtonPressed(Button.A, function () {
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
+})
+```
 
 Cliciwch ar y sgwariau i dynnu llun eich ystum. Bydd sgwariau gwyn yn cael eu goleuo ar yr arddangosfa LED.
 
 Yn yr enghraifft hon, rydyn ni wedi tynnu llun wyneb gwên fel ystum gwirion.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_XsR7jJ2wiTAx
-" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+input.onButtonPressed(Button.A, function () {
+    basic.showLeds(`
+        . # . # .
+        . . . . .
+        . . # . .
+        # . . . #
+        . # # # .
+        `)
+})
+```
 
 --- /task ---
 
 Dylid arddangos yr eicon am beth amser cyn ei newid.
 
-Byddwch yn defnyddio bloc <code style="background-color: #1E90FF">saib</code> ar gyfer hyn. Mae hyn yn oedi'r rhaglen am nifer penodol o filieiliadau (1/1000fed o eiliad).
+You will use a `pause`{:class='microbitbasic'} block for this. Mae hyn yn oedi'r rhaglen am nifer penodol o filieiliadau (1/1000fed o eiliad).
 
 --- task ---
 
 O'r ddewislen <code style="background-color: #1E90FF">Sylfaenol</code>, llusgwch floc <code style="background-color: #1E90FF">saib</code> o dan y bloc <code style="background-color: #1E90FF">dangos leds</code>.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_AVuUqsMq8hbR
-" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+input.onButtonPressed(Button.A, function () {
+    basic.showLeds(`
+        . # . # .
+        . . . . .
+        . . # . .
+        # . . . #
+        . # # # .
+        `)
+    basic.pause(100)
+})
+```
 
 --- /task ---
 
 --- task ---
 
-Newidiwch y `100` yn y bloc <code style="background-color: #1E90FF">saib</code> i rif mwy fel bod y saib yn hirach, ac mae'r eicon yn cael ei arddangos am gyfnod hirach. Rydym wedi ei osod i 2 eiliad (`2000`) yn yr enghraifft hon.
+Change the `100` in the `pause`{:class='microbitbasic'} block to a larger number so the pause is longer, and the icon is displayed for longer. Rydym wedi ei osod i 2 eiliad (`2000`) yn yr enghraifft hon.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:55%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_2AcgfYKeAeFu
-" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+input.onButtonPressed(Button.A, function () {
+    basic.showLeds(`
+        . # . # .
+        . . . . .
+        . . # . .
+        # . . . #
+        . # # # .
+        `)
+    basic.pause(2000)
+})
+```
 
 --- /task ---
 
@@ -254,7 +305,7 @@ Bydd nawr gennych ddau floc botwm <code style="background-color: #D400D4">ar fot
 
 --- task ---
 
-Cliciwch y saeth i lawr wrth ymyl y <code style="background-color: #D400D4">A</code> ar eich <code style="background-color: #D400D4">ar fotwm</code> dyblyg. Newidiwch y <code style="background-color: #D400D4">A</code> i <code style="background-color: #D400D4">B</code>.
+Click the down arrow next to the `A`{:class='microbitinput'} on your duplicated `on button`{:class='microbitinput'} block. Change the `A`{:class='microbitinput'} to `B`{:class='microbitinput'}.
 
 <img src="images/button-options.png" alt="Y bloc 'ar fotwm A wedi'i wasgu' sy'n dangos cwymplen o'r A, gydag opsiynau ar gyfer A, B, ac A+B." width="210" />
 
@@ -288,8 +339,13 @@ O'r ddewislen <code style="background-color: #00A4A6">Logic</code>, llusgwch blo
 
 Rhowch ef yn y bloc <code style="background-color: #1E90FF">am byth</code>.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_bbCWu0JRuH7u
-" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+basic.forever(function () {
+    if (true) {
+
+    }
+})
+```
 
 --- /task ---
 
@@ -303,8 +359,13 @@ Newidiwch y symbol <code style="background-color: #00A4A6">=</code> i <code styl
 
 Rhowch y bloc cymharu y tu mewn i'r bwlch <code style="background-color: #00A4A6">gwir</code> yn y bloc <code style="background-color: #00A4A6">os</code>.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:60%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_5RoV5sKivV2q
-" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
+```microbit
+basic.forever(function () {
+    if (0 > 0) {
+
+    }
+})
+```
 
 --- /task ---
 
@@ -312,7 +373,14 @@ Rhowch y bloc cymharu y tu mewn i'r bwlch <code style="background-color: #00A4A6
 
 O'r ddewislen <code style="background-color: #DC143C">Newidynnau</code>, llusgwch y bloc <code style="background-color: #DC143C">amserydd</code> a'i osod y tu mewn i'r `0` cyntaf yn y bloc <code style="background-color: #00A4A6">0 > 0</code>.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe>0</div>
+```microbit
+basic.forever(function () {
+    let timer = 0
+    if (timer > 0) {
+
+    }
+})
+```
 
 --- /task ---
 
@@ -324,7 +392,14 @@ O'r ddewislen <code style="background-color: #DC143C">Newidynnau</code>, llusgwc
 
 Newid `1` i `-1`.
 
-<div style="position:relative;height:calc(200px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe>1</div>
+```microbit
+let timer = 0
+basic.forever(function () {
+    if (timer > 0) {
+        timer += -1
+    }
+})
+```
 
 --- /task ---
 
@@ -336,7 +411,15 @@ O'r ddewislen <code style="background-color: #1E90FF">Sylfaenol</code>, llusgwch
 
 O'r ddewislen <code style="background-color: #DC143C">Newidynnau</code>, llusgwch y newidyn <code style="background-color: #DC143C">amserydd</code> y tu mewn i'r `0` ar y bloc <code style="background-color: #1E90FF">dangos rhif</code>.
 
-<div style="position:relative;height:calc(250px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe>2</div>
+```microbit
+let timer = 0
+basic.forever(function () {
+    if (timer > 0) {
+        timer += -1
+        basic.showNumber(timer)
+    }
+})
+```
 
 --- /task ---
 
@@ -348,9 +431,18 @@ Dde-gliciwch ar un o'ch blociau <code style="background-color: #1E90FF">saib</co
 
 Llusgwch y bloc <code style="background-color: #1E90FF">saib</code> a ddyblygwyd o dan y bloc <code style="background-color: #1E90FF">dangos rhif</code>.
 
-Newid `2000` i `1000`. 
+Newid `2000` i `1000`.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe>3</div>
+```microbit
+let timer = 0
+basic.forever(function () {
+    if (timer > 0) {
+        timer += -1
+        basic.showNumber(timer)
+        basic.pause(1000)
+    }
+})
+```
 
 --- /task ---
 
@@ -362,7 +454,7 @@ Byddwch yn gwneud hyn drwy ychwanegu adran <code style="background-color: #00A4A
 
 --- task ---
 
-Cliciwch ar y symbol `+` ar waelod y bloc <code style="background-color: #00A4A6">os</code>. Bydd hyn yn creu adran <code style="background-color: #00A4A6">arall</code>.
+Click on the `+` symbol at the bottom of the `if`{:class='microbitlogic'} block. This will create an `else`{:class='microbitlogic'} section.
 
 O'r ddewislen <code style="background-color: #1E90FF">Sylfaenol</code>, llusgwch y bloc <code style="background-color: #1E90FF">dangos llinyn</code> a'i osod y tu mewn i'r adran <code style="background-color: #00A4A6">arall</code>.
 
@@ -370,7 +462,19 @@ Newidiwch y llinyn `Helo!` i `Osgo!`.
 
 O'r ddewislen <code style="background-color: #1E90FF">Sylfaenol</code>, llusgwch y bloc <code style="background-color: #1E90FF">sgrin glir</code> a'i ollwng **uwchben** y bloc <code style="background-color: #1E90FF">dangos llinyn</code>.
 
-<div style="position:relative;height:calc(350px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe>4</div>
+```microbit
+let timer = 0
+basic.forever(function () {
+    if (timer > 0) {
+        timer += -1
+        basic.showNumber(timer)
+        basic.pause(1000)
+    } else {
+        basic.clearScreen()
+        basic.showString("Pose!")
+    }
+})
+```
 
 --- /task ---
 
@@ -392,7 +496,20 @@ Rydym wedi dewis `Canol A`.
 
 Cliciwch ar y gwymplen <code style="background-color: #E63022">nes gorffen</code> a'i newid i <code style="background-color: #E63022">yn y cefndir</code>.
 
-<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:relative;top:0;left:0;width:50%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ChCUrqPF77FM" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe>5</div>
+```microbit
+let timer = 0
+basic.forever(function () {
+    if (timer > 0) {
+        timer += -1
+        music.play(music.tonePlayable(440, music.beat(BeatFraction.Whole)), music.PlaybackMode.InBackground)
+        basic.showNumber(timer)
+        basic.pause(1000)
+    } else {
+        basic.clearScreen()
+        basic.showString("Pose!")
+    }
+})
+```
 
 --- /collapse ---
 
@@ -421,6 +538,10 @@ Cliciwch ar y gwymplen <code style="background-color: #E63022">nes gorffen</code
 **Profwch** eich rhaglen ar y micro:bit ffisegol.
 
 --- /task ---
+
+### Uwchraddiwch eich prosiect
+
+Gallwch chi uwchraddio'ch prosiect atgoffa gwirion trwy:
 
 ### Uwchraddiwch eich prosiect
 
