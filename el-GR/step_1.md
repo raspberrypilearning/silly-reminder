@@ -4,28 +4,28 @@
 
 ### Τι θα φτιάξεις
 
-Αυτό το έργο σου υπενθυμίζει να αφιερώσεις χρόνο για να χαλαρώσεις, να διασκεδάσεις και να κάνεις μια διασκεδαστική πόζα! Αυτό θα μπορούσε να συμβεί μετά από μια κουραστική μέρα στο σχολείο ή σαν ένας τρόπος για να φτιάξεις τη δική σου διάθεση και των φίλων σου. Μπορείς να προγραμματίσεις τα κουμπιά micro:bit για να σε βοηθήσουν να θυμάσαι να διασκεδάζεις με αστειάκια.
+Αυτό το έργο σου υπενθυμίζει να αφιερώσεις χρόνο για να χαλαρώσεις, να διασκεδάσεις και να κάνεις μια αστεία πόζα! Αυτό θα μπορούσε να συμβεί μετά από μια κουραστική μέρα στο σχολείο ή σαν ένας τρόπος για να φτιάξεις τη δική σου διάθεση και των φίλων σου. Μπορείς να προγραμματίσεις τα κουμπιά micro:bit για να σε βοηθήσουν να θυμάσαι να διασκεδάζεις με αστειάκια.
 
-In this project, you will make a **silly reminder**.
+Σε αυτό το έργο, θα κάνεις μια **υπενθύμιση διασκέδασης**.
 
-You will:
-+ Display icons, text, and numbers on the LEDs
-+ Use `if`{:class='microbitlogic'} blocks to control what is displayed
-+ Use the `pause`{:class='microbitbasic'} block to create a countdown timer
-+ Play sounds
-+ Use buttons to change the display
+Θα:
++ Εμφανίσεις εικονίδια, κείμενα και αριθμούς στα LED
++ Χρησιμοποιήσεις μπλοκ `εάν`{:class='microbitlogic'} για να ελέγξεις τι εμφανίζεται
++ Χρησιμοποιήσεις το μπλοκ `παύση`{:class='microbitbasic'} για να δημιουργήσεις ένα χρονόμετρο αντίστροφης μέτρησης
++ Παίξεις ήχους
++ Χρησιμοποιήσεις κουμπιά για να αλλάξεις την οθόνη
 
 --- no-print ---
 
-### Play ▶️
+### Δοκίμασέ το ▶️
 
 --- task ---
 
-+ What happens when the program starts?
-+ What happens when the countdown runs?
-+ What happens when the countdown finishes?
-+ What happens if you `press` Button A?
-+ What happens if you `press` Button B?
++ Τι συμβαίνει όταν ξεκινά το πρόγραμμα;
++ Τι συμβαίνει όταν τρέχει η αντίστροφη μέτρηση;
++ Τι συμβαίνει όταν τελειώσει η αντίστροφη μέτρηση;
++ Τι θα συμβεί αν `πατήσεις` το κουμπί Button A;
++ Τι θα συμβεί αν `πατήσεις` το κουμπί Button B;
 
 <div style="position:relative;height:100%;padding-bottom:125%;padding-top:0;overflow:hidden;">
 <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=_KiYLAWM3cip4" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe>
@@ -35,31 +35,31 @@ You will:
 
 --- /no-print ---
 
-### Open MakeCode
+### Άνοιξε το MakeCode
 
-To start creating your micro:bit project, open the MakeCode editor.
+Για να ξεκινήσεις τη δημιουργία του έργου σου με το micro:bit, πρέπει να ανοίξεις το πρόγραμμα επεξεργασίας MakeCode.
 
 --- task ---
 
-Open the MakeCode editor at [makecode.microbit.org](https://makecode.microbit.org){:target="_blank"}
+Άνοιξε το πρόγραμμα επεξεργασίας MakeCode στη διεύθυνση [makecode.microbit.org](https://makecode.microbit.org){:target="_blank"}
 
 --- collapse ---
 
 ---
-title: Offline version of the editor
+title: Εκτός σύνδεσης έκδοση του επεξεργαστή
 ---
 
-There is also a [downloadable version of the MakeCode editor](https://makecode.microbit.org/offline-app){:target="_blank"}.
+Υπάρχει επίσης μια έκδοση με [δυνατότητα λήψης του προγράμματος επεξεργασίας MakeCode](https://makecode.microbit.org/offline-app)"{:target="_blank"}.
 
 --- /collapse ---
 
 --- /task ---
 
-Once the editor is open, create a New Project and give your project a name.
+Μόλις ανοίξει το πρόγραμμα επεξεργασίας, δημιούργησε ένα νέο έργο και δώσε ένα όνομα στο έργο σου.
 
 --- task ---
 
-Click on the **New Project** button.
+Κάνε κλικ στο κουμπί **Νέο έργο**.
 
 ![The New Project button in MakeCode.](images/new-project-button.png)
 
@@ -67,36 +67,36 @@ Click on the **New Project** button.
 
 --- task ---
 
-Give your project the name `silly reminder` and click **Create**.
+Δώσε στο έργο σου το όνομα `Υπενθύμιση διασκέδασης` και κάνε κλικ στο **Δημιουργία**.
 
 <img src="images/new-project.png" alt="The name 'silly reminder' written in the Create a Project dialogue box." width="450" />
 
-**Tip:** To make your project easier to find later, give it a helpful name that relates to what you’re creating.
+**Συμβουλή:** Για να γίνει πιο εύκολη η εύρεση του έργου σου αργότερα, δώσε του ένα όνομα που να σχετίζεται με αυτό που δημιουργείς.
 
 --- /task ---
 
-### The MakeCode editor
+### Το πρόγραμμα επεξεργασίας MakeCode
 
-Created by the micro:bit Foundation, the **MakeCode editor** has everything you need start coding with micro:bit.
+Δημιουργημένο από το micro:bit Foundation, το πρόγραμμα επεξεργασίας **MakeCode** έχει όλα όσα χρειάζεσαι για να ξεκινήσεις να προγραμματίζεις με το micro:bit.
 
 ![The MakeCode editor window](images/makecode-tour.png)
 
-On the left-hand side. there is a **simulator**. This is a virtual micro:bit that you can use to test your code!
+Στην αριστερή πλευρά. υπάρχει ένας προσομοιωτής ****. Αυτό είναι ένα εικονικό micro:bit που μπορείς να χρησιμοποιήσεις για να δοκιμάσεις τον κώδικά σου!
 
-It has all the features and buttons found on a V2 micro:bit, including:
-+ LED display
-+ Speaker
-+ Microphone
-+ Input buttons
+Διαθέτει όλα τα χαρακτηριστικά και τα κουμπιά που βρίσκονται σε ένα micro:bit V2, όπως:
++ Οθόνη LED
++ Ηχείο
++ Μικρόφωνο
++ Κουμπιά εισαγωγής
     + A
     + B
-    + Logo
+    + Λογότυπο (Logo)
 
-In the centre, there is the **blocks panel**, which is colour-coded and allows you to access various code blocks.
+Στο κέντρο, υπάρχει ο **πίνακας με τα μπλοκ**, ο οποίος είναι χρωματικά κωδικοποιημένος και σου επιτρέπει να έχεις πρόσβαση στα διάφορα μπλοκ κώδικα.
 
-On the right-hand side, there is the **code editor panel**. This is where you drag and drop blocks to create your program.
+Στη δεξιά πλευρά, υπάρχει ο **πίνακας επεξεργασίας κώδικα **. Εδώ μπορείς να σύρεις και να αποθέσεις μπλοκ για να δημιουργήσεις το πρόγραμμά σου.
 
-The MakeCode editor panel already contains two blocks: `on start`{:class='microbitbasic'} and `forever`{:class='microbitbasic'}.
+Το πρόγραμμα επεξεργασίας MakeCode περιέχει ήδη δύο μπλοκ: `κατά την έναρξη`{:class='microbitbasic'} και `για πάντα`{:class='microbitbasic'}.
 
 ### Display icon
 
