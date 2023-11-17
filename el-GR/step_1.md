@@ -1,10 +1,10 @@
-The **micro:bit** is a small computer that you can use to interact with the world around you.
+Το **micro:bit** είναι ένας μικρός υπολογιστής που μπορείς να χρησιμοποιήσεις για να αλληλεπιδράσεις με τον κόσμο γύρω σου.
 
-This project will help you **discover** what the **micro:bit** can do.
+Αυτό το έργο θα σε βοηθήσει να **ανακαλύψεις** τι μπορεί να κάνει το **micro:bit**.
 
-### What you will make
+### Τι θα φτιάξεις
 
-This project reminds you to make time to be silly, have fun, and strike a pose! This could be after a long day at school, or as a way to cheer you and your friends up. You can program the micro:bit buttons to help you remember to have some silly fun.
+Αυτό το έργο σου υπενθυμίζει να αφιερώσεις χρόνο για να χαλαρώσεις, να διασκεδάσεις και να κάνεις μια διασκεδαστική πόζα! Αυτό θα μπορούσε να συμβεί μετά από μια κουραστική μέρα στο σχολείο ή σαν ένας τρόπος για να φτιάξεις τη δική σου διάθεση και των φίλων σου. Μπορείς να προγραμματίσεις τα κουμπιά micro:bit για να σε βοηθήσουν να θυμάσαι να διασκεδάζεις με αστειάκια.
 
 In this project, you will make a **silly reminder**.
 
