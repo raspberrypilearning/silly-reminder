@@ -149,11 +149,11 @@ basic.showIcon(IconNames.Heart)
 
 ### Δημιούργησε ένα χρονόμετρο για κάθε πόζα
 
-Create a variable that will be used in a timer that tells you how long to hold each pose for.
+Δημιούργησε μια μεταβλητή που θα χρησιμοποιηθεί σε ένα χρονόμετρο που θα σου λέει για πόσο χρόνο θα μείνεις στην κάθε πόζα.
 
 --- task ---
 
-Open the `Variables`{:class='microbitvariables'} menu, and click **Make a variable**.
+Άνοιξε το μενού `Μεταβλητές`{:class="block3variables"} και κάνε κλικ στο κουμπί **Δημιουργία μεταβλητής**.
 
 <img src="images/variable-menu.png" alt="The Variables menu open with the 'Make a variable' button highlighted." width="350" />
 
@@ -161,19 +161,19 @@ Open the `Variables`{:class='microbitvariables'} menu, and click **Make a variab
 
 --- task ---
 
-Name the new variable `timer`, then click the **OK** button.
+Ονόμασε τη νέα μεταβλητή `χρονόμετρο`και, στη συνέχεια, κάνε κλικ στο κουμπί **OK**.
 
 <img src="images/variable-examplename.png" alt="The 'New variable name' window, with the name 'timer' written in the box." width="400" />
 
 --- /task ---
 
-New blocks will be created that you can place in your program to use and change the value stored in the `timer` variable.
+Θα δημιουργηθούν νέα μπλοκ που μπορείς να τα τοποθετήσεις στο πρόγραμμά σου για να τα χρησιμοποιήσεις και να αλλάξεις την τιμή που είναι αποθηκευμένη στη μεταβλητή `χρονόμετρο`.
 
 <img src="images/variable-blocks.png" alt="The Variable menu with new blocks to set the value, to change the value, and to use the value of the timer variable in your code." width="350" />
 
 --- task ---
 
-Drag the `set`{:class='microbitvariables'} block **under** the `show icon`{:class='microbitbasic'} block.
+Σύρε το μπλοκ `ορισμός`{:class='microbitvariables'} **κάτω ** από το μπλοκ `εμφάνιση εικονιδίου`{:class='microbitbasic'}.
 
 ```microbit
 let timer = 0
@@ -185,13 +185,13 @@ basic.forever(function () {
 
 --- /task ---
 
-### Set icon for each pose
+### Ορισμός εικονιδίου για κάθε πόζα
 
-You will now program the A and B input buttons on the micro:bit to help you select which silly pose to do.
+Τώρα θα προγραμματίσεις τα κουμπιά εισόδου Α και Β στο micro:bit για να σε βοηθήσει να επιλέξεις ποια αστεία πόζα να κάνεις.
 
 --- task ---
 
-Click on the `Input`{:class='microbitinput'} menu and drag an `on button`{:class='microbitinput'} block to the **code editor panel**.
+Κάνε κλικ στο μενού `Είσοδος`{:class='microbitinput'} και σύρε ένα μπλοκ `όταν πιεστεί το πλήκτρο`{:class='microbitinput'} στον **πίνακα επεξεργαστή κώδικα**.
 
 ```microbit
 input.onButtonPressed(Button.A, function () {
@@ -203,7 +203,7 @@ input.onButtonPressed(Button.A, function () {
 
 --- task ---
 
-From the `Basic`{:class='microbitbasic'} menu, drag the `show leds`{:class='microbitbasic'} block inside the `on button`{:class='microbitinput'} block.
+Από το μενού `Βασικά`{:class='microbitbasic'}, σύρε το μπλοκ `show leds`{:class='microbitbasic'} μέσα στο μπλοκ `όταν πιεστεί το πλήκτρο`{:class='microbitinput'}.
 
 ```microbit
 input.onButtonPressed(Button.A, function () {
@@ -217,9 +217,9 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-Click on the squares to draw your pose. Whites squares will be lit on the LED display.
+Κάνε κλικ στα τετράγωνα για να σχεδιάσεις την πόζα σου. Τα λευκά τετράγωνα θα είναι αναμμένα στο micro: bit.
 
-In this example, we have drawn a smiley face as a silly pose.
+Σε αυτό το παράδειγμα, έχουμε σχεδιάσει ένα χαμογελαστό πρόσωπο ως αστεία πόζα.
 
 ```microbit
 input.onButtonPressed(Button.A, function () {
@@ -235,13 +235,13 @@ input.onButtonPressed(Button.A, function () {
 
 --- /task ---
 
-The icon should be displayed for some time before changing.
+Το εικονίδιο θα πρέπει να εμφανίζεται για κάποιο χρονικό διάστημα πριν να αλλάξει.
 
-You will use a `pause`{:class='microbitbasic'} block for this. This pauses the program for a set number of milliseconds (1/1000th of a second).
+Θα χρησιμοποιήσεις ένα μπλοκ `παύση`{:class='microbitbasic'} για αυτό. Αυτό παύει το πρόγραμμα για ένα ορισμένο αριθμό χιλιοστών του δευτερολέπτου (1/1000ό του δευτερολέπτου).
 
 --- task ---
 
-From the `Basic`{:class='microbitbasic'} menu, drag a `pause`{:class='microbitbasic'} block below the `show leds`{:class='microbitbasic'} block.
+Από το μενού `Βασικά`{:class='microbitbasic'}, σύρε ένα μπλοκ `παύση`{:class='microbitbasic'} κάτω από το μπλοκ `show leds`{:class='microbitbasic'}.
 
 ```microbit
 input.onButtonPressed(Button.A, function () {
@@ -260,7 +260,7 @@ input.onButtonPressed(Button.A, function () {
 
 --- task ---
 
-Change the `100` in the `pause`{:class='microbitbasic'} block to a larger number so the pause is longer, and the icon is displayed for longer. We have set it to 2 seconds (`2000`) in this example.
+Άλλαξε το μπλοκ `100` στο μπλοκ `παύση`{:class='microbitbasic'} σε ένα μεγαλύτερο αριθμό ώστε η παύση να είναι μεγαλύτερη, και το εικονίδιο να εμφανίζεται για μεγαλύτερο χρονικό διάστημα. Σε αυτό το παράδειγμα το έχουμε ορίσει σε 2 δευτερόλεπτα (`2000`).
 
 ```microbit
 input.onButtonPressed(Button.A, function () {
@@ -279,33 +279,33 @@ input.onButtonPressed(Button.A, function () {
 
 --- task ---
 
-Right-click on the `set`{:class='microbitvariables'} block inside the `on start`{:class='microbitbasic'} block.
+Κάνε δεξί κλικ στο μπλοκ `ορισμός`{:class='microbitvariables'} μέσα στο μπλοκ `κατά την έναρξη`{:class='microbitbasic'}.
 
-Click **Duplicate** to make a copy of it.
+Κάνε κλικ στο **Αντίγραφο** για να δημιουργήσεις ένα αντίγραφό του.
 
-Place the duplicated `set`{:class='microbitvariables'} block above the `show leds`{:class='microbitbasic'} block.
+Τοποέτησε το διπλότυπο μπλοκ `ορισμός`{:class='microbitvariables'} πάνω από το μπλοκ `show leds`{:class='microbitbasic'}.
 
-Change the `0` to `10` in the new block.
+Άλλαξε το `0` σε `10` στο νέο μπλοκ.
 
 <img src="images/duplicate-timer-variable.gif" alt="An animation showing the process of duplicating the set block." width="350" />
 
 --- /task ---
 
-To allow more than one pose to be selected, you will use Button B.
+Για να επιτρέψεις την επιλογή περισσότερων από μία πόζες, θα χρησιμοποιήσεις το κουμπί Button Β.
 
 --- task ---
 
-Right-click on the entire `on button`{:class='microbitinput'} block.
+Κάνε δεξί κλικ σε ολόκληρο το μπλοκ `όταν πιεστεί το πλήκτρο`{:class='microbitinput'}.
 
-Click `Duplicate` to make a copy of it.
+Κάνε κλικ στο `Αντίγραφο` για να δημιουργήσεις ένα αντίγραφό του.
 
-You will now have two `on button`{:class='microbitinput'} blocks in the **code editor panel**.
+Τώρα θα έχεις δύο μπλοκ `όταν πιεστεί το πλήκτρο`{:class='microbitinput'} στον **πίνακα του επεξεργαστή κώδικα **.
 
 --- /task ---
 
 --- task ---
 
-Click the down arrow next to the `A`{:class='microbitinput'} on your duplicated `on button`{:class='microbitinput'} block. Change the `A`{:class='microbitinput'} to `B`{:class='microbitinput'}.
+Κάνε κλικ στο κάτω βέλος δίπλα στο `A`{:class='microbitinput'} στο διπλότυπο μπλοκ `όταν πιεστεί το πλήκτρο`{:class='microbitinput'}. Άλλαξε το `A`{:class='microbitinput'} σε `B`{:class='microbitinput'}.
 
 <img src="images/button-options.png" alt="The 'on button A pressed' block showing a drop-down menu from the A, with options for A, B, and A+B." width="210" />
 
@@ -313,31 +313,31 @@ Click the down arrow next to the `A`{:class='microbitinput'} on your duplicated 
 
 --- task ---
 
-To create a new pose icon, change the squares on the new `show leds`{:class='microbitbasic'} block inside the new `on button`{:class='microbitinput'} block.
+Για να δημιουργήσεις ένα νέο εικονίδιο πόζας, άλλαξε τα τετράγωνα στο νέο μπλοκ `show leds`{:class='microbitbasic'} μέσα στο νέο μπλοκ `όταν πιεστεί το πλήκτρο`{:class='microbitinput'}.
 
 --- /task ---
 
 --- task ---
 
-**Test**
+**Δοκιμή**
 
-+ Click Button `A` on the simulator to see which icon displays on the LED. Take note of how long it shows for.
-+ Do the same to test Button `B`.
-+ Change the value in your `pause`{:class='microbitbasic'} block to increase or decrease how much time the icons are shown for on each button press.
++ Κάνε κλικ στο κουμπί `A` στον προσομοιωτή για να δεις ποιο εικονίδιο εμφανίζεται στο LED. Σημείωσε για πόσο χρονικό διάστημα το δείχνει.
++ Κάνε το ίδιο για να δοκιμάσεις το κουμπί `B`.
++ Άλλαξε την τιμή στο μπλοκ `παύση`{:class='microbitbasic'} για να αυξήσεις ή να μειώσεις το χρόνο εμφάνισης των εικονιδίων σε κάθε πάτημα του κουμπιού.
 
 --- /task ---
 
-### Create a countdown
+### Δημιουργία αντίστροφης μέτρησης
 
-You will now create a 10-second countdown.
+Τώρα θα δημιουργήσεις μια αντίστροφη μέτρηση 10 δευτερολέπτων.
 
-The `timer`{:class='microbitvariables'} variable value will decrease by `1` each second, but **only** if the timer is **greater than 0**.
+Η τιμή της μεταβλητής `χρονόμετρο`{:class='microbitvariables'} θα μειώνεται κατά `1` κάθε δευτερόλεπτο, αλλά **μόνο** εάν το χρονόμετρο είναι **μεγαλύτερο από 0**.
 
 --- task ---
 
-From the `Logic`{:class='microbitlogic'} menu, drag an `if`{:class='microbitlogic'} block.
+Από το μενού `Λογική`{:class='microbitlogic'} σύρε το μπλοκ `εάν`{:class='microbitlogic'}.
 
-Place it in the `forever`{:class='microbitbasic'} block.
+Τοποθέτησέ το στο μπλοκ `για πάντα`{:class='microbitbasic'}.
 
 ```microbit
 basic.forever(function () {
@@ -351,13 +351,13 @@ basic.forever(function () {
 
 --- task ---
 
-From the `Logic`{:class='microbitlogic'} menu, drag a `0 = 0`{:class='microbitlogic'} comparison block.
+Από το μενού `Λογική`{:class='microbitlogic'}, σύρε ένα μπλοκ σύγκρισης `0 = 0`{:class='microbitlogic'}.
 
 <img src="images/comparison-block.png" alt="The Logic menu with the comparison block '0 = 0' highlighted." width="350" />
 
-Change the `=`{:class='microbitlogic'} to a `>`{:class='microbitlogic'} (greater than) symbol using the drop-down arrow on the comparison block.
+Άλλαξε το σύμβολο `=`{:class='microbitlogic'} σε `>`{:class='microbitlogic'} (μεγαλύτερο από) χρησιμοποιώντας το βέλος στο αναπτυσσόμενο μενού στο μπλοκ σύγκρισης.
 
-Place the comparison block inside the `true`{:class='microbitlogic'} space in the `if`{:class='microbitlogic'} block.
+Τοποθέτησε το μπλοκ σύγκρισης μέσα στο μπλοκ `αληθές`{:class='microbitlogic'} στο μπλοκ `εάν`{:class='microbitlogic'}.
 
 ```microbit
 basic.forever(function () {
@@ -371,7 +371,7 @@ basic.forever(function () {
 
 --- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, drag the `timer`{:class='microbitvariables'} block and place it inside the first `0` in the `0 > 0`{:class='microbitlogic'} block.
+Από το μενού `Μεταβλητές`{:class='microbitvariables'}, σύρε το μπλοκ `χρονόμετρο`{:class='microbitvariables'} και τοποθέτησέ το στο πρώτο μπλοκ `0` μέσα στο μπλοκ `0 > 0`{:class='microbitlogic'}.
 
 ```microbit
 basic.forever(function () {
@@ -384,13 +384,13 @@ basic.forever(function () {
 
 --- /task ---
 
-To create a countdown, the `timer` variable value needs to reduce by `1`.
+Για να δημιουργήσεις μια αντίστροφη μέτρηση, η μεταβλητή `χρονόμετρο` πρέπει να μειωθεί κατά `1`.
 
 --- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, drag the `change`{:class='microbitvariables'} block and place it inside the `if`{:class='microbitlogic'} section.
+Από το μενού `Μεταβλητές`{:class='microbitvariables'}, σύρε το μπλοκ `άλλαξε`{:class='microbitvariables'} και τοποθέτησέ το στην ενότητα `εάν`{:class='microbitlogic'}.
 
-Change `1` to `-1`.
+Άλλαξε το `1` σε `-1`.
 
 ```microbit
 let timer = 0
@@ -405,11 +405,11 @@ basic.forever(function () {
 
 --- task ---
 
-From the `Basic`{:class='microbitbasic'} menu, drag the `show number`{:class='microbitbasic'} block and place it below the `change`{:class='microbitvariables'} block.
+Από το μενού `Βασικά`{:class='microbitbasic'}, σύρε το μπλοκ `εμφάνισε αριθμό`{:class='microbitbasic'} και τοποθέτησέ το κάτω από το μπλοκ `άλλαξε`{:class='microbitvariables'}.
 
 <img src="images/show-number.png" alt="The Basic menu with the 'show number' block highlighted." width="350" />
 
-From the `Variables`{:class='microbitvariables'} menu, drag the `timer`{:class='microbitvariables'} variable inside the `0` on the `show number`{:class='microbitbasic'} block.
+Από το μενού `Μεταβλητές`{:class='microbitvariables'}, σύρε τη μεταβλητή `χρονόμετρο`{:class='microbitvariables'} μέσα στο μπλοκ `0` στο μπλοκ `εμφάνισε αριθμό`{:class='microbitbasic'}.
 
 ```microbit
 let timer = 0
@@ -423,15 +423,15 @@ basic.forever(function () {
 
 --- /task ---
 
-After each value of `timer`{:class='microbitvariables'} is displayed on the micro:bit, you need to add a 1-second pause.
+Αφού εμφανιστεί κάθε τιμή του `χρονόμετρου`{:class='microbitvariables'} στο micro:bit, πρέπει να προσθέσεις μια παύση 1 δευτερολέπτου.
 
 --- task ---
 
-Right-click on one of your `pause`{:class='microbitbasic'} blocks and duplicate it.
+Κάνε δεξί κλικ σε ένα από τα μπλοκ `παύση`{:class='microbitbasic'} και αντίγραψέ το.
 
-Drag the duplicated `pause`{:class='microbitbasic'} block below the `show number`{:class='microbitbasic'} block.
+Σύρε το διπλότυπο μπλοκ `παύση`{:class='microbitbasic'} κάτω από το μπλοκ `εμφάνιση αριθμό`{:class='microbitbasic'}.
 
-Change `2000` to `1000`.
+Άλλαξε το `2000` σε `1000`.
 
 ```microbit
 let timer = 0
@@ -446,21 +446,21 @@ basic.forever(function () {
 
 --- /task ---
 
-After the countdown finishes, the value will be 0.
+Αφού τελειώσει η αντίστροφη μέτρηση, η τιμή θα είναι 0.
 
-You need a message to tell the user to change their silly pose.
+Χρειάζεσαι ένα μήνυμα για να πεις στον χρήστη να αλλάξει την αστεία πόζα του.
 
-You will do this by adding an `else`{:class='microbitlogic'} section to the `if`{:class='microbitlogic'} block.
+Θα το κάνεις αυτό προσθέτοντας μια ενότητα `αλλιώς`{:class='microbitlogic'} στο μπλοκ `εάν`{:class='microbitlogic'}.
 
 --- task ---
 
-Click on the `+` symbol at the bottom of the `if`{:class='microbitlogic'} block. This will create an `else`{:class='microbitlogic'} section.
+Κάνε κλικ στο σύμβολο `+` κάτω από το μπλοκ `εάν`{:class='microbitlogic'}. Αυτό θα δημιουργήσει μια ενότητα `αλλιώς`{:class='microbitlogic'}.
 
-From the `Basic`{:class='microbitbasic'} menu, drag the `show string`{:class='microbitbasic'} block and place it inside the `else`{:class='microbitlogic'} section.
+Από το μενού `Βασικά`{:class='microbitbasic'}, σύρε το μπλοκ `εμφάνισε συμβολοσειρά`{:class='microbitbasic'} και τοποθέτησέ το μέσα στην ενότητα `αλλιώς`{:class='microbitlogic'}.
 
-Change the string `Hello!` to `Pose!`.
+Άλλαξε τη συμβολοσειρά `Hello!` σε `Πόζα!`.
 
-From the `Basic`{:class='microbitbasic'} menu, drag the `clear screen`{:class='microbitbasic'} block and drop it **above** the `show string`{:class='microbitbasic'} block.
+Από το μενού `Βασικά`{:class='microbitbasic'}, σύρε το μπλοκ `καθαρισμός οθόνης`{:class='microbitbasic'} και απόθεσέ το **πάνω ** από το μπλοκ `εμφάνισε συμβολοσειρά`{:class='microbitbasic'}.
 
 ```microbit
 let timer = 0
@@ -481,12 +481,12 @@ basic.forever(function () {
 --- collapse ---
 
 ---
-title: Add sound for dramatic effect
+title: Προσθήκη ήχου για έντονο εφέ
 ---
 
-From the `Music`{:class='microbitmusic'} menu, drag a `play tone`{:class='microbitmusic'} block.
+Από το μενού `Μουσική`{:class='microbitmusic'}, σύρε ένα μπλοκ `play tone`{:class='microbitmusic'}.
 
-Place it below the `change`{:class='microbitvariables'} block.
+Τοποθέτησέ το κάτω από το μπλοκ `άλλαξε`{:class='microbitvariables'}.
 
 Click the `Middle C` drop-down menu and a piano keys console will appear.
 
