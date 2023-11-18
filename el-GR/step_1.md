@@ -61,7 +61,7 @@ title: Εκτός σύνδεσης έκδοση του επεξεργαστή
 
 Κάνε κλικ στο κουμπί **Νέο έργο**.
 
-![The New Project button in MakeCode.](images/new-project-button.png)
+![Το κουμπί Νέο Έργο στο MakeCode.](images/new-project-button.png)
 
 --- /task ---
 
@@ -69,7 +69,7 @@ title: Εκτός σύνδεσης έκδοση του επεξεργαστή
 
 Δώσε στο έργο σου το όνομα `Υπενθύμιση διασκέδασης` και κάνε κλικ στο **Δημιουργία**.
 
-<img src="images/new-project.png" alt="The name 'silly reminder' written in the Create a Project dialogue box." width="450" />
+<img src="images/new-project.png" alt="Το όνομα 'Υπενθύμιση διασκέδασης' γραμμένο στο πλαίσιο διαλόγου Δημιουργία έργου." width="450" />
 
 **Συμβουλή:** Για να γίνει πιο εύκολη η εύρεση του έργου σου αργότερα, δώσε του ένα όνομα που να σχετίζεται με αυτό που δημιουργείς.
 
@@ -79,7 +79,7 @@ title: Εκτός σύνδεσης έκδοση του επεξεργαστή
 
 Δημιουργημένο από το micro:bit Foundation, το πρόγραμμα επεξεργασίας **MakeCode** έχει όλα όσα χρειάζεσαι για να ξεκινήσεις να προγραμματίζεις με το micro:bit.
 
-![The MakeCode editor window](images/makecode-tour.png)
+![Το παράθυρο του επεξεργαστή MakeCode](images/makecode-tour.png)
 
 Στην αριστερή πλευρά. υπάρχει ένας προσομοιωτής ****. Αυτό είναι ένα εικονικό micro:bit που μπορείς να χρησιμοποιήσεις για να δοκιμάσεις τον κώδικά σου!
 
@@ -108,7 +108,7 @@ title: Εκτός σύνδεσης έκδοση του επεξεργαστή
 
 Αυτό θα επεκταθεί για να σου δείξει τα διαθέσιμα μπλοκ.
 
-<img src="images/show-icon-location.png" alt="The Basic menu with the 'show icon' block highlighted." width="350" />
+<img src="images/show-icon-location.png" alt="Το μενού Βασικά με το μπλοκ &quot;εμφάνιση εικονιδίου&quot; τονισμένο." width="350" />
 
 Σύρε το μπλοκ `εμφάνιση εικονιδίου`{:class='microbitbasic'} και απόθεσέ το **μέσα** στο μπλοκ `κατά την έναρξη`{:class='microbitbasic'}.
 
@@ -124,7 +124,7 @@ basic.showIcon(IconNames.Heart)
 
 Κάνε κλικ στο κάτω βέλος στο μπλοκ `εμφάνιση εικονιδίου`{:class='microbitbasic'} και επίλεξε ένα εικονίδιο.
 
-<img src="images/show-icon.png" alt="The show icon menu expanded to display all available icons." width="350" />
+<img src="images/show-icon.png" alt="Το μενού εμφάνιση εικονιδίου επεκτάθηκε για να εμφανίσει όλα τα διαθέσιμα εικονίδια." width="350" />
 
 Σε αυτό το παράδειγμα, επιλέξαμε το εικονίδιο `καρδιά`.
 
@@ -155,7 +155,7 @@ basic.showIcon(IconNames.Heart)
 
 Άνοιξε το μενού `Μεταβλητές`{:class="block3variables"} και κάνε κλικ στο κουμπί **Δημιουργία μεταβλητής**.
 
-<img src="images/variable-menu.png" alt="The Variables menu open with the 'Make a variable' button highlighted." width="350" />
+<img src="images/variable-menu.png" alt="Το μενού Μεταβλητές ανοίγει με τονισμένο το κουμπί &quot;Δημιουργία Μεταβλητής&quot;." width="350" />
 
 --- /task ---
 
@@ -163,13 +163,13 @@ basic.showIcon(IconNames.Heart)
 
 Ονόμασε τη νέα μεταβλητή `χρονόμετρο`και, στη συνέχεια, κάνε κλικ στο κουμπί **OK**.
 
-<img src="images/variable-examplename.png" alt="The 'New variable name' window, with the name 'timer' written in the box." width="400" />
+<img src="images/variable-examplename.png" alt="Το παράθυρο &quot;Όνομα νέας μεταβλητής&quot;, με το όνομα &quot;χρονόμετρο&quot; γραμμένο στο πλαίσιο." width="400" />
 
 --- /task ---
 
 Θα δημιουργηθούν νέα μπλοκ που μπορείς να τα τοποθετήσεις στο πρόγραμμά σου για να τα χρησιμοποιήσεις και να αλλάξεις την τιμή που είναι αποθηκευμένη στη μεταβλητή `χρονόμετρο`.
 
-<img src="images/variable-blocks.png" alt="The Variable menu with new blocks to set the value, to change the value, and to use the value of the timer variable in your code." width="350" />
+<img src="images/variable-blocks.png" alt="Το μενού Μεταβλητές με νέα μπλοκ για να ορίσεις την τιμή, να αλλάξεις την τιμή και να χρησιμοποιήσεις την τιμή της μεταβλητής &quot;χρονόμετρο&quot; στον κώδικά σου." width="350" />
 
 --- task ---
 
@@ -287,7 +287,7 @@ input.onButtonPressed(Button.A, function () {
 
 Άλλαξε το `0` σε `10` στο νέο μπλοκ.
 
-<img src="images/duplicate-timer-variable.gif" alt="An animation showing the process of duplicating the set block." width="350" />
+<img src="images/duplicate-timer-variable.gif" alt="Ένα κινούμενο σχέδιο που δείχνει τη διαδικασία αντιγραφής του συνόλου ορισμός." width="350" />
 
 --- /task ---
 
@@ -307,7 +307,7 @@ input.onButtonPressed(Button.A, function () {
 
 Κάνε κλικ στο κάτω βέλος δίπλα στο `A`{:class='microbitinput'} στο διπλότυπο μπλοκ `όταν πιεστεί το πλήκτρο`{:class='microbitinput'}. Άλλαξε το `A`{:class='microbitinput'} σε `B`{:class='microbitinput'}.
 
-<img src="images/button-options.png" alt="The 'on button A pressed' block showing a drop-down menu from the A, with options for A, B, and A+B." width="210" />
+<img src="images/button-options.png" alt="Το μπλοκ 'όταν πιεστεί το πλήκτρο button A' εμφανίζει ένα αναπτυσσόμενο μενού ατο A, με επιλογές για A, B και A+B." width="210" />
 
 --- /task ---
 
@@ -353,7 +353,7 @@ basic.forever(function () {
 
 Από το μενού `Λογική`{:class='microbitlogic'}, σύρε ένα μπλοκ σύγκρισης `0 = 0`{:class='microbitlogic'}.
 
-<img src="images/comparison-block.png" alt="The Logic menu with the comparison block '0 = 0' highlighted." width="350" />
+<img src="images/comparison-block.png" alt="Το μενού Λογική με το μπλοκ σύγκρισης &quot;0 = 0&quot; τονισμένο." width="350" />
 
 Άλλαξε το σύμβολο `=`{:class='microbitlogic'} σε `>`{:class='microbitlogic'} (μεγαλύτερο από) χρησιμοποιώντας το βέλος στο αναπτυσσόμενο μενού στο μπλοκ σύγκρισης.
 
@@ -407,7 +407,7 @@ basic.forever(function () {
 
 Από το μενού `Βασικά`{:class='microbitbasic'}, σύρε το μπλοκ `εμφάνισε αριθμό`{:class='microbitbasic'} και τοποθέτησέ το κάτω από το μπλοκ `άλλαξε`{:class='microbitvariables'}.
 
-<img src="images/show-number.png" alt="The Basic menu with the 'show number' block highlighted." width="350" />
+<img src="images/show-number.png" alt="Το μενού Βασικά με το μπλοκ «εμφάνιση αριθμό» τονισμένο." width="350" />
 
 Από το μενού `Μεταβλητές`{:class='microbitvariables'}, σύρε τη μεταβλητή `χρονόμετρο`{:class='microbitvariables'} μέσα στο μπλοκ `0` στο μπλοκ `εμφάνισε αριθμό`{:class='microbitbasic'}.
 
@@ -488,13 +488,13 @@ title: Προσθήκη ήχου για έντονο εφέ
 
 Τοποθέτησέ το κάτω από το μπλοκ `άλλαξε`{:class='microbitvariables'}.
 
-Click the `Middle C` drop-down menu and a piano keys console will appear.
+Κάνε κλικ στο αναπτυσσόμενο μενού `Μεσαία Ντο` και θα εμφανιστεί μια κονσόλα πλήκτρων πιάνου.
 
-Choose a tone for your timer.
+Επίλεξε έναν τόνο για το χρονόμετρό σου.
 
-We have selected `Middle A`.
+Έχουμε επιλέξει `Μεσαία Λα`.
 
-Click the `until done`{:class='microbitmusic'} drop-down menu and change it to `in background`{:class='microbitmusic'}.
+Κάνε κλικ στο `until done`{:class='microbitmusic'} αναπτυσσόμενο μενού και άλλαξέ το σε `in background`{:class='microbitmusic'}.
 
 ```microbit
 let timer = 0
@@ -515,15 +515,15 @@ basic.forever(function () {
 
 --- task ---
 
-**Test** your program on the simulator:
+**Δοκίμασε** το πρόγραμμά σου στον προσομοιωτή:
 
-+ **Click** Button A to see the pose icon displayed.
++ **Κάνε κλικ** στο Κουμπί A για να δεις το εικονίδιο πόζας να εμφανίζεται.
 
-+ **Click** Button B to see another pose icon displayed.
++ **Κάνε κλικ** στο Κουμπί Β για να δεις ένα άλλο εικονίδιο πόζας να εμφανίζεται.
 
-+ **Check** the countdown timer is working and counting back from 10.
++ **Έλεγξε** ότι το χρονόμετρο αντίστροφης μέτρησης λειτουργεί και μετρά αντίστροφα από το 10.
 
-+ **Check** that a tone is played as each second counts down.
++ **Έλεγξε** ότι ακούγεται ένας τόνος καθώς κάθε δευτερόλεπτο μετρά αντίστροφα.
 
 --- /task ---
 
@@ -531,25 +531,25 @@ basic.forever(function () {
 
 [[[download-to-microbit]]]
 
-When you have downloaded your program to your micro:bit, it will run immediately.
+Όταν κατεβάσεις το πρόγραμμά σου στο micro:bit, θα εκτελεστεί αμέσως.
 
 --- /task ---
 
 --- task ---
 
-**Test** your program on the physical micro:bit.
+**Δοκίμασε** το πρόγραμμά σου στο micro:bit.
 
 --- /task ---
 
 [[[microbit-share]]]
 
-### Completed project
+### Ολοκληρωμένο έργο
 
-If you want to check your code you can can find [the completed project here](https://makecode.microbit.org/_8K430qR3oH7t){:target="_blank"}.
+Αν θέλεις να ελέγξεις τον κώδικά σου μπορείς να βρεις [το ολοκληρωμένο έργο εδώ](https://makecode.microbit.org/_8K430qR3oH7t)"{:target="_blank"}.
 
-### Upgrade your project
+### Αναβάθμισε το έργο σου
 
-You can upgrade your silly reminder project by:
+Μπορείς να αναβαθμίσεις το έργο σου υπενθύμιση διασκέδασης:
 
-+ Adding one more silly pose that shows when you press Buttons A and B together (`A+B`)
-+ Increase the amount of time between poses
++ Προσθέτοντας μια ακόμη αστεία πόζα που να εμφανίζεται όταν πατάς τα κουμπιά A και B μαζί (`A+B`)
++ Αυξάνοντας το χρονικό διάστημα ανάμεσα στις πόζες
