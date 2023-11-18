@@ -98,21 +98,21 @@ title: Εκτός σύνδεσης έκδοση του επεξεργαστή
 
 Το πρόγραμμα επεξεργασίας MakeCode περιέχει ήδη δύο μπλοκ: `κατά την έναρξη`{:class='microbitbasic'} και `για πάντα`{:class='microbitbasic'}.
 
-### Display icon
+### Εμφάνιση εικονιδίου
 
-You will use the `on start`{:class='microbitbasic'} block to see how the LEDs on the simulator work.
+Θα χρησιμοποιήσεις το μπλοκ `κατά την έναρξη`{:class='microbitbasic'} για να δεις πώς λειτουργούν τα LED στον προσομοιωτή.
 
 --- task ---
 
-Click on the `Basic`{:class='microbitbasic'} menu.
+Κάνε κλικ στο μενού `Βασικά`{:class='microbitbasic'}.
 
-This will expand to show you the blocks available.
+Αυτό θα επεκταθεί για να σου δείξει τα διαθέσιμα μπλοκ.
 
 <img src="images/show-icon-location.png" alt="The Basic menu with the 'show icon' block highlighted." width="350" />
 
-Drag the `show iccon`{:class='microbitbasic'} block and place it **inside** the `on start`{:class='microbitbasic'} block.
+Σύρε το μπλοκ `εμφάνιση εικονιδίου`{:class='microbitbasic'} και απόθεσέ το **μέσα** στο μπλοκ `κατά την έναρξη`{:class='microbitbasic'}.
 
-This should fit in place like a puzzle piece.
+Αυτό θα πρέπει να ταιριάζει στη θέση του σαν ένα κομμάτι παζλ.
 
 ```microbit
 basic.showIcon(IconNames.Heart)
@@ -122,32 +122,32 @@ basic.showIcon(IconNames.Heart)
 
 --- task ---
 
-Click the down arrow on the `show icon`{:class='microbitbasic'} block and pick an icon.
+Κάνε κλικ στο κάτω βέλος στο μπλοκ `εμφάνιση εικονιδίου`{:class='microbitbasic'} και επίλεξε ένα εικονίδιο.
 
 <img src="images/show-icon.png" alt="The show icon menu expanded to display all available icons." width="350" />
 
-In this example, we have chosen the `heart` icon.
+Σε αυτό το παράδειγμα, επιλέξαμε το εικονίδιο `καρδιά`.
 
 --- /task ---
 
 --- task ---
 
-**Test:** The LED display should light up on the simulator, and show your chosen icon.
+**Δοκιμή:** Η οθόνη LED θα πρέπει να ανάβει στον προσομοιωτή και να δείχνει το εικονίδιο που επίλεξες.
 
-Well done! You've made the LEDs on the micro:bit light up!
+Συγχαρητήρια! Έκανες τα LED στο micro:bit να ανάβουν!
 
 --- /task ---
 
-### Choose some poses
+### Επίλεξε μερικές πόζες
 
-You will need to decide on some silly faces or poses that you will make whenever you push a micro:bit button. Here are some ideas for poses:
+Θα χρειαστεί να αποφασίσεις μερικές αστείες γκριμάτσες ή πόζες που θα κάνεις κάθε φορά που πατάς ένα κουμπί micro:bit. Εδώ είναι μερικές ιδέες για πόζες:
 
-+ A big cheesy grin
-+ Jumping jacks
-+ Be a tree
-+ Flexing muscle pose
++ Μια γκριμάτσα βαρεμάρας
++ Ασκήσεις γυμναστικής
++ Κάνε το δέντρο
++ Πόζα με κάμψη μυών
 
-### Create a timer for each pose
+### Δημιούργησε ένα χρονόμετρο για κάθε πόζα
 
 Create a variable that will be used in a timer that tells you how long to hold each pose for.
 
