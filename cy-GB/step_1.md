@@ -41,7 +41,7 @@ I ddechrau creu eich prosiect micro:bit, agorwch y golygydd MakeCode.
 
 --- task ---
 
-Open the MakeCode editor at [makecode.microbit.org](https://makecode.microbit.org){:target="_blank"}
+Agorwch y golygydd MakeCode yn [makecode.microbit.org](https://makecode.microbit.org){:target="_blank"}
 
 --- collapse ---
 
@@ -49,7 +49,7 @@ Open the MakeCode editor at [makecode.microbit.org](https://makecode.microbit.or
 title: Fersiwn all-lein o'r golygydd
 ---
 
-There is also a [downloadable version of the MakeCode editor](https://makecode.microbit.org/offline-app){:target="_blank"}.
+Mae yna hefyd fersiwn [y gellir ei lawrlwytho o olygydd MakeCode](https://makecode.microbit.org/offline-app){:target="_blank"}.
 
 --- /collapse ---
 
