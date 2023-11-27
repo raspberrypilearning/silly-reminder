@@ -41,7 +41,7 @@ Om je micro:bit-project te maken, moet je eerst de MakeCode-editor openen.
 
 --- task ---
 
-Open the MakeCode editor at [makecode.microbit.org](https://makecode.microbit.org){:target="_blank"}
+Open de MakeCode editor op [makecode.microbit.org](https://makecode.microbit.org)
 
 --- collapse ---
 
@@ -49,7 +49,7 @@ Open the MakeCode editor at [makecode.microbit.org](https://makecode.microbit.or
 title: Offline versie van de editor
 ---
 
-There is also a [downloadable version of the MakeCode editor](https://makecode.microbit.org/offline-app){:target="_blank"}.
+Er is ook een [downloadbare versie van de MakeCode editor](https://makecode.microbit.org/offline-app).
 
 --- /collapse ---
 
@@ -545,7 +545,7 @@ When you have downloaded your program to your micro:bit, it will run immediately
 
 ### Voltooid project
 
-If you want to check your code you can can find [the completed project here](https://makecode.microbit.org/_8K430qR3oH7t){:target="_blank"}.
+Als je je code wilt controleren, kun je [het voltooide project hier](https://makecode.microbit.org/_8K430qR3oH7t) vinden.
 
 ### Verbeter je project
 
