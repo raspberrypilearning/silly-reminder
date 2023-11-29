@@ -6,26 +6,26 @@ Ce projet t'aidera **à découvrir** ce que le **micro:bit** peut faire.
 
 Ce projet te rappelle de prendre le temps de faire des bêtises, de t'amuser et de prendre une pose ! Cela peut être après une longue journée à l'école ou pour te remonter le moral, toi et tes amis. Tu peux programmer les boutons micro:bit pour t'aider à te rappeler de t'amuser un peu.
 
-In this project, you will make a **silly reminder**.
+Dans ce projet, tu feras un **rappel idiot**.
 
-You will:
-+ Display icons, text, and numbers on the LEDs
-+ Use `if`{:class='microbitlogic'} blocks to control what is displayed
-+ Use the `pause`{:class='microbitbasic'} block to create a countdown timer
-+ Play sounds
-+ Use buttons to change the display
+Tu vas :
++ Afficher des icônes, du texte et des chiffres sur les LED
++ Utiliser des blocs `si`{:class='microbitlogic'} pour contrôler ce qui est affiché
++ Utiliser le bloc `pause`{:class='microbitbasic'} pour créer un compte à rebours
++ Jouer des sons
++ Utiliser les boutons pour changer l'affichage
 
 --- no-print ---
 
-### Play ▶️
+### Joue ▶️
 
 --- task ---
 
-+ What happens when the program starts?
-+ What happens when the countdown runs?
-+ What happens when the countdown finishes?
-+ What happens if you `press` Button A?
-+ What happens if you `press` Button B?
++ Que se passe-t-il lorsque le programme démarre ?
++ Que se passe-t-il une fois le compte à rebours lancé ?
++ Que se passe-t-il une fois le compte à rebours terminé ?
++ Que se passe-t-il si tu `appuies sur` le bouton A ?
++ Que se passe-t-il si tu `appuies sur` le bouton B ?
 
 <div style="position:relative;height:100%;padding-bottom:125%;padding-top:0;overflow:hidden;">
 <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---run?id=_KiYLAWM3cip4" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe>
@@ -35,84 +35,84 @@ You will:
 
 --- /no-print ---
 
-### Open MakeCode
+### Ouvrir MakeCode
 
-To start creating your micro:bit project, open the MakeCode editor.
+Pour commencer à créer ton projet micro:bit, ouvre l'éditeur MakeCode.
 
 --- task ---
 
-Open the MakeCode editor at [makecode.microbit.org](https://makecode.microbit.org){:target="_blank"}
+Ouvre l'éditeur MakeCode sur [makecode.microbit.org](https://makecode.microbit.org){:target="_blank"}
 
 --- collapse ---
 
 ---
-title: Offline version of the editor
+title: Version hors ligne de l'éditeur
 ---
 
-There is also a [downloadable version of the MakeCode editor](https://makecode.microbit.org/offline-app){:target="_blank"}.
+Il y a aussi une version [téléchargeable de l'éditeur MakeCode](https://makecode.microbit.org/offline-app){:target="_blank"}.
 
 --- /collapse ---
 
 --- /task ---
 
-Once the editor is open, create a New Project and give your project a name.
+Une fois que l'éditeur est ouvert, crée un nouveau projet et donne un nom à ton projet.
 
 --- task ---
 
-Click on the **New Project** button.
+Clique sur le bouton **Nouveau projet**.
 
-![The New Project button in MakeCode.](images/new-project-button.png)
+![Le bouton Nouveau projet dans MakeCode.](images/new-project-button.png)
 
 --- /task ---
 
 --- task ---
 
-Give your project the name `silly reminder` and click **Create**.
+Donne à ton projet le nom `rappel idiot` et clique sur **Créer**.
 
-<img src="images/new-project.png" alt="The name 'silly reminder' written in the Create a Project dialogue box." width="450" />
+<img src="images/new-project.png" alt="Le nom « rappel idiot » écrit dans la boîte de dialogue Créer un projet." width="450" />
 
-**Tip:** To make your project easier to find later, give it a helpful name that relates to what you’re creating.
+**Astuce :** Pour faciliter la recherche ultérieure de ton projet, donne-lui un nom utile en rapport avec ce que tu crées.
 
 --- /task ---
 
-### The MakeCode editor
+### L'éditeur MakeCode
 
-Created by the micro:bit Foundation, the **MakeCode editor** has everything you need start coding with micro:bit.
+Créé par la Fondation micro:bit, l'éditeur **MakeCode** a tout ce dont tu as besoin pour commencer à coder avec micro:bit.
 
-![The MakeCode editor window](images/makecode-tour.png)
+![La fenêtre de l'éditeur MakeCode](images/makecode-tour.png)
 
-On the left-hand side. there is a **simulator**. This is a virtual micro:bit that you can use to test your code!
+Sur la gauche il y a un **simulateur**. C'est un micro:bit virtuel que tu peux utiliser pour tester ton code!
 
-It has all the features and buttons found on a V2 micro:bit, including:
-+ LED display
-+ Speaker
+Il a toutes les fonctionnalités et tous les boutons d'un micro:bit V2, y compris :
++ Écran LED
++ Haut-parleur
 + Microphone
-+ Input buttons
++ Boutons de saisie 
     + A
     + B
     + Logo
 
-In the centre, there is the **blocks panel**, which is colour-coded and allows you to access various code blocks.
+Au centre, il y a le panneau **blocs**, qui est codé en couleur et te permet d'accéder à divers blocs de code.
 
-On the right-hand side, there is the **code editor panel**. This is where you drag and drop blocks to create your program.
+Sur la droite, il y a le panneau **de l'éditeur de code**. C'est là que tu fais glisser et déposer des blocs pour créer ton programme.
 
-The MakeCode editor panel already contains two blocks: `on start`{:class='microbitbasic'} and `forever`{:class='microbitbasic'}.
+Le panneau de l'éditeur MakeCode contient déjà deux blocs : `au démarrage`{:class='microbitbasic'} et `toujours`{:class='microbitbasic'}.
 
-### Display icon
+### Afficher une icône
 
-You will use the `on start`{:class='microbitbasic'} block to see how the LEDs on the simulator work.
+Tu utiliseras le bloc `au démarrage`{:class='microbitbasic'} pour voir comment fonctionnent les LEDs sur le simulateur.
 
 --- task ---
 
-Click on the `Basic`{:class='microbitbasic'} menu.
+Clique sur le menu `Base`{:class='microbitbasic'}.
 
-This will expand to show you the blocks available.
+Cela va l'étendre pour te montrer les blocs disponibles.
 
-<img src="images/show-icon-location.png" alt="The Basic menu with the 'show icon' block highlighted." width="350" />
+<img src="images/show-icon-location.png" alt="Le menu de base avec le bloc « montrer l'icône » en surbrillance." width="350" />
 
-Drag the `show iccon`{:class='microbitbasic'} block and place it **inside** the `on start`{:class='microbitbasic'} block.
+Fais glisser le bloc `montrer l'icône`{:class='microbitbasic'} et place-le **à l'intérieur du** bloc `au démarrage`{:class='microbitbasic'}.
 
-This should fit in place like a puzzle piece.
+Cela devrait s’emboîter comme une pièce de puzzle.
 
 ```microbit
 basic.showIcon(IconNames.Heart)
@@ -122,58 +122,58 @@ basic.showIcon(IconNames.Heart)
 
 --- task ---
 
-Click the down arrow on the `show icon`{:class='microbitbasic'} block and pick an icon.
+Clique sur la flèche vers le bas sur le bloc `montrer l'icône`{:class='microbitbasic'} et choisis une icône.
 
-<img src="images/show-icon.png" alt="The show icon menu expanded to display all available icons." width="350" />
+<img src="images/show-icon.png" alt="Le menu montrer l'icône s'est développé pour afficher toutes les icônes disponibles." width="350" />
 
-In this example, we have chosen the `heart` icon.
-
---- /task ---
-
---- task ---
-
-**Test:** The LED display should light up on the simulator, and show your chosen icon.
-
-Well done! You've made the LEDs on the micro:bit light up!
-
---- /task ---
-
-### Choose some poses
-
-You will need to decide on some silly faces or poses that you will make whenever you push a micro:bit button. Here are some ideas for poses:
-
-+ A big cheesy grin
-+ Jumping jacks
-+ Be a tree
-+ Flexing muscle pose
-
-### Create a timer for each pose
-
-Create a variable that will be used in a timer that tells you how long to hold each pose for.
-
---- task ---
-
-Open the `Variables`{:class='microbitvariables'} menu, and click **Make a variable**.
-
-<img src="images/variable-menu.png" alt="The Variables menu open with the 'Make a variable' button highlighted." width="350" />
+Dans cet exemple, nous avons choisi l'icône `coeur`.
 
 --- /task ---
 
 --- task ---
 
-Name the new variable `timer`, then click the **OK** button.
+**Test :** L'écran LED doit s'allumer sur le simulateur et afficher l'icône de ton choix.
 
-<img src="images/variable-examplename.png" alt="The 'New variable name' window, with the name 'timer' written in the box." width="400" />
+Bien joué ! Tu as allumé les LEDs sur l'éclairage micro:bit!
 
 --- /task ---
 
-New blocks will be created that you can place in your program to use and change the value stored in the `timer` variable.
+### Choisis quelques poses
 
-<img src="images/variable-blocks.png" alt="The Variable menu with new blocks to set the value, to change the value, and to use the value of the timer variable in your code." width="350" />
+Tu devras décider des grimaces ou des poses idiotes que tu feras chaque fois que tu appuieras sur un bouton micro:bit. Voici quelques idées de poses :
+
++ Un grand sourire ringard
++ Sauts étoiles
++ Être un arbre
++ Pose musculaire souple
+
+### Créer un chronomètre pour chaque pose
+
+Crée une variable qui sera utilisée dans un minuteur qui t'indique combien de temps il faut tenir chaque pose.
 
 --- task ---
 
-Drag the `set`{:class='microbitvariables'} block **under** the `show icon`{:class='microbitbasic'} block.
+Ouvre le menu `Variables`{:class='microbitvariables'} et clique sur **Créer une variable**.
+
+<img src="images/variable-menu.png" alt="Le menu Variables s'ouvre avec le bouton « Créer une variable » en surbrillance." width="350" />
+
+--- /task ---
+
+--- task ---
+
+Nomme la nouvelle variable `minuteur`, puis clique sur le bouton **OK**.
+
+<img src="images/variable-examplename.png" alt="La fenêtre 'Nouveau nom de variable', avec le nom 'minuteur' écrit dans la case." width="400" />
+
+--- /task ---
+
+De nouveaux blocs seront créés que tu peux placer dans ton programme pour utiliser et modifier la valeur stockée dans la variable `minuteur`.
+
+<img src="images/variable-blocks.png" alt="Le menu Variable avec de nouveaux blocs pour définir la valeur, modifier la valeur et utiliser la valeur de la variable minuteur dans ton code." width="350" />
+
+--- task ---
+
+Fais glisser le bloc `définir`{:class='microbitvariables'} **sous** le bloc `montrer l'icône`{:class='microbitbasic'}.
 
 ```microbit
 let timer = 0
@@ -185,13 +185,13 @@ basic.forever(function () {
 
 --- /task ---
 
-### Set icon for each pose
+### Définir une icône pour chaque pose
 
-You will now program the A and B input buttons on the micro:bit to help you select which silly pose to do.
+Tu vas maintenant programmer les boutons d'entrée A et B sur le micro:bit pour t'aider à choisir quelle pose idiote faire.
 
 --- task ---
 
-Click on the `Input`{:class='microbitinput'} menu and drag an `on button`{:class='microbitinput'} block to the **code editor panel**.
+Clique sur le menu `Entrée`{:class='microbitinput'} et fais glisser un `lorsque le bouton`{:class='microbitinput'} vers le panneau **de l'éditeur de code**.
 
 ```microbit
 input.onButtonPressed(Button.A, function () {
@@ -203,7 +203,7 @@ input.onButtonPressed(Button.A, function () {
 
 --- task ---
 
-From the `Basic`{:class='microbitbasic'} menu, drag the `show leds`{:class='microbitbasic'} block inside the `on button`{:class='microbitinput'} block.
+À partir du menu `Base`{:class='microbitbasic'}, fais glisser le bloc `montrer leds`{:class='microbitbasic'} à l'intérieur du bloc `lorsque le bouton`{:class='microbitinput'}.
 
 ```microbit
 input.onButtonPressed(Button.A, function () {
@@ -217,9 +217,9 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-Click on the squares to draw your pose. Whites squares will be lit on the LED display.
+Clique sur les carrés pour dessiner ta pose. Des carrés blancs seront allumés sur l'écran LED.
 
-In this example, we have drawn a smiley face as a silly pose.
+Dans cet exemple, nous avons dessiné un visage souriant comme pose idiote.
 
 ```microbit
 input.onButtonPressed(Button.A, function () {
@@ -235,13 +235,13 @@ input.onButtonPressed(Button.A, function () {
 
 --- /task ---
 
-The icon should be displayed for some time before changing.
+L'icône doit être affichée pendant un certain temps avant de changer.
 
-You will use a `pause`{:class='microbitbasic'} block for this. This pauses the program for a set number of milliseconds (1/1000th of a second).
+Tu utiliseras un bloc `pause`{:class='microbitbasic'} pour cela. Cela met le programme en pause pendant un nombre défini de millisecondes (1/1000ème de seconde).
 
 --- task ---
 
-From the `Basic`{:class='microbitbasic'} menu, drag a `pause`{:class='microbitbasic'} block below the `show leds`{:class='microbitbasic'} block.
+À partir du menu `Base`{:class='microbitbasic'}, fais glisser un bloc `pause`{:class='microbitbasic'} sous le bloc `montrer leds`{:class='microbitbasic'}.
 
 ```microbit
 input.onButtonPressed(Button.A, function () {
@@ -260,7 +260,7 @@ input.onButtonPressed(Button.A, function () {
 
 --- task ---
 
-Change the `100` in the `pause`{:class='microbitbasic'} block to a larger number so the pause is longer, and the icon is displayed for longer. We have set it to 2 seconds (`2000`) in this example.
+Remplace le `100` dans le bloc `pause`{:class='microbitbasic'} par un nombre plus grand afin que la pause soit plus longue et que l'icône s'affiche plus longtemps. Nous l'avons fixé à 2 secondes (`2000`) dans cet exemple.
 
 ```microbit
 input.onButtonPressed(Button.A, function () {
@@ -279,41 +279,41 @@ input.onButtonPressed(Button.A, function () {
 
 --- task ---
 
-Right-click on the `set`{:class='microbitvariables'} block inside the `on start`{:class='microbitbasic'} block.
+Fais un clic droit sur le bloc `définir`{:class='microbitvariables'} à l'intérieur du bloc `au démarrage`{:class='microbitbasic'}.
 
-Click **Duplicate** to make a copy of it.
+Clique sur **Dupliquer** pour en faire une copie.
 
-Place the duplicated `set`{:class='microbitvariables'} block above the `show leds`{:class='microbitbasic'} block.
+Place le bloc `définir`{:class='microbitvariables'} dupliqué au-dessus du bloc `montrer leds`{:class='microbitbasic'}.
 
-Change the `0` to `10` in the new block.
+Change le `0` en `10` dans le nouveau bloc.
 
-<img src="images/duplicate-timer-variable.gif" alt="An animation showing the process of duplicating the set block." width="350" />
-
---- /task ---
-
-To allow more than one pose to be selected, you will use Button B.
-
---- task ---
-
-Right-click on the entire `on button`{:class='microbitinput'} block.
-
-Click `Duplicate` to make a copy of it.
-
-You will now have two `on button`{:class='microbitinput'} blocks in the **code editor panel**.
+<img src="images/duplicate-timer-variable.gif" alt="Une animation montrant le processus de duplication du bloc défini." width="350" />
 
 --- /task ---
 
+Pour permettre de sélectionner plusieurs poses, tu utiliseras le bouton B.
+
 --- task ---
 
-Click the down arrow next to the `A`{:class='microbitinput'} on your duplicated `on button`{:class='microbitinput'} block. Change the `A`{:class='microbitinput'} to `B`{:class='microbitinput'}.
+Fais un clic droit sur l'intégralité du bloc `lorsque le bouton`{:class='microbitinput'}.
 
-<img src="images/button-options.png" alt="The 'on button A pressed' block showing a drop-down menu from the A, with options for A, B, and A+B." width="210" />
+Clique sur `Dupliquer` pour en faire une copie.
+
+Tu aurez maintenant deux blocs `lorsque le bouton`{:class='microbitinput'} dans le panneau **de l'éditeur de code**.
 
 --- /task ---
 
 --- task ---
 
-To create a new pose icon, change the squares on the new `show leds`{:class='microbitbasic'} block inside the new `on button`{:class='microbitinput'} block.
+Clique sur la flèche vers le bas à côté du bloc `A`{:class='microbitinput'} sur ton bloc `lorsque le bouton`{:class='microbitinput'} dupliqué. Remplace le `A`{:class='microbitinput'} par `B`{:class='microbitinput'}.
+
+<img src="images/button-options.png" alt="Le bloc 'lorsque le bouton A est pressé' affiche un menu déroulant à partir du A, avec des options pour A, B et A+B." width="210" />
+
+--- /task ---
+
+--- task ---
+
+Pour créer une nouvelle icône de pose, change les carrés du nouveau bloc `montrer leds`{:class='microbitbasic'} à l'intérieur du nouveau bloc `lorsque le bouton`{:class='microbitinput'}.
 
 --- /task ---
 
@@ -321,23 +321,23 @@ To create a new pose icon, change the squares on the new `show leds`{:class='mic
 
 **Test**
 
-+ Click Button `A` on the simulator to see which icon displays on the LED. Take note of how long it shows for.
-+ Do the same to test Button `B`.
-+ Change the value in your `pause`{:class='microbitbasic'} block to increase or decrease how much time the icons are shown for on each button press.
++ Clique sur le bouton `A` sur le simulateur pour voir quelle icône s'affiche sur la LED. Note la durée pendant laquelle il s'affiche.
++ Fais de même pour tester le bouton `B`.
++ Modifie la valeur dans ton bloc `pause`{:class='microbitbasic'} pour augmenter ou diminuer la durée d'affichage des icônes à chaque pression sur un bouton.
 
 --- /task ---
 
-### Create a countdown
+### Créer un compte à rebours
 
-You will now create a 10-second countdown.
+Tu vas maintenant créer un compte à rebours de 10 secondes.
 
-The `timer`{:class='microbitvariables'} variable value will decrease by `1` each second, but **only** if the timer is **greater than 0**.
+La valeur de la variable `minuteur`{:class='microbitvariables'} diminuera de `1` par seconde, mais **seulement** si le minuteur est **supérieur à 0**.
 
 --- task ---
 
-From the `Logic`{:class='microbitlogic'} menu, drag an `if`{:class='microbitlogic'} block.
+À partir du menu `Logique`{:class='microbitlogic'}, fais glisser un bloc `si`{:class='microbitlogic'}.
 
-Place it in the `forever`{:class='microbitbasic'} block.
+Place-le dans le bloc `toujours`{:class='microbitbasic'}.
 
 ```microbit
 basic.forever(function () {
@@ -351,13 +351,13 @@ basic.forever(function () {
 
 --- task ---
 
-From the `Logic`{:class='microbitlogic'} menu, drag a `0 = 0`{:class='microbitlogic'} comparison block.
+À partir du menu `Logique`{:class='microbitlogic'}, fais glisser un bloc de comparaison `0 = 0`{:class='microbitlogic'}.
 
-<img src="images/comparison-block.png" alt="The Logic menu with the comparison block '0 = 0' highlighted." width="350" />
+<img src="images/comparison-block.png" alt="Le menu Logique avec le bloc de comparaison '0 = 0' en surbrillance." width="350" />
 
-Change the `=`{:class='microbitlogic'} to a `>`{:class='microbitlogic'} (greater than) symbol using the drop-down arrow on the comparison block.
+Change le symbole `=`{:class='microbitlogic'} en `>`{:class='microbitlogic'} (supérieur à) en utilisant la flèche déroulante du bloc de comparaison.
 
-Place the comparison block inside the `true`{:class='microbitlogic'} space in the `if`{:class='microbitlogic'} block.
+Place le bloc de comparaison à l'intérieur du bloc `vrai`{:class='microbitlogic'} dans l'espace `si`{:class='microbitlogic'}.
 
 ```microbit
 basic.forever(function () {
@@ -371,7 +371,7 @@ basic.forever(function () {
 
 --- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, drag the `timer`{:class='microbitvariables'} block and place it inside the first `0` in the `0 > 0`{:class='microbitlogic'} block.
+À partir du menu `Variables`{:class='microbitvariables'}, Fais glisser le bloc `minuteur`{:class='microbitvariables'} et place-le à l'intérieur du premier bloc `0` dans le bloc `0 > 0`{:class='microbitlogic'}.
 
 ```microbit
 basic.forever(function () {
@@ -384,13 +384,13 @@ basic.forever(function () {
 
 --- /task ---
 
-To create a countdown, the `timer` variable value needs to reduce by `1`.
+Pour créer un compte à rebours, la valeur de la variable `minuteur` doit être réduite de `1`.
 
 --- task ---
 
-From the `Variables`{:class='microbitvariables'} menu, drag the `change`{:class='microbitvariables'} block and place it inside the `if`{:class='microbitlogic'} section.
+À partir du menu `Variables`{:class='microbitvariables'}, fais glisser le bloc `modifier`{:class='microbitvariables'} et place-le à l'intérieur de la section `si`{:class='microbitlogic'}.
 
-Change `1` to `-1`.
+Change `1` en `-1`.
 
 ```microbit
 let timer = 0
@@ -405,11 +405,11 @@ basic.forever(function () {
 
 --- task ---
 
-From the `Basic`{:class='microbitbasic'} menu, drag the `show number`{:class='microbitbasic'} block and place it below the `change`{:class='microbitvariables'} block.
+À partir du menu `Base`{:class='microbitbasic'}, fais glisser le bloc `montrer nombre`{:class='microbitbasic'} et place-le sous le bloc `modifier`{:class='microbitvariables'}.
 
-<img src="images/show-number.png" alt="The Basic menu with the 'show number' block highlighted." width="350" />
+<img src="images/show-number.png" alt="Le menu de base avec le bloc « montrer nombre » en surbrillance." width="350" />
 
-From the `Variables`{:class='microbitvariables'} menu, drag the `timer`{:class='microbitvariables'} variable inside the `0` on the `show number`{:class='microbitbasic'} block.
+À partir du menu `Variables`{:class='microbitvariables'}, fais glisser la variable `minuteur`{:class='microbitvariables'} à l'intérieur du bloc `0` sur le bloc `montrer nombre`{:class='microbitbasic'}.
 
 ```microbit
 let timer = 0
@@ -423,15 +423,15 @@ basic.forever(function () {
 
 --- /task ---
 
-After each value of `timer`{:class='microbitvariables'} is displayed on the micro:bit, you need to add a 1-second pause.
+Après chaque valeur le `minuteur`{:class='microbitvariables'} est affiché sur le micro:bit, tu dois ajouter une pause de 1 seconde.
 
 --- task ---
 
-Right-click on one of your `pause`{:class='microbitbasic'} blocks and duplicate it.
+Fais un clic droit sur l'un de tes blocs `pause`{:class='microbitbasic'} et duplique-le.
 
-Drag the duplicated `pause`{:class='microbitbasic'} block below the `show number`{:class='microbitbasic'} block.
+Fais glisser le bloc `pause`{:class='microbitbasic'} dupliqué sous le bloc `montrer nombre`{:class='microbitbasic'}.
 
-Change `2000` to `1000`.
+Change `2000` à `1000`.
 
 ```microbit
 let timer = 0
@@ -446,21 +446,21 @@ basic.forever(function () {
 
 --- /task ---
 
-After the countdown finishes, the value will be 0.
+Une fois le compte à rebours terminé, la valeur sera 0.
 
-You need a message to tell the user to change their silly pose.
+Tu as besoin d'un message pour dire à l'utilisateur de changer de pose idiote.
 
-You will do this by adding an `else`{:class='microbitlogic'} section to the `if`{:class='microbitlogic'} block.
+Tu le feras en ajoutant un `sinon`{:class='microbitlogic'} à la section `si`{:class='microbitlogic'}.
 
 --- task ---
 
-Click on the `+` symbol at the bottom of the `if`{:class='microbitlogic'} block. This will create an `else`{:class='microbitlogic'} section.
+Clique sur le symbole `+` au bas du bloc `si`{:class='microbitlogic'}. Cela va créer un `sinon`{:class='microbitlogic'}.
 
-From the `Basic`{:class='microbitbasic'} menu, drag the `show string`{:class='microbitbasic'} block and place it inside the `else`{:class='microbitlogic'} section.
+À partir du menu `Base`{:class='microbitbasic'}, fais glisser le bloc `afficher le texte`{:class='microbitbasic'} et place-la dans la section `sinon`{:class='microbitlogic'}.
 
-Change the string `Hello!` to `Pose!`.
+Changez le texte `Bonjour!` en `Pose!`.
 
-From the `Basic`{:class='microbitbasic'} menu, drag the `clear screen`{:class='microbitbasic'} block and drop it **above** the `show string`{:class='microbitbasic'} block.
+À partir du menu `Base`{:class='microbitbasic'}, fais glisser le bloc `effacer l'écran`{:class='microbitbasic'} et dépose-le **au-dessus du** bloc `afficher le texte`{:class='microbitbasic'}.
 
 ```microbit
 let timer = 0
@@ -481,20 +481,20 @@ basic.forever(function () {
 --- collapse ---
 
 ---
-title: Add sound for dramatic effect
+title: Ajouter un son pour un effet dramatique
 ---
 
-From the `Music`{:class='microbitmusic'} menu, drag a `play tone`{:class='microbitmusic'} block.
+À partir du menu `Musique`{:class='microbitmusic'}, fais glisser un bloc `jouer tonalité`{:class='microbitmusic'}.
 
-Place it below the `change`{:class='microbitvariables'} block.
+Place-le sous le bloc `modifier`{:class='microbitvariables'}.
 
-Click the `Middle C` drop-down menu and a piano keys console will appear.
+Clique sur le menu déroulant `Middle C` et un clavier de touches de piano apparaîtra.
 
-Choose a tone for your timer.
+Choisis une tonalité pour ton minuteur.
 
-We have selected `Middle A`.
+Nous avons sélectionné `Middle A`.
 
-Click the `until done`{:class='microbitmusic'} drop-down menu and change it to `in background`{:class='microbitmusic'}.
+Clique sur le menu déroulant `jusqu'à la fin`{:class='microbitmusic'} et remplace-le par `en arrière-plan`{:class='microbitmusic'}.
 
 ```microbit
 let timer = 0
@@ -515,15 +515,15 @@ basic.forever(function () {
 
 --- task ---
 
-**Test** your program on the simulator:
+**Teste** ton programme sur le simulateur :
 
-+ **Click** Button A to see the pose icon displayed.
++ **Clique sur** le bouton A pour voir l'icône de pose affichée.
 
-+ **Click** Button B to see another pose icon displayed.
++ **Clique sur** le bouton B pour voir une autre icône de pose affichée.
 
-+ **Check** the countdown timer is working and counting back from 10.
++ **Vérifie** que le compte à rebours fonctionne et compte à rebours à partir de 10.
 
-+ **Check** that a tone is played as each second counts down.
++ **Vérifie** qu'une tonalité est émise à chaque seconde du compte à rebours.
 
 --- /task ---
 
@@ -531,25 +531,25 @@ basic.forever(function () {
 
 [[[download-to-microbit]]]
 
-When you have downloaded your program to your micro:bit, it will run immediately.
+Lorsque tu auras téléchargé ton programme sur ton micro:bit, il s'exécutera immédiatement.
 
 --- /task ---
 
 --- task ---
 
-**Test** your program on the physical micro:bit.
+**Teste** ton programme sur le micro:bit physique.
 
 --- /task ---
 
 [[[microbit-share]]]
 
-### Completed project
+### Projet terminé
 
-If you want to check your code you can can find [the completed project here](https://makecode.microbit.org/_8K430qR3oH7t){:target="_blank"}.
+Si tu veux vérifier ton code, tu peux trouver [le projet terminé ici](https://makecode.microbit.org/_8K430qR3oH7t){:target="_blank"}.
 
-### Upgrade your project
+### Améliorer ton projet
 
-You can upgrade your silly reminder project by:
+Tu peux améliorer ton projet de rappel idiot en :
 
-+ Adding one more silly pose that shows when you press Buttons A and B together (`A+B`)
-+ Increase the amount of time between poses
++ Ajoutant une pose idiote supplémentaire qui apparaît lorsque tu appuies simultanément sur les boutons A et B (`A+B`)
++ Augmentant le temps entre les poses
