@@ -1,10 +1,10 @@
-The **micro:bit** is a small computer that you can use to interact with the world around you.
+Le **micro:bit** est un petit ordinateur que tu peux utiliser pour interagir avec le monde qui t'entoure.
 
-This project will help you **discover** what the **micro:bit** can do.
+Ce projet t'aidera **à découvrir** ce que le **micro:bit** peut faire.
 
-### What you will make
+### Ce que tu vas faire
 
-This project reminds you to make time to be silly, have fun, and strike a pose! This could be after a long day at school, or as a way to cheer you and your friends up. You can program the micro:bit buttons to help you remember to have some silly fun.
+Ce projet te rappelle de prendre le temps de faire des bêtises, de t'amuser et de prendre une pose ! Cela peut être après une longue journée à l'école ou pour te remonter le moral, toi et tes amis. Tu peux programmer les boutons micro:bit pour t'aider à te rappeler de t'amuser un peu.
 
 In this project, you will make a **silly reminder**.
 
