@@ -71,7 +71,7 @@ Donne à ton projet le nom `rappel idiot` et clique sur **Créer**.
 
 <img src="images/new-project.png" alt="Le nom « rappel idiot » écrit dans la boîte de dialogue Créer un projet." width="450" />
 
-**Astuce :** Pour faciliter la recherche ultérieure de ton projet, donne-lui un nom utile en rapport avec ce que tu crées.
+**Astuce :** pour faciliter la recherche ultérieure de ton projet, donne-lui un nom utile en rapport avec ce que tu crées.
 
 --- /task ---
 
@@ -81,13 +81,13 @@ Créé par la Fondation micro:bit, l'éditeur **MakeCode** a tout ce dont tu as 
 
 ![La fenêtre de l'éditeur MakeCode](images/makecode-tour.png)
 
-Sur la gauche il y a un **simulateur**. C'est un micro:bit virtuel que tu peux utiliser pour tester ton code!
+Sur la gauche, il y a un **simulateur**. C'est un micro:bit virtuel que tu peux utiliser pour tester ton code !
 
 Il a toutes les fonctionnalités et tous les boutons d'un micro:bit V2, y compris :
 + Écran LED
 + Haut-parleur
 + Microphone
-+ Boutons de saisie 
++ Boutons de saisie
     + A
     + B
     + Logo
@@ -126,26 +126,26 @@ Clique sur la flèche vers le bas sur le bloc `montrer l'icône`{:class='microbi
 
 <img src="images/show-icon.png" alt="Le menu montrer l'icône s'est développé pour afficher toutes les icônes disponibles." width="350" />
 
-Dans cet exemple, nous avons choisi l'icône `coeur`.
+Dans cet exemple, nous avons choisi l'icône `cœur`.
 
 --- /task ---
 
 --- task ---
 
-**Test :** L'écran LED doit s'allumer sur le simulateur et afficher l'icône de ton choix.
+**Test :** l'écran LED doit s'allumer sur le simulateur et afficher l'icône de ton choix.
 
-Bien joué ! Tu as allumé les LEDs sur l'éclairage micro:bit!
+Bien joué ! Tu as allumé les LEDs sur l'éclairage micro:bit !
 
 --- /task ---
 
-### Choisis quelques poses
+### Choisir quelques poses
 
 Tu devras décider des grimaces ou des poses idiotes que tu feras chaque fois que tu appuieras sur un bouton micro:bit. Voici quelques idées de poses :
 
 + Un grand sourire ringard
 + Sauts étoiles
 + Être un arbre
-+ Pose musculaire souple
++ Posture de flexion musculaire
 
 ### Créer un chronomètre pour chaque pose
 
@@ -163,7 +163,7 @@ Ouvre le menu `Variables`{:class='microbitvariables'} et clique sur **Créer une
 
 Nomme la nouvelle variable `minuteur`, puis clique sur le bouton **OK**.
 
-<img src="images/variable-examplename.png" alt="La fenêtre 'Nouveau nom de variable', avec le nom 'minuteur' écrit dans la case." width="400" />
+<img src="images/variable-examplename.png" alt="La fenêtre « Nouveau nom de variable », avec le nom « minuteur » écrit dans la case." width="400" />
 
 --- /task ---
 
@@ -307,7 +307,7 @@ Tu aurez maintenant deux blocs `lorsque le bouton`{:class='microbitinput'} dans 
 
 Clique sur la flèche vers le bas à côté du bloc `A`{:class='microbitinput'} sur ton bloc `lorsque le bouton`{:class='microbitinput'} dupliqué. Remplace le `A`{:class='microbitinput'} par `B`{:class='microbitinput'}.
 
-<img src="images/button-options.png" alt="Le bloc 'lorsque le bouton A est pressé' affiche un menu déroulant à partir du A, avec des options pour A, B et A+B." width="210" />
+<img src="images/button-options.png" alt="Le bloc « lorsque le bouton A est pressé » affiche un menu déroulant à partir du A, avec des options pour A, B et A+B." width="210" />
 
 --- /task ---
 
@@ -353,7 +353,7 @@ basic.forever(function () {
 
 À partir du menu `Logique`{:class='microbitlogic'}, fais glisser un bloc de comparaison `0 = 0`{:class='microbitlogic'}.
 
-<img src="images/comparison-block.png" alt="Le menu Logique avec le bloc de comparaison '0 = 0' en surbrillance." width="350" />
+<img src="images/comparison-block.png" alt="Le menu Logique avec le bloc de comparaison « 0 = 0 » en surbrillance." width="350" />
 
 Change le symbole `=`{:class='microbitlogic'} en `>`{:class='microbitlogic'} (supérieur à) en utilisant la flèche déroulante du bloc de comparaison.
 
@@ -371,7 +371,7 @@ basic.forever(function () {
 
 --- task ---
 
-À partir du menu `Variables`{:class='microbitvariables'}, Fais glisser le bloc `minuteur`{:class='microbitvariables'} et place-le à l'intérieur du premier bloc `0` dans le bloc `0 > 0`{:class='microbitlogic'}.
+À partir du menu `Variables`{:class='microbitvariables'}, fais glisser le bloc `minuteur`{:class='microbitvariables'} et place-le à l'intérieur du premier bloc `0` dans le bloc `0 > 0`{:class='microbitlogic'}.
 
 ```microbit
 basic.forever(function () {
@@ -431,7 +431,7 @@ Fais un clic droit sur l'un de tes blocs `pause`{:class='microbitbasic'} et dupl
 
 Fais glisser le bloc `pause`{:class='microbitbasic'} dupliqué sous le bloc `montrer nombre`{:class='microbitbasic'}.
 
-Change `2000` à `1000`.
+Remplace `2000` par `1000`.
 
 ```microbit
 let timer = 0
@@ -454,13 +454,13 @@ Tu le feras en ajoutant un `sinon`{:class='microbitlogic'} à la section `si`{:c
 
 --- task ---
 
-Clique sur le symbole `+` au bas du bloc `si`{:class='microbitlogic'}. Cela va créer un `sinon`{:class='microbitlogic'}.
+Clique sur le symbole `+` au bas du bloc `si`{:class='microbitlogic'}. Cela va créer une section `sinon`{:class='microbitlogic'}.
 
-À partir du menu `Base`{:class='microbitbasic'}, fais glisser le bloc `afficher le texte`{:class='microbitbasic'} et place-la dans la section `sinon`{:class='microbitlogic'}.
+À partir du menu `Base`{:class='microbitbasic'}, fais glisser le bloc `afficher texte`{:class='microbitbasic'} et place-la dans la section `sinon`{:class='microbitlogic'}.
 
-Changez le texte `Bonjour!` en `Pose!`.
+Change le texte `Hello!` par `Pose !`.
 
-À partir du menu `Base`{:class='microbitbasic'}, fais glisser le bloc `effacer l'écran`{:class='microbitbasic'} et dépose-le **au-dessus du** bloc `afficher le texte`{:class='microbitbasic'}.
+À partir du menu `Base`{:class='microbitbasic'}, fais glisser le bloc `effacer l'écran`{:class='microbitbasic'} et dépose-le **au-dessus du** bloc `afficher texte`{:class='microbitbasic'}.
 
 ```microbit
 let timer = 0
