@@ -1,10 +1,10 @@
-title: Silly reminder
+title: Recordatorio
 hero_image: images/banner.png
-description: Let your micro:bit remind you to loosen up and stike a pose
+description: Deja que tu micro:bit te recuerde que debes relajarte y adoptar una pose
 version: 4
 listed: false
 copyedit: false
 last_tested: "2023-08-11"
 steps:
   - 
-    title: Set a reminder
+    title: Establece un recordatorio
