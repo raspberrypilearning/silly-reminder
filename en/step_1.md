@@ -110,7 +110,7 @@ This will expand to show you the blocks available.
 
 <img src="images/show-icon-location.png" alt="The Basic menu with the 'show icon' block highlighted." width="350"/>
 
-Drag the `show iccon`{:class='microbitbasic'} block and place it **inside** the `on start`{:class='microbitbasic'} block. 
+Drag the `show icon`{:class='microbitbasic'} block and place it **inside** the `on start`{:class='microbitbasic'} block. 
 
 This should fit in place like a puzzle piece.
 
