@@ -110,7 +110,7 @@ Bydd hyn yn ehangu i ddangos y blociau sydd ar gael i chi.
 
 <img src="images/show-icon-location.png" alt="Mae'r ddewislen Sylfaenol gyda'r bloc 'eicon dangos' wedi'i amlygu." width="350" />
 
-Llusgwch y bloc <code style="background-color: #1E90FF">dangos eicon</code> bloc a'i osod **y tu mewn i** y bloc <code style="background-color: #1E90FF">ar ddechrau</code>.
+Drag the `show icon`{:class='microbitbasic'} block and place it **inside** the `on start`{:class='microbitbasic'} block.
 
 Dylai hwn ffitio yn ei le fel darn pos.
 
