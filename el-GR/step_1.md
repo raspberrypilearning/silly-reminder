@@ -110,7 +110,7 @@ title: Εκτός σύνδεσης έκδοση του επεξεργαστή
 
 <img src="images/show-icon-location.png" alt="Το μενού Βασικά με το μπλοκ &quot;εμφάνιση εικονιδίου&quot; τονισμένο." width="350" />
 
-Σύρε το μπλοκ `εμφάνιση εικονιδίου`{:class='microbitbasic'} και απόθεσέ το **μέσα** στο μπλοκ `κατά την έναρξη`{:class='microbitbasic'}.
+Drag the `show icon`{:class='microbitbasic'} block and place it **inside** the `on start`{:class='microbitbasic'} block.
 
 Αυτό θα πρέπει να ταιριάζει στη θέση του σαν ένα κομμάτι παζλ.
 
