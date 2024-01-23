@@ -110,7 +110,7 @@ Se expandirá para mostrarte los bloques disponibles.
 
 <img src="images/show-icon-location.png" alt="El menú básico con el bloque 'Mostrar icono' resaltado." width="350" />
 
-Arrastra el bloque `mostrar el icono`{:class='microbitbasic'} y colócalo **dentro de** el bloque `al iniciar`{:class='microbitbasic'}.
+Drag the `show icon`{:class='microbitbasic'} block and place it **inside** the `on start`{:class='microbitbasic'} block.
 
 Esto debería encajar en su lugar como una pieza de rompecabezas.
 
