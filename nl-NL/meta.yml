@@ -3,8 +3,8 @@ title: Tijd voor gekkigheid
 hero_image: images/banner.png
 description: Laat je micro:bit je eraan herinneren om te ontspannen worden en gek te doen
 version: 4
-listed: false
-copyedit: false
+listed: true
+copyedit: true
 last_tested: "2023-08-11"
 steps:
   - title: Stel een herinnering in
