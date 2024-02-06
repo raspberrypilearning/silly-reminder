@@ -110,7 +110,7 @@ Dit zal je uitklappen om de beschikbare blokken te laten zien.
 
 <img src="images/show-icon-location.png" alt="Het basisblokmenu met het 'toon pictogram' blok geaccentueerd." width="350" />
 
-Drag the `show icon`{:class='microbitbasic'} block and place it **inside** the `on start`{:class='microbitbasic'} block.
+Sleep het `toon pictogram`{:class='microbitbasic'} blok en plaats het **in** het `bij opstarten`{:class='microbitbasic'} blok.
 
 Het moet als een puzzelstuk op zijn plaats passen.
 
