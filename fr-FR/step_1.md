@@ -110,7 +110,7 @@ Cela va l'étendre pour te montrer les blocs disponibles.
 
 <img src="images/show-icon-location.png" alt="Le menu de base avec le bloc « montrer l'icône » en surbrillance." width="350" />
 
-Drag the `show icon`{:class='microbitbasic'} block and place it **inside** the `on start`{:class='microbitbasic'} block.
+Fais glisser le bloc `montrer l'icône`{:class='microbitbasic'} et place-le **à l'intérieur du** bloc `au démarrage`{:class='microbitbasic'}.
 
 Cela devrait s’emboîter comme une pièce de puzzle.
 
