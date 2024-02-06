@@ -2,8 +2,8 @@ title: Rappel idiot
 hero_image: images/banner.png
 description: Laisse ton micro:bit te rappeler de te détendre et de prendre une pose
 version: 4
-listed: false
-copyedit: false
+listed: true
+copyedit: true
 last_tested: "2023-08-11"
 steps:
   - 
