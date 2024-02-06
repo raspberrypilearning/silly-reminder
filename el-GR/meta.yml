@@ -2,8 +2,8 @@ title: Υπενθύμιση διασκέδασης
 hero_image: images/banner.png
 description: Άσε το micro:bit να σου υπενθυμίσει να χαλαρώσεις και να πάρεις μια πόζα
 version: 4
-listed: false
-copyedit: false
+listed: true
+copyedit: true
 last_tested: "2023-08-11"
 steps:
   - 
